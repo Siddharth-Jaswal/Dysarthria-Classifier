@@ -1,5 +1,6 @@
 import os
 import random
+import logging
 from dataclasses import dataclass
 from typing import Dict, List, Tuple
 
@@ -49,6 +50,10 @@ class Config:
     best_model_name: str = "best_model.pth"
     curves_name: str = "training_curves.png"
     cm_name: str = "confusion_matrix.png"
+    log_file_name: str = "train.log"
+    console_verbose: bool = False
+    file_verbose: bool = True
+    batch_log_interval: int = 20
     device: str = "cuda" if torch.cuda.is_available() else "cpu"
 
 
@@ -66,6 +71,29 @@ def set_seed(seed: int) -> None:
 
 set_seed(CFG.seed)
 os.makedirs(CFG.output_dir, exist_ok=True)
+
+
+def setup_logger(cfg: Config) -> logging.Logger:
+    logger = logging.getLogger("dysarthria_train")
+    logger.setLevel(logging.DEBUG)
+    logger.handlers.clear()
+    logger.propagate = False
+
+    log_path = os.path.join(cfg.output_dir, cfg.log_file_name)
+
+    file_handler = logging.FileHandler(log_path, mode="w", encoding="utf-8")
+    file_handler.setLevel(logging.DEBUG if cfg.file_verbose else logging.INFO)
+    file_handler.setFormatter(
+        logging.Formatter("%(asctime)s | %(levelname)s | %(message)s", datefmt="%Y-%m-%d %H:%M:%S")
+    )
+
+    stream_handler = logging.StreamHandler()
+    stream_handler.setLevel(logging.INFO if cfg.console_verbose else logging.WARNING)
+    stream_handler.setFormatter(logging.Formatter("%(message)s"))
+
+    logger.addHandler(file_handler)
+    logger.addHandler(stream_handler)
+    return logger
 
 
 # =========================
@@ -299,12 +327,15 @@ def train_one_epoch(
     scaler: torch.cuda.amp.GradScaler,
     device: str,
     use_amp: bool,
+    logger: logging.Logger,
+    cfg: Config,
+    epoch: int,
 ) -> Tuple[float, float]:
     model.train()
     running_loss = 0.0
     running_acc = 0.0
 
-    for x, y in loader:
+    for batch_idx, (x, y) in enumerate(loader, start=1):
         x = x.to(device, non_blocking=True)
         y = y.to(device, non_blocking=True)
 
@@ -321,6 +352,15 @@ def train_one_epoch(
         running_loss += loss.item() * x.size(0)
         running_acc += binary_accuracy_from_logits(logits.detach(), y) * x.size(0)
 
+        if cfg.file_verbose and (batch_idx % cfg.batch_log_interval == 0 or batch_idx == len(loader)):
+            logger.debug(
+                "Epoch %02d | Batch %d/%d | batch_loss=%.4f",
+                epoch,
+                batch_idx,
+                len(loader),
+                loss.item(),
+            )
+
     epoch_loss = running_loss / len(loader.dataset)
     epoch_acc = running_acc / len(loader.dataset)
     return epoch_loss, epoch_acc
@@ -333,12 +373,14 @@ def validate_one_epoch(
     criterion: nn.Module,
     device: str,
     use_amp: bool,
+    logger: logging.Logger,
+    epoch: int,
 ) -> Tuple[float, float]:
     model.eval()
     running_loss = 0.0
     running_acc = 0.0
 
-    for x, y in loader:
+    for batch_idx, (x, y) in enumerate(loader, start=1):
         x = x.to(device, non_blocking=True)
         y = y.to(device, non_blocking=True)
 
@@ -349,12 +391,16 @@ def validate_one_epoch(
         running_loss += loss.item() * x.size(0)
         running_acc += binary_accuracy_from_logits(logits, y) * x.size(0)
 
+        if batch_idx == len(loader):
+            logger.debug("Epoch %02d | Validation complete", epoch)
+
     epoch_loss = running_loss / len(loader.dataset)
     epoch_acc = running_acc / len(loader.dataset)
     return epoch_loss, epoch_acc
 
 
 def train_model(cfg: Config):
+    logger = setup_logger(cfg)
     train_loader, val_loader, test_loader, train_df = create_dataloaders(cfg)
     model = SpectrogramCNN(dropout=cfg.dropout).to(cfg.device)
     pos_weight = compute_pos_weight(train_df, cfg.device)
@@ -382,12 +428,16 @@ def train_model(cfg: Config):
     }
 
     best_model_path = os.path.join(cfg.output_dir, cfg.best_model_name)
+    logger.info("Training started on device=%s", cfg.device)
+    logger.info("Train samples=%d | Val samples=%d | Test samples=%d", len(train_loader.dataset), len(val_loader.dataset), len(test_loader.dataset))
 
     for epoch in range(1, cfg.epochs + 1):
         train_loss, train_acc = train_one_epoch(
-            model, train_loader, criterion, optimizer, scaler, cfg.device, use_amp
+            model, train_loader, criterion, optimizer, scaler, cfg.device, use_amp, logger, cfg, epoch
         )
-        val_loss, val_acc = validate_one_epoch(model, val_loader, criterion, cfg.device, use_amp)
+        val_loss, val_acc = validate_one_epoch(
+            model, val_loader, criterion, cfg.device, use_amp, logger, epoch
+        )
         scheduler.step(val_loss)
 
         history["train_loss"].append(train_loss)
@@ -396,27 +446,34 @@ def train_model(cfg: Config):
         history["val_acc"].append(val_acc)
 
         current_lr = optimizer.param_groups[0]["lr"]
-        print(
+        epoch_msg = (
             f"Epoch [{epoch:02d}/{cfg.epochs}] "
             f"LR: {current_lr:.6f} | "
             f"Train Loss: {train_loss:.4f} | Train Acc: {train_acc:.4f} | "
             f"Val Loss: {val_loss:.4f} | Val Acc: {val_acc:.4f}"
         )
+        print(epoch_msg)
+        logger.info(epoch_msg)
 
         if val_loss < best_val_loss:
             best_val_loss = val_loss
             best_epoch = epoch
             patience_counter = 0
             torch.save(model.state_dict(), best_model_path)
+            logger.info("Saved new best model at epoch %d", epoch)
         else:
             patience_counter += 1
             if patience_counter >= cfg.early_stopping_patience:
-                print(f"Early stopping triggered at epoch {epoch}.")
+                stop_msg = f"Early stopping triggered at epoch {epoch}."
+                print(stop_msg)
+                logger.info(stop_msg)
                 break
 
-    print(f"Best model found at epoch {best_epoch} with val_loss={best_val_loss:.4f}")
+    best_msg = f"Best model found at epoch {best_epoch} with val_loss={best_val_loss:.4f}"
+    print(best_msg)
+    logger.info(best_msg)
     model.load_state_dict(torch.load(best_model_path, map_location=cfg.device))
-    return model, test_loader, history
+    return model, test_loader, history, logger
 
 
 # =========================
@@ -556,7 +613,7 @@ def predict_audio(audio_path: str, model: nn.Module, cfg: Config):
 # =========================
 def main():
     print(f"Using device: {CFG.device}")
-    model, test_loader, history = train_model(CFG)
+    model, test_loader, history, logger = train_model(CFG)
 
     metrics, cm, report = evaluate_model(model, test_loader, CFG.device)
     print("\nTest Metrics")
@@ -565,6 +622,7 @@ def main():
 
     print("\nClassification Report")
     print(report)
+    logger.info("Classification report:\n%s", report)
 
     curves_path = os.path.join(CFG.output_dir, CFG.curves_name)
     cm_path = os.path.join(CFG.output_dir, CFG.cm_name)
@@ -575,6 +633,8 @@ def main():
     print(os.path.join(CFG.output_dir, CFG.best_model_name))
     print(curves_path)
     print(cm_path)
+    print(os.path.join(CFG.output_dir, CFG.log_file_name))
+    logger.info("Saved artifacts: %s, %s, %s, %s", os.path.join(CFG.output_dir, CFG.best_model_name), curves_path, cm_path, os.path.join(CFG.output_dir, CFG.log_file_name))
 
     # Example usage:
     # example_file = os.path.join("Database", "M_data", "M01", "Session1", "wav_headMic", "0001.wav")
