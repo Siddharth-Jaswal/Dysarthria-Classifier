@@ -3,3 +3,4 @@ test.ipynb
 .vscode
 .venv
 __pycache__
+outputs
