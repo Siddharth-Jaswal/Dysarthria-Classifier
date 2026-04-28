@@ -1,0 +1,6 @@
+2026-04-28 15:02:33 | INFO | Training started on device=cpu
+2026-04-28 15:02:33 | INFO | Train samples=5491 | Val samples=1252 | Test samples=1475
+2026-04-28 15:06:10 | DEBUG | Epoch 01 | Batch 20/172 | batch_loss=0.6460
+2026-04-28 15:07:17 | DEBUG | Epoch 01 | Batch 40/172 | batch_loss=0.6531
+2026-04-28 15:08:20 | DEBUG | Epoch 01 | Batch 60/172 | batch_loss=0.5047
+2026-04-28 15:09:22 | DEBUG | Epoch 01 | Batch 80/172 | batch_loss=0.3108

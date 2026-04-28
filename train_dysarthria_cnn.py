@@ -9,6 +9,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
 import seaborn as sns
+import soundfile as sf
 import torch
 import torch.nn as nn
 from sklearn.metrics import (
@@ -94,6 +95,37 @@ def setup_logger(cfg: Config) -> logging.Logger:
     logger.addHandler(file_handler)
     logger.addHandler(stream_handler)
     return logger
+
+
+def filter_readable_audio(df: pd.DataFrame, cfg: Config, logger: logging.Logger) -> pd.DataFrame:
+    valid_rows = []
+    bad_files = []
+
+    for _, row in df.iterrows():
+        rel_path = os.path.normpath(str(row["file_path"]))
+        full_path = os.path.join(cfg.base_data_dir, rel_path)
+
+        if not os.path.isfile(full_path):
+            bad_files.append((full_path, "missing_file"))
+            continue
+
+        try:
+            sf.info(full_path)
+            valid_rows.append(row)
+        except Exception as exc:
+            bad_files.append((full_path, str(exc)))
+
+    if bad_files:
+        logger.warning("Skipping %d unreadable/missing audio files.", len(bad_files))
+        for path, reason in bad_files[:20]:
+            logger.warning("Skipped file: %s | reason: %s", path, reason)
+        if len(bad_files) > 20:
+            logger.warning("... plus %d more skipped files.", len(bad_files) - 20)
+
+    filtered_df = pd.DataFrame(valid_rows).reset_index(drop=True)
+    if filtered_df.empty:
+        raise RuntimeError("No readable audio files found after filtering.")
+    return filtered_df
 
 
 # =========================
@@ -216,7 +248,7 @@ class DysarthriaDataset(Dataset):
         return x, y
 
 
-def create_dataloaders(cfg: Config):
+def create_dataloaders(cfg: Config, logger: logging.Logger):
     df = pd.read_csv(cfg.csv_path)
     expected_cols = {"file_path", "speaker_id", "gender", "session_id", "label", "split"}
     missing = expected_cols.difference(df.columns)
@@ -226,6 +258,10 @@ def create_dataloaders(cfg: Config):
     train_df = df[df["split"] == "train"].copy()
     val_df = df[df["split"] == "val"].copy()
     test_df = df[df["split"] == "test"].copy()
+
+    train_df = filter_readable_audio(train_df, cfg, logger)
+    val_df = filter_readable_audio(val_df, cfg, logger)
+    test_df = filter_readable_audio(test_df, cfg, logger)
 
     train_ds = DysarthriaDataset(train_df, cfg, train_mode=True)
     val_ds = DysarthriaDataset(val_df, cfg, train_mode=False)
@@ -324,7 +360,7 @@ def train_one_epoch(
     loader: DataLoader,
     criterion: nn.Module,
     optimizer: torch.optim.Optimizer,
-    scaler: torch.cuda.amp.GradScaler,
+    scaler: torch.amp.GradScaler,
     device: str,
     use_amp: bool,
     logger: logging.Logger,
@@ -341,7 +377,7 @@ def train_one_epoch(
 
         optimizer.zero_grad(set_to_none=True)
 
-        with torch.cuda.amp.autocast(enabled=use_amp):
+        with torch.amp.autocast(device_type="cuda", enabled=use_amp):
             logits = model(x)
             loss = criterion(logits, y)
 
@@ -384,7 +420,7 @@ def validate_one_epoch(
         x = x.to(device, non_blocking=True)
         y = y.to(device, non_blocking=True)
 
-        with torch.cuda.amp.autocast(enabled=use_amp):
+        with torch.amp.autocast(device_type="cuda", enabled=use_amp):
             logits = model(x)
             loss = criterion(logits, y)
 
@@ -401,7 +437,7 @@ def validate_one_epoch(
 
 def train_model(cfg: Config):
     logger = setup_logger(cfg)
-    train_loader, val_loader, test_loader, train_df = create_dataloaders(cfg)
+    train_loader, val_loader, test_loader, train_df = create_dataloaders(cfg, logger)
     model = SpectrogramCNN(dropout=cfg.dropout).to(cfg.device)
     pos_weight = compute_pos_weight(train_df, cfg.device)
     criterion = nn.BCEWithLogitsLoss(pos_weight=pos_weight)
@@ -414,7 +450,7 @@ def train_model(cfg: Config):
         optimizer, mode="min", factor=0.5, patience=2
     )
     use_amp = cfg.device == "cuda"
-    scaler = torch.cuda.amp.GradScaler(enabled=use_amp)
+    scaler = torch.amp.GradScaler("cuda", enabled=use_amp)
 
     best_val_loss = float("inf")
     best_epoch = -1
