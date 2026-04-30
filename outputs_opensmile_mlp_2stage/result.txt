@@ -1,0 +1,29 @@
+============================================================
+All folds complete. Aggregating results...
+
+--- Final Aggregated Results ---
+Accuracy:          0.5175
+Balanced Accuracy: 0.4044
+Macro F1:          0.4151
+Weighted F1:       0.5432
+
+--- Classification Report ---
+              precision    recall  f1-score   support
+
+     Healthy     0.7513    0.6593    0.7023     10413
+        Mild     0.0557    0.0789    0.0653      3131
+      Severe     0.4805    0.4750    0.4777      2438
+
+    accuracy                         0.5175     15982
+   macro avg     0.4292    0.4044    0.4151     15982
+weighted avg     0.5737    0.5175    0.5432     15982
+
+--- Confusion Matrix ---
+[[6865 3232  316]
+ [1948  247  936]
+ [ 325  955 1158]]
+
+--- Per-Class Recall ---
+Healthy: 0.6593
+Mild: 0.0789
+Severe: 0.4750

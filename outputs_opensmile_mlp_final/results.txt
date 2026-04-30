@@ -1,0 +1,95 @@
+TORGO Dysarthria Severity Classification Results
+Model: openSMILE + MLP
+Evaluation: Leave-One-Speaker-Out (LOSO) Cross-Validation
+
+============================================================
+FINAL AGGREGATED RESULTS
+========================
+
+Accuracy:            0.4966
+Balanced Accuracy:   0.3877
+Macro F1 Score:      0.4015
+Weighted F1 Score:   0.5241
+
+============================================================
+CLASSIFICATION REPORT
+=====================
+
+Class: Healthy
+Precision: 0.7284
+Recall:    0.6356
+F1-Score:  0.6788
+Support:   10413
+
+Class: Mild
+Precision: 0.0320
+Recall:    0.0463
+F1-Score:  0.0379
+Support:   3131
+
+Class: Severe
+Precision: 0.4949
+Recall:    0.4811
+F1-Score:  0.4879
+Support:   2438
+
+---
+
+Overall Accuracy: 0.4966
+Total Samples:    15982
+
+Macro Average:
+Precision: 0.4184
+Recall:    0.3877
+F1-Score:  0.4015
+
+Weighted Average:
+Precision: 0.5563
+Recall:    0.4966
+F1-Score:  0.5241
+
+============================================================
+CONFUSION MATRIX
+================
+
+```
+            Predicted
+          H      M      S
+```
+
+Actual H    6618   3442    353
+Actual M    2142    145    844
+Actual S     326    939   1173
+
+Where:
+H = Healthy
+M = Mild
+S = Severe
+
+============================================================
+PER-CLASS RECALL
+================
+
+Healthy : 0.6356
+Mild    : 0.0463
+Severe  : 0.4811
+
+============================================================
+OBSERVATIONS
+============
+
+1. Healthy class performs strongest with high precision and recall.
+2. Severe class shows moderate detection capability.
+3. Mild class remains highly challenging with very low recall.
+4. Most Mild samples are confused as Healthy or Severe.
+5. Dataset overlap between Mild and neighboring classes likely remains significant.
+
+============================================================
+OUTPUT FILES
+============
+
+Predictions CSV:
+outputs_opensmile_mlp_final/results_opensmile_mlp_final.csv
+
+Total Runtime:
+16.42 minutes

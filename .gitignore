@@ -1,0 +1,9 @@
+Database/F_data
+Database/FC_data
+Database/M_data
+Database/MC_data
+.vscode
+.venv
+__pycache__
+*.pkl
+*.pth

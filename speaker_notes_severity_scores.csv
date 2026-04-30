@@ -1,0 +1,15 @@
+speaker_id,rows_used,domains_found,raw_score,adjusted_score,severity_4class,severity_3class,severity_label,confidence,notes_file
+FC01,0,0,0.0,0.0,Healthy,Healthy,0,High,Database\FC_data\FC01\Notes\FC01.csv
+FC02,0,0,0.0,0.0,Healthy,Healthy,0,High,Database\FC_data\FC02\Notes\FC02.csv
+FC03,0,0,0.0,0.0,Healthy,Healthy,0,High,Database\FC_data\FC03\Notes\FC03.csv
+MC02,0,0,0.0,0.0,Healthy,Healthy,0,High,Database\MC_data\MC02\Notes\MC02.csv
+MC01,0,0,0.0,0.0,Healthy,Healthy,0,High,Database\MC_data\MC01\Notes\MC01.csv
+MC03,0,0,0.0,0.0,Healthy,Healthy,0,High,Database\MC_data\MC03\Notes\MC03.csv
+F03,28,9,0.213,0.113,Healthy,Healthy,0,High,Database\F_data\F03\Notes\F03.csv
+F04,28,9,0.213,0.113,Healthy,Healthy,0,High,Database\F_data\F04\Notes\F04.csv
+M03,28,9,0.17,0.17,Healthy,Healthy,0,High,Database\M_data\M03\Notes\M03.csv
+M05,27,8,1.453,1.453,Mild,Mild,1,High,Database\M_data\M05\Notes\M05.csv
+M02,28,9,1.76,1.76,Moderate,Severe,2,High,Database\M_data\M02\Notes\M02.csv
+F01,28,9,1.76,2.11,Moderate,Severe,2,High,Database\F_data\F01\Notes\F01.csv
+M01,28,9,1.76,2.11,Moderate,Severe,2,High,Database\M_data\M01\Notes\M01.csv
+M04,28,9,2.017,2.167,Moderate,Severe,2,High,Database\M_data\M04\Notes\M04.csv

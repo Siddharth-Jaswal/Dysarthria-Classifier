@@ -1,0 +1,22 @@
+outputs
+    -train.log
+    -code.py
+
+
+outputs_opensmile_mlp_final
+    -results.txt
+    -code.py
+
+
+outputs_opensmile_mlp_2stage
+    -results.txt
+    -code.py
+
+
+outputs_opensmile_gru
+    -results.txt
+    -code.py
+
+
+
+SPEAKER_SEVERITY_README.md

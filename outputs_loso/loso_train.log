@@ -1,0 +1,419 @@
+2026-05-01 01:07:58 | INFO | Starting LOSO Cross-Validation...
+2026-05-01 01:07:58 | INFO | Using device: cuda
+2026-05-01 01:07:58 | INFO | Number of workers: 8
+2026-05-01 01:07:59 | INFO | Loaded 10704 rows from Database\master_severity_split.csv
+2026-05-01 01:07:59 | INFO | Found 15 unique speakers: ['F01', 'F03', 'F04', 'FC01', 'FC02', 'FC03', 'M01', 'M02', 'M03', 'M04', 'M05', 'MC01', 'MC02', 'MC03', 'MC04']
+2026-05-01 01:07:59 | INFO | ============================================================
+2026-05-01 01:07:59 | INFO | Starting Fold 1/15: Test Speaker = F01
+2026-05-01 01:07:59 | INFO | Train speakers (14): ['F03', 'F04', 'FC01', 'FC02', 'FC03', 'M01', 'M02', 'M03', 'M04', 'M05', 'MC01', 'MC02', 'MC03', 'MC04']
+2026-05-01 01:07:59 | INFO | Test speaker (1): F01
+2026-05-01 01:07:59 | INFO | --------------------------------------------------
+2026-05-01 01:07:59 | INFO | Fold 1: Training on 10436 samples.
+2026-05-01 01:07:59 | INFO | Fold 1: Using class weights: [0.8  1.61 0.97]
+2026-05-01 01:09:55 | INFO | 
+Fold 1 | Epoch 01 | LR: 5.0e-04
+  Train -> Loss: 1.0806
+  Train -> Bal Acc: 0.3570
+  Train -> Macro F1: 0.3446
+
+  Test Monitor (Speaker F01):
+  Accuracy: 0.0746
+  Balanced Acc: 0.0746
+  Macro F1: 0.0694
+
+  Predicted classes:
+  Healthy: 248
+  Mild: 0
+  Severe: 20
+
+  True Class: Severe
+  Recall on True Class: 0.0746
+2026-05-01 01:09:55 | INFO | -> New best model saved at epoch 1 with train_loss: 1.0806
+2026-05-01 01:11:32 | INFO | 
+Fold 1 | Epoch 02 | LR: 5.0e-04
+  Train -> Loss: 1.0053
+  Train -> Bal Acc: 0.4539
+  Train -> Macro F1: 0.4320
+
+  Test Monitor (Speaker F01):
+  Accuracy: 0.4963
+  Balanced Acc: 0.4963
+  Macro F1: 0.2211
+
+  Predicted classes:
+  Healthy: 134
+  Mild: 1
+  Severe: 133
+
+  True Class: Severe
+  Recall on True Class: 0.4963
+2026-05-01 01:11:32 | INFO | -> New best model saved at epoch 2 with train_loss: 1.0053
+2026-05-01 01:13:13 | INFO | 
+Fold 1 | Epoch 03 | LR: 5.0e-04
+  Train -> Loss: 0.9078
+  Train -> Bal Acc: 0.5460
+  Train -> Macro F1: 0.5507
+
+  Test Monitor (Speaker F01):
+  Accuracy: 0.6119
+  Balanced Acc: 0.6119
+  Macro F1: 0.2531
+
+  Predicted classes:
+  Healthy: 88
+  Mild: 16
+  Severe: 164
+
+  True Class: Severe
+  Recall on True Class: 0.6119
+2026-05-01 01:13:13 | INFO | -> New best model saved at epoch 3 with train_loss: 0.9078
+2026-05-01 01:14:49 | INFO | 
+Fold 1 | Epoch 04 | LR: 5.0e-04
+  Train -> Loss: 0.8057
+  Train -> Bal Acc: 0.6376
+  Train -> Macro F1: 0.6447
+
+  Test Monitor (Speaker F01):
+  Accuracy: 0.7276
+  Balanced Acc: 0.7276
+  Macro F1: 0.2808
+
+  Predicted classes:
+  Healthy: 22
+  Mild: 51
+  Severe: 195
+
+  True Class: Severe
+  Recall on True Class: 0.7276
+2026-05-01 01:14:49 | INFO | -> New best model saved at epoch 4 with train_loss: 0.8057
+2026-05-01 01:16:28 | INFO | 
+Fold 1 | Epoch 05 | LR: 5.0e-04
+  Train -> Loss: 0.7102
+  Train -> Bal Acc: 0.7145
+  Train -> Macro F1: 0.7123
+
+  Test Monitor (Speaker F01):
+  Accuracy: 0.3470
+  Balanced Acc: 0.3470
+  Macro F1: 0.1717
+
+  Predicted classes:
+  Healthy: 67
+  Mild: 108
+  Severe: 93
+
+  True Class: Severe
+  Recall on True Class: 0.3470
+2026-05-01 01:16:28 | INFO | -> New best model saved at epoch 5 with train_loss: 0.7102
+2026-05-01 01:18:07 | INFO | 
+Fold 1 | Epoch 06 | LR: 5.0e-04
+  Train -> Loss: 0.6635
+  Train -> Bal Acc: 0.7595
+  Train -> Macro F1: 0.7529
+
+  Test Monitor (Speaker F01):
+  Accuracy: 0.1604
+  Balanced Acc: 0.1604
+  Macro F1: 0.0922
+
+  Predicted classes:
+  Healthy: 61
+  Mild: 164
+  Severe: 43
+
+  True Class: Severe
+  Recall on True Class: 0.1604
+2026-05-01 01:18:07 | INFO | -> New best model saved at epoch 6 with train_loss: 0.6635
+2026-05-01 01:19:43 | INFO | 
+Fold 1 | Epoch 07 | LR: 5.0e-04
+  Train -> Loss: 0.5883
+  Train -> Bal Acc: 0.8082
+  Train -> Macro F1: 0.8025
+
+  Test Monitor (Speaker F01):
+  Accuracy: 0.3022
+  Balanced Acc: 0.3022
+  Macro F1: 0.1547
+
+  Predicted classes:
+  Healthy: 14
+  Mild: 173
+  Severe: 81
+
+  True Class: Severe
+  Recall on True Class: 0.3022
+2026-05-01 01:19:43 | INFO | -> New best model saved at epoch 7 with train_loss: 0.5883
+2026-05-01 01:21:19 | INFO | 
+Fold 1 | Epoch 08 | LR: 5.0e-04
+  Train -> Loss: 0.5420
+  Train -> Bal Acc: 0.8414
+  Train -> Macro F1: 0.8296
+
+  Test Monitor (Speaker F01):
+  Accuracy: 0.4254
+  Balanced Acc: 0.4254
+  Macro F1: 0.1990
+
+  Predicted classes:
+  Healthy: 28
+  Mild: 126
+  Severe: 114
+
+  True Class: Severe
+  Recall on True Class: 0.4254
+2026-05-01 01:21:19 | INFO | -> New best model saved at epoch 8 with train_loss: 0.5420
+2026-05-01 01:22:56 | INFO | 
+Fold 1 | Epoch 09 | LR: 5.0e-04
+  Train -> Loss: 0.5046
+  Train -> Bal Acc: 0.8531
+  Train -> Macro F1: 0.8462
+
+  Test Monitor (Speaker F01):
+  Accuracy: 0.4179
+  Balanced Acc: 0.4179
+  Macro F1: 0.1965
+
+  Predicted classes:
+  Healthy: 14
+  Mild: 142
+  Severe: 112
+
+  True Class: Severe
+  Recall on True Class: 0.4179
+2026-05-01 01:22:56 | INFO | -> New best model saved at epoch 9 with train_loss: 0.5046
+2026-05-01 01:24:30 | INFO | 
+Fold 1 | Epoch 10 | LR: 5.0e-04
+  Train -> Loss: 0.4654
+  Train -> Bal Acc: 0.8824
+  Train -> Macro F1: 0.8745
+
+  Test Monitor (Speaker F01):
+  Accuracy: 0.5149
+  Balanced Acc: 0.5149
+  Macro F1: 0.2266
+
+  Predicted classes:
+  Healthy: 14
+  Mild: 116
+  Severe: 138
+
+  True Class: Severe
+  Recall on True Class: 0.5149
+2026-05-01 01:24:30 | INFO | -> New best model saved at epoch 10 with train_loss: 0.4654
+2026-05-01 01:26:07 | INFO | 
+Fold 1 | Epoch 11 | LR: 5.0e-04
+  Train -> Loss: 0.4770
+  Train -> Bal Acc: 0.8693
+  Train -> Macro F1: 0.8647
+
+  Test Monitor (Speaker F01):
+  Accuracy: 0.5522
+  Balanced Acc: 0.5522
+  Macro F1: 0.2372
+
+  Predicted classes:
+  Healthy: 6
+  Mild: 114
+  Severe: 148
+
+  True Class: Severe
+  Recall on True Class: 0.5522
+2026-05-01 01:27:44 | INFO | 
+Fold 1 | Epoch 12 | LR: 5.0e-04
+  Train -> Loss: 0.4407
+  Train -> Bal Acc: 0.8942
+  Train -> Macro F1: 0.8899
+
+  Test Monitor (Speaker F01):
+  Accuracy: 0.5112
+  Balanced Acc: 0.5112
+  Macro F1: 0.2255
+
+  Predicted classes:
+  Healthy: 35
+  Mild: 96
+  Severe: 137
+
+  True Class: Severe
+  Recall on True Class: 0.5112
+2026-05-01 01:27:44 | INFO | -> New best model saved at epoch 12 with train_loss: 0.4407
+2026-05-01 01:29:31 | INFO | 
+Fold 1 | Epoch 13 | LR: 5.0e-04
+  Train -> Loss: 0.4427
+  Train -> Bal Acc: 0.8894
+  Train -> Macro F1: 0.8835
+
+  Test Monitor (Speaker F01):
+  Accuracy: 0.4142
+  Balanced Acc: 0.4142
+  Macro F1: 0.1953
+
+  Predicted classes:
+  Healthy: 10
+  Mild: 147
+  Severe: 111
+
+  True Class: Severe
+  Recall on True Class: 0.4142
+2026-05-01 01:31:15 | INFO | 
+Fold 1 | Epoch 14 | LR: 5.0e-04
+  Train -> Loss: 0.4050
+  Train -> Bal Acc: 0.9107
+  Train -> Macro F1: 0.9049
+
+  Test Monitor (Speaker F01):
+  Accuracy: 0.4216
+  Balanced Acc: 0.4216
+  Macro F1: 0.1977
+
+  Predicted classes:
+  Healthy: 17
+  Mild: 138
+  Severe: 113
+
+  True Class: Severe
+  Recall on True Class: 0.4216
+2026-05-01 01:31:15 | INFO | -> New best model saved at epoch 14 with train_loss: 0.4050
+2026-05-01 01:33:04 | INFO | 
+Fold 1 | Epoch 15 | LR: 5.0e-04
+  Train -> Loss: 0.4001
+  Train -> Bal Acc: 0.9171
+  Train -> Macro F1: 0.9123
+
+  Test Monitor (Speaker F01):
+  Accuracy: 0.5410
+  Balanced Acc: 0.5410
+  Macro F1: 0.2341
+
+  Predicted classes:
+  Healthy: 18
+  Mild: 105
+  Severe: 145
+
+  True Class: Severe
+  Recall on True Class: 0.5410
+2026-05-01 01:33:04 | INFO | -> New best model saved at epoch 15 with train_loss: 0.4001
+2026-05-01 01:33:04 | INFO | Finished fold 1. Best epoch: 15, Best train_loss: 0.4001
+2026-05-01 01:33:05 | INFO | Evaluating fold 1 on test speaker F01...
+2026-05-01 01:33:34 | INFO | Fold 1 Test Metrics: {'accuracy': 0.5410447761194029, 'balanced_accuracy': 0.5410447761194029, 'macro_f1': 0.23405972558514931, 'weighted_f1': 0.7021791767554479, 'recall_Healthy': 0.0, 'recall_Mild': 0.0, 'recall_Severe': 0.5410447761194029, 'fold': 1, 'test_speaker': 'F01'}
+2026-05-01 01:33:34 | INFO | ============================================================
+2026-05-01 01:33:34 | INFO | Starting Fold 2/15: Test Speaker = F03
+2026-05-01 01:33:34 | INFO | Train speakers (14): ['F01', 'F04', 'FC01', 'FC02', 'FC03', 'M01', 'M02', 'M03', 'M04', 'M05', 'MC01', 'MC02', 'MC03', 'MC04']
+2026-05-01 01:33:34 | INFO | Test speaker (1): F03
+2026-05-01 01:33:34 | INFO | --------------------------------------------------
+2026-05-01 01:33:34 | INFO | Fold 2: Training on 9854 samples.
+2026-05-01 01:33:34 | INFO | Fold 2: Using class weights: [0.78 1.57 1.03]
+2026-05-01 01:35:18 | INFO | 
+Fold 2 | Epoch 01 | LR: 5.0e-04
+  Train -> Loss: 1.0470
+  Train -> Bal Acc: 0.3954
+  Train -> Macro F1: 0.3886
+
+  Test Monitor (Speaker F03):
+  Accuracy: 0.1447
+  Balanced Acc: 0.1447
+  Macro F1: 0.0843
+
+  Predicted classes:
+  Healthy: 725
+  Mild: 2
+  Severe: 123
+
+  True Class: Severe
+  Recall on True Class: 0.1447
+2026-05-01 01:35:18 | INFO | -> New best model saved at epoch 1 with train_loss: 1.0470
+2026-05-01 01:36:56 | INFO | 
+Fold 2 | Epoch 02 | LR: 5.0e-04
+  Train -> Loss: 0.8996
+  Train -> Bal Acc: 0.5533
+  Train -> Macro F1: 0.5518
+
+  Test Monitor (Speaker F03):
+  Accuracy: 0.0694
+  Balanced Acc: 0.0694
+  Macro F1: 0.0433
+
+  Predicted classes:
+  Healthy: 765
+  Mild: 26
+  Severe: 59
+
+  True Class: Severe
+  Recall on True Class: 0.0694
+2026-05-01 01:36:56 | INFO | -> New best model saved at epoch 2 with train_loss: 0.8996
+2026-05-01 01:38:43 | INFO | 
+Fold 2 | Epoch 03 | LR: 5.0e-04
+  Train -> Loss: 0.7875
+  Train -> Bal Acc: 0.6342
+  Train -> Macro F1: 0.6399
+
+  Test Monitor (Speaker F03):
+  Accuracy: 0.2282
+  Balanced Acc: 0.2282
+  Macro F1: 0.1239
+
+  Predicted classes:
+  Healthy: 579
+  Mild: 77
+  Severe: 194
+
+  True Class: Severe
+  Recall on True Class: 0.2282
+2026-05-01 01:38:43 | INFO | -> New best model saved at epoch 3 with train_loss: 0.7875
+2026-05-01 01:40:33 | INFO | 
+Fold 2 | Epoch 04 | LR: 5.0e-04
+  Train -> Loss: 0.7105
+  Train -> Bal Acc: 0.6984
+  Train -> Macro F1: 0.7002
+
+  Test Monitor (Speaker F03):
+  Accuracy: 0.1576
+  Balanced Acc: 0.1576
+  Macro F1: 0.0908
+
+  Predicted classes:
+  Healthy: 602
+  Mild: 114
+  Severe: 134
+
+  True Class: Severe
+  Recall on True Class: 0.1576
+2026-05-01 01:40:34 | INFO | -> New best model saved at epoch 4 with train_loss: 0.7105
+2026-05-01 01:42:21 | INFO | 
+Fold 2 | Epoch 05 | LR: 5.0e-04
+  Train -> Loss: 0.6454
+  Train -> Bal Acc: 0.7512
+  Train -> Macro F1: 0.7512
+
+  Test Monitor (Speaker F03):
+  Accuracy: 0.0800
+  Balanced Acc: 0.0800
+  Macro F1: 0.0494
+
+  Predicted classes:
+  Healthy: 708
+  Mild: 74
+  Severe: 68
+
+  True Class: Severe
+  Recall on True Class: 0.0800
+2026-05-01 01:42:21 | INFO | -> New best model saved at epoch 5 with train_loss: 0.6454
+2026-05-01 01:44:16 | INFO | 
+Fold 2 | Epoch 06 | LR: 5.0e-04
+  Train -> Loss: 0.5786
+  Train -> Bal Acc: 0.7983
+  Train -> Macro F1: 0.7917
+
+  Test Monitor (Speaker F03):
+  Accuracy: 0.1506
+  Balanced Acc: 0.1506
+  Macro F1: 0.0873
+
+  Predicted classes:
+  Healthy: 591
+  Mild: 131
+  Severe: 128
+
+  True Class: Severe
+  Recall on True Class: 0.1506
+2026-05-01 01:44:16 | INFO | -> New best model saved at epoch 6 with train_loss: 0.5786

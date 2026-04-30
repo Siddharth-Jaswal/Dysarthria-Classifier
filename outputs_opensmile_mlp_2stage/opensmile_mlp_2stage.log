@@ -1,0 +1,310 @@
+Starting openSMILE Hierarchical 2-Stage MLP LOSO Pipeline...
+Using device: cuda
+Loading cached openSMILE features from disk...
+Found 2 missing features. Extracting and appending to cache...
+Failed to extract features for Database\F_data\F01\Session1\wav_headMic\0067.wav: Error opening 'D:\\Repos\\Dysarthria-Classifier\\Database\\F_data\\F01\\Session1\\wav_headMic\\0067.wav': Format not recognised.
+Failed to extract features for Database\F_data\F01\Session1\wav_headMic\0068.wav: Error opening 'D:\\Repos\\Dysarthria-Classifier\\Database\\F_data\\F01\\Session1\\wav_headMic\\0068.wav': Format not recognised.
+Finished extraction. Failed/Missing files skipped: 2
+Feature Dimension: 88
+Found 15 unique speakers for validation.
+
+============================================================
+Starting Fold 1/15: Test Speaker = F01
+============================================================
+Stage1 Train Metrics -> Best F1: 0.9795
+Stage2 Train Metrics -> Best F1: 0.9947
+
+Final Test Metrics (Speaker F01):
+  Accuracy: 0.0226
+  Balanced Acc: 0.0226
+  Macro F1: 0.0147
+
+  Prediction counts:
+    Healthy: 78
+    Mild: 182
+    Severe: 6
+  ------------------------------
+Fold 1 Best Model Test Result -> Acc: 0.0226, Bal Acc: 0.0226, Macro F1: 0.0147
+
+============================================================
+Starting Fold 2/15: Test Speaker = F03
+============================================================
+Stage1 Train Metrics -> Best F1: 0.9859
+Stage2 Train Metrics -> Best F1: 0.9945
+
+Final Test Metrics (Speaker F03):
+  Accuracy: 0.0541
+  Balanced Acc: 0.0541
+  Macro F1: 0.0342
+
+  Prediction counts:
+    Healthy: 1007
+    Mild: 62
+    Severe: 76
+  ------------------------------
+Fold 2 Best Model Test Result -> Acc: 0.0541, Bal Acc: 0.0541, Macro F1: 0.0342
+
+============================================================
+Starting Fold 3/15: Test Speaker = F04
+============================================================
+Stage1 Train Metrics -> Best F1: 0.9822
+Stage2 Train Metrics -> Best F1: 0.9929
+
+Final Test Metrics (Speaker F04):
+  Accuracy: 0.1643
+  Balanced Acc: 0.1643
+  Macro F1: 0.0941
+
+  Prediction counts:
+    Healthy: 344
+    Mild: 82
+    Severe: 73
+  ------------------------------
+Fold 3 Best Model Test Result -> Acc: 0.1643, Bal Acc: 0.1643, Macro F1: 0.0941
+
+============================================================
+Starting Fold 4/15: Test Speaker = FC01
+============================================================
+Stage1 Train Metrics -> Best F1: 0.9805
+Stage2 Train Metrics -> Best F1: 0.9923
+
+Final Test Metrics (Speaker FC01):
+  Accuracy: 0.7591
+  Balanced Acc: 0.7591
+  Macro F1: 0.2877
+
+  Prediction counts:
+    Healthy: 249
+    Mild: 75
+    Severe: 4
+  ------------------------------
+Fold 4 Best Model Test Result -> Acc: 0.7591, Bal Acc: 0.7591, Macro F1: 0.2877
+
+============================================================
+Starting Fold 5/15: Test Speaker = FC02
+============================================================
+Stage1 Train Metrics -> Best F1: 0.9785
+Stage2 Train Metrics -> Best F1: 0.9925
+
+Final Test Metrics (Speaker FC02):
+  Accuracy: 0.7309
+  Balanced Acc: 0.7309
+  Macro F1: 0.2815
+
+  Prediction counts:
+    Healthy: 1456
+    Mild: 515
+    Severe: 21
+  ------------------------------
+Fold 5 Best Model Test Result -> Acc: 0.7309, Bal Acc: 0.7309, Macro F1: 0.2815
+
+============================================================
+Starting Fold 6/15: Test Speaker = FC03
+============================================================
+Stage1 Train Metrics -> Best F1: 0.9828
+Stage2 Train Metrics -> Best F1: 0.9927
+
+Final Test Metrics (Speaker FC03):
+  Accuracy: 0.4231
+  Balanced Acc: 0.4231
+  Macro F1: 0.1982
+
+  Prediction counts:
+    Healthy: 844
+    Mild: 1079
+    Severe: 72
+  ------------------------------
+Fold 6 Best Model Test Result -> Acc: 0.4231, Bal Acc: 0.4231, Macro F1: 0.1982
+
+============================================================
+Starting Fold 7/15: Test Speaker = M01
+============================================================
+Stage1 Train Metrics -> Best F1: 0.9773
+Stage2 Train Metrics -> Best F1: 0.9931
+
+Final Test Metrics (Speaker M01):
+  Accuracy: 0.7691
+  Balanced Acc: 0.7691
+  Macro F1: 0.2898
+
+  Prediction counts:
+    Healthy: 41
+    Mild: 137
+    Severe: 593
+  ------------------------------
+Fold 7 Best Model Test Result -> Acc: 0.7691, Bal Acc: 0.7691, Macro F1: 0.2898
+
+============================================================
+Starting Fold 8/15: Test Speaker = M02
+============================================================
+Stage1 Train Metrics -> Best F1: 0.9784
+Stage2 Train Metrics -> Best F1: 0.9932
+
+Final Test Metrics (Speaker M02):
+  Accuracy: 0.5575
+  Balanced Acc: 0.5575
+  Macro F1: 0.2386
+
+  Prediction counts:
+    Healthy: 135
+    Mild: 223
+    Severe: 451
+  ------------------------------
+Fold 8 Best Model Test Result -> Acc: 0.5575, Bal Acc: 0.5575, Macro F1: 0.2386
+
+============================================================
+Starting Fold 9/15: Test Speaker = M03
+============================================================
+Stage1 Train Metrics -> Best F1: 0.9830
+Stage2 Train Metrics -> Best F1: 0.9947
+
+Final Test Metrics (Speaker M03):
+  Accuracy: 0.0514
+  Balanced Acc: 0.0514
+  Macro F1: 0.0326
+
+  Prediction counts:
+    Healthy: 547
+    Mild: 43
+    Severe: 246
+  ------------------------------
+Fold 9 Best Model Test Result -> Acc: 0.0514, Bal Acc: 0.0514, Macro F1: 0.0326
+
+============================================================
+Starting Fold 10/15: Test Speaker = M04
+============================================================
+Stage1 Train Metrics -> Best F1: 0.9763
+Stage2 Train Metrics -> Best F1: 0.9942
+
+Final Test Metrics (Speaker M04):
+  Accuracy: 0.1824
+  Balanced Acc: 0.1824
+  Macro F1: 0.1029
+
+  Prediction counts:
+    Healthy: 71
+    Mild: 413
+    Severe: 108
+  ------------------------------
+Fold 10 Best Model Test Result -> Acc: 0.1824, Bal Acc: 0.1824, Macro F1: 0.1029
+
+============================================================
+Starting Fold 11/15: Test Speaker = M05
+============================================================
+Stage1 Train Metrics -> Best F1: 0.9776
+Stage2 Train Metrics -> Best F1: 0.9931
+
+Final Test Metrics (Speaker M05):
+  Accuracy: 0.0922
+  Balanced Acc: 0.0922
+  Macro F1: 0.0563
+
+  Prediction counts:
+    Healthy: 50
+    Mild: 60
+    Severe: 541
+  ------------------------------
+Fold 11 Best Model Test Result -> Acc: 0.0922, Bal Acc: 0.0922, Macro F1: 0.0563
+
+============================================================
+Starting Fold 12/15: Test Speaker = MC01
+============================================================
+Stage1 Train Metrics -> Best F1: 0.9778
+Stage2 Train Metrics -> Best F1: 0.9925
+
+Final Test Metrics (Speaker MC01):
+  Accuracy: 0.8704
+  Balanced Acc: 0.8704
+  Macro F1: 0.3102
+
+  Prediction counts:
+    Healthy: 1928
+    Mild: 209
+    Severe: 78
+  ------------------------------
+Fold 12 Best Model Test Result -> Acc: 0.8704, Bal Acc: 0.8704, Macro F1: 0.3102
+
+============================================================
+Starting Fold 13/15: Test Speaker = MC02
+============================================================
+Stage1 Train Metrics -> Best F1: 0.9807
+Stage2 Train Metrics -> Best F1: 0.9911
+
+Final Test Metrics (Speaker MC02):
+  Accuracy: 0.7070
+  Balanced Acc: 0.7070
+  Macro F1: 0.2761
+
+  Prediction counts:
+    Healthy: 654
+    Mild: 243
+    Severe: 28
+  ------------------------------
+Fold 13 Best Model Test Result -> Acc: 0.7070, Bal Acc: 0.7070, Macro F1: 0.2761
+
+============================================================
+Starting Fold 14/15: Test Speaker = MC03
+============================================================
+Stage1 Train Metrics -> Best F1: 0.9783
+Stage2 Train Metrics -> Best F1: 0.9916
+
+Final Test Metrics (Speaker MC03):
+  Accuracy: 0.9167
+  Balanced Acc: 0.9167
+  Macro F1: 0.3188
+
+  Prediction counts:
+    Healthy: 1518
+    Mild: 131
+    Severe: 7
+  ------------------------------
+Fold 14 Best Model Test Result -> Acc: 0.9167, Bal Acc: 0.9167, Macro F1: 0.3188
+
+============================================================
+Starting Fold 15/15: Test Speaker = MC04
+============================================================
+Stage1 Train Metrics -> Best F1: 0.9806
+Stage2 Train Metrics -> Best F1: 0.9923
+
+Final Test Metrics (Speaker MC04):
+  Accuracy: 0.1659
+  Balanced Acc: 0.1659
+  Macro F1: 0.0949
+
+  Prediction counts:
+    Healthy: 216
+    Mild: 980
+    Severe: 106
+  ------------------------------
+Fold 15 Best Model Test Result -> Acc: 0.1659, Bal Acc: 0.1659, Macro F1: 0.0949
+============================================================
+All folds complete. Aggregating results...
+
+--- Final Aggregated Results ---
+Accuracy:          0.5175
+Balanced Accuracy: 0.4044
+Macro F1:          0.4151
+Weighted F1:       0.5432
+
+--- Classification Report ---
+              precision    recall  f1-score   support
+
+     Healthy     0.7513    0.6593    0.7023     10413
+        Mild     0.0557    0.0789    0.0653      3131
+      Severe     0.4805    0.4750    0.4777      2438
+
+    accuracy                         0.5175     15982
+   macro avg     0.4292    0.4044    0.4151     15982
+weighted avg     0.5737    0.5175    0.5432     15982
+
+--- Confusion Matrix ---
+[[6865 3232  316]
+ [1948  247  936]
+ [ 325  955 1158]]
+
+--- Per-Class Recall ---
+Healthy: 0.6593
+Mild: 0.0789
+Severe: 0.4750
+
+Saved predictions to outputs_opensmile_mlp_2stage\results_opensmile_mlp_2stage.csv. Total execution time: 6.32 minutes.

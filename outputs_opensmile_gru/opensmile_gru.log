@@ -1,0 +1,6490 @@
+Starting openSMILE + GRU LOSO Pipeline...
+Using device: cuda
+Extracting openSMILE features. This will take a while on the first run...
+Failed to extract features for Database\F_data\F01\Session1\wav_headMic\0067.wav: Error opening 'D:\\Repos\\Dysarthria-Classifier\\Database\\F_data\\F01\\Session1\\wav_headMic\\0067.wav': Format not recognised.
+Failed to extract features for Database\F_data\F01\Session1\wav_headMic\0068.wav: Error opening 'D:\\Repos\\Dysarthria-Classifier\\Database\\F_data\\F01\\Session1\\wav_headMic\\0068.wav': Format not recognised.
+Finished extraction. Failed/Missing files skipped: 2
+Feature Dimension: 25
+Sequence Length: 300
+Found 15 unique speakers for validation.
+
+============================================================
+Starting Fold 1/15: Test Speaker = F01
+============================================================
+Fold 1 | Epoch 01
+  Train Loss: 0.7770
+  Train Accuracy: 0.7493
+  Train Macro F1: 0.6345
+
+  Test Accuracy: 0.0714
+  Test Balanced Acc: 0.0714
+  Test Macro F1: 0.0444
+
+  Prediction counts:
+    Healthy: 121
+    Mild: 126
+    Severe: 19
+
+  True Class: Severe
+  Recall on True Class: 0.0714
+  ------------------------------
+Fold 1 | Epoch 02
+  Train Loss: 0.5599
+  Train Accuracy: 0.8454
+  Train Macro F1: 0.8001
+
+  Test Accuracy: 0.1241
+  Test Balanced Acc: 0.1241
+  Test Macro F1: 0.0736
+
+  Prediction counts:
+    Healthy: 61
+    Mild: 172
+    Severe: 33
+
+  True Class: Severe
+  Recall on True Class: 0.1241
+  ------------------------------
+Fold 1 | Epoch 03
+  Train Loss: 0.4824
+  Train Accuracy: 0.8829
+  Train Macro F1: 0.8562
+
+  Test Accuracy: 0.1880
+  Test Balanced Acc: 0.1880
+  Test Macro F1: 0.1055
+
+  Prediction counts:
+    Healthy: 83
+    Mild: 133
+    Severe: 50
+
+  True Class: Severe
+  Recall on True Class: 0.1880
+  ------------------------------
+Fold 1 | Epoch 04
+  Train Loss: 0.4240
+  Train Accuracy: 0.9144
+  Train Macro F1: 0.8945
+
+  Test Accuracy: 0.1165
+  Test Balanced Acc: 0.1165
+  Test Macro F1: 0.0696
+
+  Prediction counts:
+    Healthy: 41
+    Mild: 194
+    Severe: 31
+
+  True Class: Severe
+  Recall on True Class: 0.1165
+  ------------------------------
+Fold 1 | Epoch 05
+  Train Loss: 0.3847
+  Train Accuracy: 0.9322
+  Train Macro F1: 0.9171
+
+  Test Accuracy: 0.1278
+  Test Balanced Acc: 0.1278
+  Test Macro F1: 0.0756
+
+  Prediction counts:
+    Healthy: 56
+    Mild: 176
+    Severe: 34
+
+  True Class: Severe
+  Recall on True Class: 0.1278
+  ------------------------------
+Fold 1 | Epoch 06
+  Train Loss: 0.3597
+  Train Accuracy: 0.9440
+  Train Macro F1: 0.9310
+
+  Test Accuracy: 0.0188
+  Test Balanced Acc: 0.0188
+  Test Macro F1: 0.0123
+
+  Prediction counts:
+    Healthy: 130
+    Mild: 131
+    Severe: 5
+
+  True Class: Severe
+  Recall on True Class: 0.0188
+  ------------------------------
+Fold 1 | Epoch 07
+  Train Loss: 0.3458
+  Train Accuracy: 0.9501
+  Train Macro F1: 0.9383
+
+  Test Accuracy: 0.0113
+  Test Balanced Acc: 0.0113
+  Test Macro F1: 0.0074
+
+  Prediction counts:
+    Healthy: 43
+    Mild: 220
+    Severe: 3
+
+  True Class: Severe
+  Recall on True Class: 0.0113
+  ------------------------------
+Fold 1 | Epoch 08
+  Train Loss: 0.3386
+  Train Accuracy: 0.9539
+  Train Macro F1: 0.9412
+
+  Test Accuracy: 0.0301
+  Test Balanced Acc: 0.0301
+  Test Macro F1: 0.0195
+
+  Prediction counts:
+    Healthy: 39
+    Mild: 219
+    Severe: 8
+
+  True Class: Severe
+  Recall on True Class: 0.0301
+  ------------------------------
+Fold 1 | Epoch 09
+  Train Loss: 0.3178
+  Train Accuracy: 0.9619
+  Train Macro F1: 0.9525
+
+  Test Accuracy: 0.0301
+  Test Balanced Acc: 0.0301
+  Test Macro F1: 0.0195
+
+  Prediction counts:
+    Healthy: 40
+    Mild: 218
+    Severe: 8
+
+  True Class: Severe
+  Recall on True Class: 0.0301
+  ------------------------------
+Fold 1 | Epoch 10
+  Train Loss: 0.3083
+  Train Accuracy: 0.9666
+  Train Macro F1: 0.9582
+
+  Test Accuracy: 0.0226
+  Test Balanced Acc: 0.0226
+  Test Macro F1: 0.0147
+
+  Prediction counts:
+    Healthy: 32
+    Mild: 228
+    Severe: 6
+
+  True Class: Severe
+  Recall on True Class: 0.0226
+  ------------------------------
+Fold 1 | Epoch 11
+  Train Loss: 0.2968
+  Train Accuracy: 0.9709
+  Train Macro F1: 0.9638
+
+  Test Accuracy: 0.0188
+  Test Balanced Acc: 0.0188
+  Test Macro F1: 0.0123
+
+  Prediction counts:
+    Healthy: 36
+    Mild: 225
+    Severe: 5
+
+  True Class: Severe
+  Recall on True Class: 0.0188
+  ------------------------------
+Fold 1 | Epoch 12
+  Train Loss: 0.2920
+  Train Accuracy: 0.9733
+  Train Macro F1: 0.9666
+
+  Test Accuracy: 0.0226
+  Test Balanced Acc: 0.0226
+  Test Macro F1: 0.0147
+
+  Prediction counts:
+    Healthy: 28
+    Mild: 232
+    Severe: 6
+
+  True Class: Severe
+  Recall on True Class: 0.0226
+  ------------------------------
+Fold 1 | Epoch 13
+  Train Loss: 0.2842
+  Train Accuracy: 0.9761
+  Train Macro F1: 0.9705
+
+  Test Accuracy: 0.0752
+  Test Balanced Acc: 0.0752
+  Test Macro F1: 0.0466
+
+  Prediction counts:
+    Healthy: 59
+    Mild: 187
+    Severe: 20
+
+  True Class: Severe
+  Recall on True Class: 0.0752
+  ------------------------------
+Fold 1 | Epoch 14
+  Train Loss: 0.2800
+  Train Accuracy: 0.9772
+  Train Macro F1: 0.9713
+
+  Test Accuracy: 0.0489
+  Test Balanced Acc: 0.0489
+  Test Macro F1: 0.0311
+
+  Prediction counts:
+    Healthy: 53
+    Mild: 200
+    Severe: 13
+
+  True Class: Severe
+  Recall on True Class: 0.0489
+  ------------------------------
+Fold 1 | Epoch 15
+  Train Loss: 0.2807
+  Train Accuracy: 0.9772
+  Train Macro F1: 0.9715
+
+  Test Accuracy: 0.0338
+  Test Balanced Acc: 0.0338
+  Test Macro F1: 0.0218
+
+  Prediction counts:
+    Healthy: 39
+    Mild: 218
+    Severe: 9
+
+  True Class: Severe
+  Recall on True Class: 0.0338
+  ------------------------------
+Fold 1 | Epoch 16
+  Train Loss: 0.2717
+  Train Accuracy: 0.9807
+  Train Macro F1: 0.9759
+
+  Test Accuracy: 0.0526
+  Test Balanced Acc: 0.0526
+  Test Macro F1: 0.0333
+
+  Prediction counts:
+    Healthy: 49
+    Mild: 203
+    Severe: 14
+
+  True Class: Severe
+  Recall on True Class: 0.0526
+  ------------------------------
+Fold 1 | Epoch 17
+  Train Loss: 0.2673
+  Train Accuracy: 0.9835
+  Train Macro F1: 0.9795
+
+  Test Accuracy: 0.0639
+  Test Balanced Acc: 0.0639
+  Test Macro F1: 0.0400
+
+  Prediction counts:
+    Healthy: 53
+    Mild: 196
+    Severe: 17
+
+  True Class: Severe
+  Recall on True Class: 0.0639
+  ------------------------------
+Fold 1 | Epoch 18
+  Train Loss: 0.2650
+  Train Accuracy: 0.9838
+  Train Macro F1: 0.9802
+
+  Test Accuracy: 0.0752
+  Test Balanced Acc: 0.0752
+  Test Macro F1: 0.0466
+
+  Prediction counts:
+    Healthy: 34
+    Mild: 212
+    Severe: 20
+
+  True Class: Severe
+  Recall on True Class: 0.0752
+  ------------------------------
+Fold 1 | Epoch 19
+  Train Loss: 0.2640
+  Train Accuracy: 0.9845
+  Train Macro F1: 0.9803
+
+  Test Accuracy: 0.0827
+  Test Balanced Acc: 0.0827
+  Test Macro F1: 0.0509
+
+  Prediction counts:
+    Healthy: 33
+    Mild: 211
+    Severe: 22
+
+  True Class: Severe
+  Recall on True Class: 0.0827
+  ------------------------------
+Fold 1 | Epoch 20
+  Train Loss: 0.2617
+  Train Accuracy: 0.9849
+  Train Macro F1: 0.9814
+
+  Test Accuracy: 0.0489
+  Test Balanced Acc: 0.0489
+  Test Macro F1: 0.0311
+
+  Prediction counts:
+    Healthy: 26
+    Mild: 227
+    Severe: 13
+
+  True Class: Severe
+  Recall on True Class: 0.0489
+  ------------------------------
+Fold 1 | Epoch 21
+  Train Loss: 0.2530
+  Train Accuracy: 0.9884
+  Train Macro F1: 0.9858
+
+  Test Accuracy: 0.0602
+  Test Balanced Acc: 0.0602
+  Test Macro F1: 0.0378
+
+  Prediction counts:
+    Healthy: 32
+    Mild: 218
+    Severe: 16
+
+  True Class: Severe
+  Recall on True Class: 0.0602
+  ------------------------------
+Fold 1 | Epoch 22
+  Train Loss: 0.2566
+  Train Accuracy: 0.9875
+  Train Macro F1: 0.9845
+
+  Test Accuracy: 0.0602
+  Test Balanced Acc: 0.0602
+  Test Macro F1: 0.0378
+
+  Prediction counts:
+    Healthy: 13
+    Mild: 237
+    Severe: 16
+
+  True Class: Severe
+  Recall on True Class: 0.0602
+  ------------------------------
+Fold 1 | Epoch 23
+  Train Loss: 0.2519
+  Train Accuracy: 0.9884
+  Train Macro F1: 0.9858
+
+  Test Accuracy: 0.0714
+  Test Balanced Acc: 0.0714
+  Test Macro F1: 0.0444
+
+  Prediction counts:
+    Healthy: 33
+    Mild: 214
+    Severe: 19
+
+  True Class: Severe
+  Recall on True Class: 0.0714
+  ------------------------------
+Fold 1 | Epoch 24
+  Train Loss: 0.2459
+  Train Accuracy: 0.9910
+  Train Macro F1: 0.9891
+
+  Test Accuracy: 0.0489
+  Test Balanced Acc: 0.0489
+  Test Macro F1: 0.0311
+
+  Prediction counts:
+    Healthy: 46
+    Mild: 207
+    Severe: 13
+
+  True Class: Severe
+  Recall on True Class: 0.0489
+  ------------------------------
+Fold 1 | Epoch 25
+  Train Loss: 0.2474
+  Train Accuracy: 0.9913
+  Train Macro F1: 0.9892
+
+  Test Accuracy: 0.0714
+  Test Balanced Acc: 0.0714
+  Test Macro F1: 0.0444
+
+  Prediction counts:
+    Healthy: 39
+    Mild: 208
+    Severe: 19
+
+  True Class: Severe
+  Recall on True Class: 0.0714
+  ------------------------------
+Fold 1 Best Model Test Result -> Acc: 0.0714, Bal Acc: 0.0714, Macro F1: 0.0444
+
+============================================================
+Starting Fold 2/15: Test Speaker = F03
+============================================================
+Fold 2 | Epoch 01
+  Train Loss: 0.7167
+  Train Accuracy: 0.8097
+  Train Macro F1: 0.6813
+
+  Test Accuracy: 0.1301
+  Test Balanced Acc: 0.1301
+  Test Macro F1: 0.0768
+
+  Prediction counts:
+    Healthy: 945
+    Mild: 149
+    Severe: 51
+
+  True Class: Mild
+  Recall on True Class: 0.1301
+  ------------------------------
+Fold 2 | Epoch 02
+  Train Loss: 0.4977
+  Train Accuracy: 0.8980
+  Train Macro F1: 0.8367
+
+  Test Accuracy: 0.0655
+  Test Balanced Acc: 0.0655
+  Test Macro F1: 0.0410
+
+  Prediction counts:
+    Healthy: 1040
+    Mild: 75
+    Severe: 30
+
+  True Class: Mild
+  Recall on True Class: 0.0655
+  ------------------------------
+Fold 2 | Epoch 03
+  Train Loss: 0.4096
+  Train Accuracy: 0.9357
+  Train Macro F1: 0.8978
+
+  Test Accuracy: 0.0699
+  Test Balanced Acc: 0.0699
+  Test Macro F1: 0.0435
+
+  Prediction counts:
+    Healthy: 1013
+    Mild: 80
+    Severe: 52
+
+  True Class: Mild
+  Recall on True Class: 0.0699
+  ------------------------------
+Fold 2 | Epoch 04
+  Train Loss: 0.3702
+  Train Accuracy: 0.9493
+  Train Macro F1: 0.9202
+
+  Test Accuracy: 0.0882
+  Test Balanced Acc: 0.0882
+  Test Macro F1: 0.0540
+
+  Prediction counts:
+    Healthy: 1034
+    Mild: 101
+    Severe: 10
+
+  True Class: Mild
+  Recall on True Class: 0.0882
+  ------------------------------
+Fold 2 | Epoch 05
+  Train Loss: 0.3486
+  Train Accuracy: 0.9599
+  Train Macro F1: 0.9369
+
+  Test Accuracy: 0.0847
+  Test Balanced Acc: 0.0847
+  Test Macro F1: 0.0521
+
+  Prediction counts:
+    Healthy: 960
+    Mild: 97
+    Severe: 88
+
+  True Class: Mild
+  Recall on True Class: 0.0847
+  ------------------------------
+Fold 2 | Epoch 06
+  Train Loss: 0.3378
+  Train Accuracy: 0.9613
+  Train Macro F1: 0.9398
+
+  Test Accuracy: 0.0489
+  Test Balanced Acc: 0.0489
+  Test Macro F1: 0.0311
+
+  Prediction counts:
+    Healthy: 1061
+    Mild: 56
+    Severe: 28
+
+  True Class: Mild
+  Recall on True Class: 0.0489
+  ------------------------------
+Fold 2 | Epoch 07
+  Train Loss: 0.3261
+  Train Accuracy: 0.9669
+  Train Macro F1: 0.9487
+
+  Test Accuracy: 0.0594
+  Test Balanced Acc: 0.0594
+  Test Macro F1: 0.0374
+
+  Prediction counts:
+    Healthy: 1027
+    Mild: 68
+    Severe: 50
+
+  True Class: Mild
+  Recall on True Class: 0.0594
+  ------------------------------
+Fold 2 | Epoch 08
+  Train Loss: 0.3141
+  Train Accuracy: 0.9718
+  Train Macro F1: 0.9561
+
+  Test Accuracy: 0.0961
+  Test Balanced Acc: 0.0961
+  Test Macro F1: 0.0584
+
+  Prediction counts:
+    Healthy: 1005
+    Mild: 110
+    Severe: 30
+
+  True Class: Mild
+  Recall on True Class: 0.0961
+  ------------------------------
+Fold 2 | Epoch 09
+  Train Loss: 0.3061
+  Train Accuracy: 0.9752
+  Train Macro F1: 0.9608
+
+  Test Accuracy: 0.0541
+  Test Balanced Acc: 0.0541
+  Test Macro F1: 0.0342
+
+  Prediction counts:
+    Healthy: 1034
+    Mild: 62
+    Severe: 49
+
+  True Class: Mild
+  Recall on True Class: 0.0541
+  ------------------------------
+Fold 2 | Epoch 10
+  Train Loss: 0.2988
+  Train Accuracy: 0.9778
+  Train Macro F1: 0.9659
+
+  Test Accuracy: 0.0498
+  Test Balanced Acc: 0.0498
+  Test Macro F1: 0.0316
+
+  Prediction counts:
+    Healthy: 1069
+    Mild: 57
+    Severe: 19
+
+  True Class: Mild
+  Recall on True Class: 0.0498
+  ------------------------------
+Fold 2 | Epoch 11
+  Train Loss: 0.2961
+  Train Accuracy: 0.9789
+  Train Macro F1: 0.9679
+
+  Test Accuracy: 0.0803
+  Test Balanced Acc: 0.0803
+  Test Macro F1: 0.0496
+
+  Prediction counts:
+    Healthy: 1035
+    Mild: 92
+    Severe: 18
+
+  True Class: Mild
+  Recall on True Class: 0.0803
+  ------------------------------
+Fold 2 | Epoch 12
+  Train Loss: 0.2872
+  Train Accuracy: 0.9823
+  Train Macro F1: 0.9725
+
+  Test Accuracy: 0.1092
+  Test Balanced Acc: 0.1092
+  Test Macro F1: 0.0656
+
+  Prediction counts:
+    Healthy: 948
+    Mild: 125
+    Severe: 72
+
+  True Class: Mild
+  Recall on True Class: 0.1092
+  ------------------------------
+Fold 2 | Epoch 13
+  Train Loss: 0.2883
+  Train Accuracy: 0.9808
+  Train Macro F1: 0.9706
+
+  Test Accuracy: 0.0751
+  Test Balanced Acc: 0.0751
+  Test Macro F1: 0.0466
+
+  Prediction counts:
+    Healthy: 1026
+    Mild: 86
+    Severe: 33
+
+  True Class: Mild
+  Recall on True Class: 0.0751
+  ------------------------------
+Fold 2 | Epoch 14
+  Train Loss: 0.2791
+  Train Accuracy: 0.9837
+  Train Macro F1: 0.9750
+
+  Test Accuracy: 0.0926
+  Test Balanced Acc: 0.0926
+  Test Macro F1: 0.0565
+
+  Prediction counts:
+    Healthy: 977
+    Mild: 106
+    Severe: 62
+
+  True Class: Mild
+  Recall on True Class: 0.0926
+  ------------------------------
+Fold 2 | Epoch 15
+  Train Loss: 0.2775
+  Train Accuracy: 0.9852
+  Train Macro F1: 0.9775
+
+  Test Accuracy: 0.0664
+  Test Balanced Acc: 0.0664
+  Test Macro F1: 0.0415
+
+  Prediction counts:
+    Healthy: 1001
+    Mild: 76
+    Severe: 68
+
+  True Class: Mild
+  Recall on True Class: 0.0664
+  ------------------------------
+Fold 2 | Epoch 16
+  Train Loss: 0.2742
+  Train Accuracy: 0.9858
+  Train Macro F1: 0.9783
+
+  Test Accuracy: 0.0594
+  Test Balanced Acc: 0.0594
+  Test Macro F1: 0.0374
+
+  Prediction counts:
+    Healthy: 1031
+    Mild: 68
+    Severe: 46
+
+  True Class: Mild
+  Recall on True Class: 0.0594
+  ------------------------------
+Fold 2 | Epoch 17
+  Train Loss: 0.2678
+  Train Accuracy: 0.9892
+  Train Macro F1: 0.9837
+
+  Test Accuracy: 0.0760
+  Test Balanced Acc: 0.0760
+  Test Macro F1: 0.0471
+
+  Prediction counts:
+    Healthy: 1012
+    Mild: 87
+    Severe: 46
+
+  True Class: Mild
+  Recall on True Class: 0.0760
+  ------------------------------
+Fold 2 | Epoch 18
+  Train Loss: 0.2646
+  Train Accuracy: 0.9891
+  Train Macro F1: 0.9838
+
+  Test Accuracy: 0.0716
+  Test Balanced Acc: 0.0716
+  Test Macro F1: 0.0446
+
+  Prediction counts:
+    Healthy: 970
+    Mild: 82
+    Severe: 93
+
+  True Class: Mild
+  Recall on True Class: 0.0716
+  ------------------------------
+Fold 2 | Epoch 19
+  Train Loss: 0.2626
+  Train Accuracy: 0.9909
+  Train Macro F1: 0.9864
+
+  Test Accuracy: 0.0908
+  Test Balanced Acc: 0.0908
+  Test Macro F1: 0.0555
+
+  Prediction counts:
+    Healthy: 915
+    Mild: 104
+    Severe: 126
+
+  True Class: Mild
+  Recall on True Class: 0.0908
+  ------------------------------
+Fold 2 | Epoch 20
+  Train Loss: 0.2616
+  Train Accuracy: 0.9903
+  Train Macro F1: 0.9857
+
+  Test Accuracy: 0.0803
+  Test Balanced Acc: 0.0803
+  Test Macro F1: 0.0496
+
+  Prediction counts:
+    Healthy: 996
+    Mild: 92
+    Severe: 57
+
+  True Class: Mild
+  Recall on True Class: 0.0803
+  ------------------------------
+Fold 2 | Epoch 21
+  Train Loss: 0.2578
+  Train Accuracy: 0.9927
+  Train Macro F1: 0.9884
+
+  Test Accuracy: 0.0681
+  Test Balanced Acc: 0.0681
+  Test Macro F1: 0.0425
+
+  Prediction counts:
+    Healthy: 1029
+    Mild: 78
+    Severe: 38
+
+  True Class: Mild
+  Recall on True Class: 0.0681
+  ------------------------------
+Fold 2 | Epoch 22
+  Train Loss: 0.2604
+  Train Accuracy: 0.9920
+  Train Macro F1: 0.9879
+
+  Test Accuracy: 0.1109
+  Test Balanced Acc: 0.1109
+  Test Macro F1: 0.0666
+
+  Prediction counts:
+    Healthy: 921
+    Mild: 127
+    Severe: 97
+
+  True Class: Mild
+  Recall on True Class: 0.1109
+  ------------------------------
+Fold 2 | Epoch 23
+  Train Loss: 0.2576
+  Train Accuracy: 0.9918
+  Train Macro F1: 0.9877
+
+  Test Accuracy: 0.0524
+  Test Balanced Acc: 0.0524
+  Test Macro F1: 0.0332
+
+  Prediction counts:
+    Healthy: 913
+    Mild: 60
+    Severe: 172
+
+  True Class: Mild
+  Recall on True Class: 0.0524
+  ------------------------------
+Fold 2 | Epoch 24
+  Train Loss: 0.2539
+  Train Accuracy: 0.9935
+  Train Macro F1: 0.9902
+
+  Test Accuracy: 0.0681
+  Test Balanced Acc: 0.0681
+  Test Macro F1: 0.0425
+
+  Prediction counts:
+    Healthy: 999
+    Mild: 78
+    Severe: 68
+
+  True Class: Mild
+  Recall on True Class: 0.0681
+  ------------------------------
+Fold 2 | Epoch 25
+  Train Loss: 0.2516
+  Train Accuracy: 0.9941
+  Train Macro F1: 0.9910
+
+  Test Accuracy: 0.0795
+  Test Balanced Acc: 0.0795
+  Test Macro F1: 0.0491
+
+  Prediction counts:
+    Healthy: 1032
+    Mild: 91
+    Severe: 22
+
+  True Class: Mild
+  Recall on True Class: 0.0795
+  ------------------------------
+Fold 2 Best Model Test Result -> Acc: 0.0795, Bal Acc: 0.0795, Macro F1: 0.0491
+
+============================================================
+Starting Fold 3/15: Test Speaker = F04
+============================================================
+Fold 3 | Epoch 01
+  Train Loss: 0.7454
+  Train Accuracy: 0.7792
+  Train Macro F1: 0.6675
+
+  Test Accuracy: 0.0922
+  Test Balanced Acc: 0.0922
+  Test Macro F1: 0.0563
+
+  Prediction counts:
+    Healthy: 384
+    Mild: 46
+    Severe: 69
+
+  True Class: Mild
+  Recall on True Class: 0.0922
+  ------------------------------
+Fold 3 | Epoch 02
+  Train Loss: 0.5094
+  Train Accuracy: 0.8774
+  Train Macro F1: 0.8280
+
+  Test Accuracy: 0.0842
+  Test Balanced Acc: 0.0842
+  Test Macro F1: 0.0518
+
+  Prediction counts:
+    Healthy: 382
+    Mild: 42
+    Severe: 75
+
+  True Class: Mild
+  Recall on True Class: 0.0842
+  ------------------------------
+Fold 3 | Epoch 03
+  Train Loss: 0.4328
+  Train Accuracy: 0.9113
+  Train Macro F1: 0.8824
+
+  Test Accuracy: 0.0942
+  Test Balanced Acc: 0.0942
+  Test Macro F1: 0.0574
+
+  Prediction counts:
+    Healthy: 410
+    Mild: 47
+    Severe: 42
+
+  True Class: Mild
+  Recall on True Class: 0.0942
+  ------------------------------
+Fold 3 | Epoch 04
+  Train Loss: 0.3949
+  Train Accuracy: 0.9303
+  Train Macro F1: 0.9071
+
+  Test Accuracy: 0.1323
+  Test Balanced Acc: 0.1323
+  Test Macro F1: 0.0779
+
+  Prediction counts:
+    Healthy: 345
+    Mild: 66
+    Severe: 88
+
+  True Class: Mild
+  Recall on True Class: 0.1323
+  ------------------------------
+Fold 3 | Epoch 05
+  Train Loss: 0.3585
+  Train Accuracy: 0.9482
+  Train Macro F1: 0.9316
+
+  Test Accuracy: 0.0862
+  Test Balanced Acc: 0.0862
+  Test Macro F1: 0.0529
+
+  Prediction counts:
+    Healthy: 424
+    Mild: 43
+    Severe: 32
+
+  True Class: Mild
+  Recall on True Class: 0.0862
+  ------------------------------
+Fold 3 | Epoch 06
+  Train Loss: 0.3466
+  Train Accuracy: 0.9527
+  Train Macro F1: 0.9363
+
+  Test Accuracy: 0.0361
+  Test Balanced Acc: 0.0361
+  Test Macro F1: 0.0232
+
+  Prediction counts:
+    Healthy: 434
+    Mild: 18
+    Severe: 47
+
+  True Class: Mild
+  Recall on True Class: 0.0361
+  ------------------------------
+Fold 3 | Epoch 07
+  Train Loss: 0.3213
+  Train Accuracy: 0.9640
+  Train Macro F1: 0.9518
+
+  Test Accuracy: 0.0882
+  Test Balanced Acc: 0.0882
+  Test Macro F1: 0.0540
+
+  Prediction counts:
+    Healthy: 418
+    Mild: 44
+    Severe: 37
+
+  True Class: Mild
+  Recall on True Class: 0.0882
+  ------------------------------
+Fold 3 | Epoch 08
+  Train Loss: 0.3189
+  Train Accuracy: 0.9643
+  Train Macro F1: 0.9521
+
+  Test Accuracy: 0.0681
+  Test Balanced Acc: 0.0681
+  Test Macro F1: 0.0425
+
+  Prediction counts:
+    Healthy: 421
+    Mild: 34
+    Severe: 44
+
+  True Class: Mild
+  Recall on True Class: 0.0681
+  ------------------------------
+Fold 3 | Epoch 09
+  Train Loss: 0.3069
+  Train Accuracy: 0.9694
+  Train Macro F1: 0.9590
+
+  Test Accuracy: 0.0421
+  Test Balanced Acc: 0.0421
+  Test Macro F1: 0.0269
+
+  Prediction counts:
+    Healthy: 454
+    Mild: 21
+    Severe: 24
+
+  True Class: Mild
+  Recall on True Class: 0.0421
+  ------------------------------
+Fold 3 | Epoch 10
+  Train Loss: 0.2962
+  Train Accuracy: 0.9717
+  Train Macro F1: 0.9616
+
+  Test Accuracy: 0.0521
+  Test Balanced Acc: 0.0521
+  Test Macro F1: 0.0330
+
+  Prediction counts:
+    Healthy: 446
+    Mild: 26
+    Severe: 27
+
+  True Class: Mild
+  Recall on True Class: 0.0521
+  ------------------------------
+Fold 3 | Epoch 11
+  Train Loss: 0.2859
+  Train Accuracy: 0.9768
+  Train Macro F1: 0.9689
+
+  Test Accuracy: 0.1784
+  Test Balanced Acc: 0.1784
+  Test Macro F1: 0.1009
+
+  Prediction counts:
+    Healthy: 377
+    Mild: 89
+    Severe: 33
+
+  True Class: Mild
+  Recall on True Class: 0.1784
+  ------------------------------
+Fold 3 | Epoch 12
+  Train Loss: 0.2799
+  Train Accuracy: 0.9806
+  Train Macro F1: 0.9741
+
+  Test Accuracy: 0.0862
+  Test Balanced Acc: 0.0862
+  Test Macro F1: 0.0529
+
+  Prediction counts:
+    Healthy: 419
+    Mild: 43
+    Severe: 37
+
+  True Class: Mild
+  Recall on True Class: 0.0862
+  ------------------------------
+Fold 3 | Epoch 13
+  Train Loss: 0.2775
+  Train Accuracy: 0.9803
+  Train Macro F1: 0.9735
+
+  Test Accuracy: 0.0521
+  Test Balanced Acc: 0.0521
+  Test Macro F1: 0.0330
+
+  Prediction counts:
+    Healthy: 434
+    Mild: 26
+    Severe: 39
+
+  True Class: Mild
+  Recall on True Class: 0.0521
+  ------------------------------
+Fold 3 | Epoch 14
+  Train Loss: 0.2716
+  Train Accuracy: 0.9822
+  Train Macro F1: 0.9760
+
+  Test Accuracy: 0.0381
+  Test Balanced Acc: 0.0381
+  Test Macro F1: 0.0245
+
+  Prediction counts:
+    Healthy: 438
+    Mild: 19
+    Severe: 42
+
+  True Class: Mild
+  Recall on True Class: 0.0381
+  ------------------------------
+Fold 3 | Epoch 15
+  Train Loss: 0.2695
+  Train Accuracy: 0.9839
+  Train Macro F1: 0.9785
+
+  Test Accuracy: 0.0521
+  Test Balanced Acc: 0.0521
+  Test Macro F1: 0.0330
+
+  Prediction counts:
+    Healthy: 421
+    Mild: 26
+    Severe: 52
+
+  True Class: Mild
+  Recall on True Class: 0.0521
+  ------------------------------
+Fold 3 | Epoch 16
+  Train Loss: 0.2621
+  Train Accuracy: 0.9869
+  Train Macro F1: 0.9820
+
+  Test Accuracy: 0.0501
+  Test Balanced Acc: 0.0501
+  Test Macro F1: 0.0318
+
+  Prediction counts:
+    Healthy: 439
+    Mild: 25
+    Severe: 35
+
+  True Class: Mild
+  Recall on True Class: 0.0501
+  ------------------------------
+Fold 3 | Epoch 17
+  Train Loss: 0.2634
+  Train Accuracy: 0.9849
+  Train Macro F1: 0.9793
+
+  Test Accuracy: 0.0481
+  Test Balanced Acc: 0.0481
+  Test Macro F1: 0.0306
+
+  Prediction counts:
+    Healthy: 447
+    Mild: 24
+    Severe: 28
+
+  True Class: Mild
+  Recall on True Class: 0.0481
+  ------------------------------
+Fold 3 | Epoch 18
+  Train Loss: 0.2614
+  Train Accuracy: 0.9857
+  Train Macro F1: 0.9806
+
+  Test Accuracy: 0.0220
+  Test Balanced Acc: 0.0220
+  Test Macro F1: 0.0144
+
+  Prediction counts:
+    Healthy: 471
+    Mild: 11
+    Severe: 17
+
+  True Class: Mild
+  Recall on True Class: 0.0220
+  ------------------------------
+Fold 3 | Epoch 19
+  Train Loss: 0.2552
+  Train Accuracy: 0.9886
+  Train Macro F1: 0.9847
+
+  Test Accuracy: 0.0842
+  Test Balanced Acc: 0.0842
+  Test Macro F1: 0.0518
+
+  Prediction counts:
+    Healthy: 413
+    Mild: 42
+    Severe: 44
+
+  True Class: Mild
+  Recall on True Class: 0.0842
+  ------------------------------
+Fold 3 | Epoch 20
+  Train Loss: 0.2555
+  Train Accuracy: 0.9890
+  Train Macro F1: 0.9853
+
+  Test Accuracy: 0.0521
+  Test Balanced Acc: 0.0521
+  Test Macro F1: 0.0330
+
+  Prediction counts:
+    Healthy: 406
+    Mild: 26
+    Severe: 67
+
+  True Class: Mild
+  Recall on True Class: 0.0521
+  ------------------------------
+Fold 3 | Epoch 21
+  Train Loss: 0.2524
+  Train Accuracy: 0.9896
+  Train Macro F1: 0.9860
+
+  Test Accuracy: 0.0521
+  Test Balanced Acc: 0.0521
+  Test Macro F1: 0.0330
+
+  Prediction counts:
+    Healthy: 443
+    Mild: 26
+    Severe: 30
+
+  True Class: Mild
+  Recall on True Class: 0.0521
+  ------------------------------
+Fold 3 | Epoch 22
+  Train Loss: 0.2512
+  Train Accuracy: 0.9902
+  Train Macro F1: 0.9865
+
+  Test Accuracy: 0.0481
+  Test Balanced Acc: 0.0481
+  Test Macro F1: 0.0306
+
+  Prediction counts:
+    Healthy: 449
+    Mild: 24
+    Severe: 26
+
+  True Class: Mild
+  Recall on True Class: 0.0481
+  ------------------------------
+Fold 3 | Epoch 23
+  Train Loss: 0.2453
+  Train Accuracy: 0.9928
+  Train Macro F1: 0.9901
+
+  Test Accuracy: 0.1002
+  Test Balanced Acc: 0.1002
+  Test Macro F1: 0.0607
+
+  Prediction counts:
+    Healthy: 405
+    Mild: 50
+    Severe: 44
+
+  True Class: Mild
+  Recall on True Class: 0.1002
+  ------------------------------
+Fold 3 | Epoch 24
+  Train Loss: 0.2477
+  Train Accuracy: 0.9915
+  Train Macro F1: 0.9879
+
+  Test Accuracy: 0.0681
+  Test Balanced Acc: 0.0681
+  Test Macro F1: 0.0425
+
+  Prediction counts:
+    Healthy: 433
+    Mild: 34
+    Severe: 32
+
+  True Class: Mild
+  Recall on True Class: 0.0681
+  ------------------------------
+Fold 3 | Epoch 25
+  Train Loss: 0.2504
+  Train Accuracy: 0.9909
+  Train Macro F1: 0.9871
+
+  Test Accuracy: 0.0842
+  Test Balanced Acc: 0.0842
+  Test Macro F1: 0.0518
+
+  Prediction counts:
+    Healthy: 433
+    Mild: 42
+    Severe: 24
+
+  True Class: Mild
+  Recall on True Class: 0.0842
+  ------------------------------
+Fold 3 Best Model Test Result -> Acc: 0.1002, Bal Acc: 0.1002, Macro F1: 0.0607
+
+============================================================
+Starting Fold 4/15: Test Speaker = FC01
+============================================================
+Fold 4 | Epoch 01
+  Train Loss: 0.7867
+  Train Accuracy: 0.7388
+  Train Macro F1: 0.6099
+
+  Test Accuracy: 0.9085
+  Test Balanced Acc: 0.9085
+  Test Macro F1: 0.3174
+
+  Prediction counts:
+    Healthy: 298
+    Mild: 24
+    Severe: 6
+
+  True Class: Healthy
+  Recall on True Class: 0.9085
+  ------------------------------
+Fold 4 | Epoch 02
+  Train Loss: 0.5554
+  Train Accuracy: 0.8414
+  Train Macro F1: 0.8022
+
+  Test Accuracy: 0.8049
+  Test Balanced Acc: 0.8049
+  Test Macro F1: 0.2973
+
+  Prediction counts:
+    Healthy: 264
+    Mild: 62
+    Severe: 2
+
+  True Class: Healthy
+  Recall on True Class: 0.8049
+  ------------------------------
+Fold 4 | Epoch 03
+  Train Loss: 0.4624
+  Train Accuracy: 0.8892
+  Train Macro F1: 0.8660
+
+  Test Accuracy: 0.8841
+  Test Balanced Acc: 0.8841
+  Test Macro F1: 0.3128
+
+  Prediction counts:
+    Healthy: 290
+    Mild: 36
+    Severe: 2
+
+  True Class: Healthy
+  Recall on True Class: 0.8841
+  ------------------------------
+Fold 4 | Epoch 04
+  Train Loss: 0.4079
+  Train Accuracy: 0.9183
+  Train Macro F1: 0.9005
+
+  Test Accuracy: 0.6829
+  Test Balanced Acc: 0.6829
+  Test Macro F1: 0.2705
+
+  Prediction counts:
+    Healthy: 224
+    Mild: 102
+    Severe: 2
+
+  True Class: Healthy
+  Recall on True Class: 0.6829
+  ------------------------------
+Fold 4 | Epoch 05
+  Train Loss: 0.3735
+  Train Accuracy: 0.9346
+  Train Macro F1: 0.9206
+
+  Test Accuracy: 0.6585
+  Test Balanced Acc: 0.6585
+  Test Macro F1: 0.2647
+
+  Prediction counts:
+    Healthy: 216
+    Mild: 110
+    Severe: 2
+
+  True Class: Healthy
+  Recall on True Class: 0.6585
+  ------------------------------
+Fold 4 | Epoch 06
+  Train Loss: 0.3414
+  Train Accuracy: 0.9500
+  Train Macro F1: 0.9387
+
+  Test Accuracy: 0.6311
+  Test Balanced Acc: 0.6311
+  Test Macro F1: 0.2579
+
+  Prediction counts:
+    Healthy: 207
+    Mild: 117
+    Severe: 4
+
+  True Class: Healthy
+  Recall on True Class: 0.6311
+  ------------------------------
+Fold 4 | Epoch 07
+  Train Loss: 0.3213
+  Train Accuracy: 0.9575
+  Train Macro F1: 0.9483
+
+  Test Accuracy: 0.5000
+  Test Balanced Acc: 0.5000
+  Test Macro F1: 0.2222
+
+  Prediction counts:
+    Healthy: 164
+    Mild: 162
+    Severe: 2
+
+  True Class: Healthy
+  Recall on True Class: 0.5000
+  ------------------------------
+Fold 4 | Epoch 08
+  Train Loss: 0.3127
+  Train Accuracy: 0.9617
+  Train Macro F1: 0.9524
+
+  Test Accuracy: 0.7500
+  Test Balanced Acc: 0.7500
+  Test Macro F1: 0.2857
+
+  Prediction counts:
+    Healthy: 246
+    Mild: 80
+    Severe: 2
+
+  True Class: Healthy
+  Recall on True Class: 0.7500
+  ------------------------------
+Fold 4 | Epoch 09
+  Train Loss: 0.2986
+  Train Accuracy: 0.9674
+  Train Macro F1: 0.9591
+
+  Test Accuracy: 0.7652
+  Test Balanced Acc: 0.7652
+  Test Macro F1: 0.2890
+
+  Prediction counts:
+    Healthy: 251
+    Mild: 75
+    Severe: 2
+
+  True Class: Healthy
+  Recall on True Class: 0.7652
+  ------------------------------
+Fold 4 | Epoch 10
+  Train Loss: 0.2876
+  Train Accuracy: 0.9719
+  Train Macro F1: 0.9657
+
+  Test Accuracy: 0.6677
+  Test Balanced Acc: 0.6677
+  Test Macro F1: 0.2669
+
+  Prediction counts:
+    Healthy: 219
+    Mild: 107
+    Severe: 2
+
+  True Class: Healthy
+  Recall on True Class: 0.6677
+  ------------------------------
+Fold 4 | Epoch 11
+  Train Loss: 0.2812
+  Train Accuracy: 0.9749
+  Train Macro F1: 0.9691
+
+  Test Accuracy: 0.9085
+  Test Balanced Acc: 0.9085
+  Test Macro F1: 0.3174
+
+  Prediction counts:
+    Healthy: 298
+    Mild: 28
+    Severe: 2
+
+  True Class: Healthy
+  Recall on True Class: 0.9085
+  ------------------------------
+Fold 4 | Epoch 12
+  Train Loss: 0.2779
+  Train Accuracy: 0.9762
+  Train Macro F1: 0.9708
+
+  Test Accuracy: 0.8079
+  Test Balanced Acc: 0.8079
+  Test Macro F1: 0.2979
+
+  Prediction counts:
+    Healthy: 265
+    Mild: 61
+    Severe: 2
+
+  True Class: Healthy
+  Recall on True Class: 0.8079
+  ------------------------------
+Fold 4 | Epoch 13
+  Train Loss: 0.2685
+  Train Accuracy: 0.9794
+  Train Macro F1: 0.9745
+
+  Test Accuracy: 0.5854
+  Test Balanced Acc: 0.5854
+  Test Macro F1: 0.2462
+
+  Prediction counts:
+    Healthy: 192
+    Mild: 134
+    Severe: 2
+
+  True Class: Healthy
+  Recall on True Class: 0.5854
+  ------------------------------
+Fold 4 | Epoch 14
+  Train Loss: 0.2648
+  Train Accuracy: 0.9824
+  Train Macro F1: 0.9775
+
+  Test Accuracy: 0.7104
+  Test Balanced Acc: 0.7104
+  Test Macro F1: 0.2769
+
+  Prediction counts:
+    Healthy: 233
+    Mild: 94
+    Severe: 1
+
+  True Class: Healthy
+  Recall on True Class: 0.7104
+  ------------------------------
+Fold 4 | Epoch 15
+  Train Loss: 0.2648
+  Train Accuracy: 0.9817
+  Train Macro F1: 0.9769
+
+  Test Accuracy: 0.6433
+  Test Balanced Acc: 0.6433
+  Test Macro F1: 0.2610
+
+  Prediction counts:
+    Healthy: 211
+    Mild: 114
+    Severe: 3
+
+  True Class: Healthy
+  Recall on True Class: 0.6433
+  ------------------------------
+Fold 4 | Epoch 16
+  Train Loss: 0.2567
+  Train Accuracy: 0.9856
+  Train Macro F1: 0.9821
+
+  Test Accuracy: 0.6555
+  Test Balanced Acc: 0.6555
+  Test Macro F1: 0.2640
+
+  Prediction counts:
+    Healthy: 215
+    Mild: 112
+    Severe: 1
+
+  True Class: Healthy
+  Recall on True Class: 0.6555
+  ------------------------------
+Fold 4 | Epoch 17
+  Train Loss: 0.2530
+  Train Accuracy: 0.9855
+  Train Macro F1: 0.9824
+
+  Test Accuracy: 0.5732
+  Test Balanced Acc: 0.5732
+  Test Macro F1: 0.2429
+
+  Prediction counts:
+    Healthy: 188
+    Mild: 139
+    Severe: 1
+
+  True Class: Healthy
+  Recall on True Class: 0.5732
+  ------------------------------
+Fold 4 | Epoch 18
+  Train Loss: 0.2504
+  Train Accuracy: 0.9880
+  Train Macro F1: 0.9853
+
+  Test Accuracy: 0.7835
+  Test Balanced Acc: 0.7835
+  Test Macro F1: 0.2929
+
+  Prediction counts:
+    Healthy: 257
+    Mild: 69
+    Severe: 2
+
+  True Class: Healthy
+  Recall on True Class: 0.7835
+  ------------------------------
+Fold 4 | Epoch 19
+  Train Loss: 0.2539
+  Train Accuracy: 0.9860
+  Train Macro F1: 0.9827
+
+  Test Accuracy: 0.6646
+  Test Balanced Acc: 0.6646
+  Test Macro F1: 0.2662
+
+  Prediction counts:
+    Healthy: 218
+    Mild: 108
+    Severe: 2
+
+  True Class: Healthy
+  Recall on True Class: 0.6646
+  ------------------------------
+Fold 4 | Epoch 20
+  Train Loss: 0.2491
+  Train Accuracy: 0.9880
+  Train Macro F1: 0.9849
+
+  Test Accuracy: 0.7134
+  Test Balanced Acc: 0.7134
+  Test Macro F1: 0.2776
+
+  Prediction counts:
+    Healthy: 234
+    Mild: 90
+    Severe: 4
+
+  True Class: Healthy
+  Recall on True Class: 0.7134
+  ------------------------------
+Fold 4 | Epoch 21
+  Train Loss: 0.2491
+  Train Accuracy: 0.9878
+  Train Macro F1: 0.9844
+
+  Test Accuracy: 0.7073
+  Test Balanced Acc: 0.7073
+  Test Macro F1: 0.2762
+
+  Prediction counts:
+    Healthy: 232
+    Mild: 95
+    Severe: 1
+
+  True Class: Healthy
+  Recall on True Class: 0.7073
+  ------------------------------
+Fold 4 | Epoch 22
+  Train Loss: 0.2479
+  Train Accuracy: 0.9879
+  Train Macro F1: 0.9854
+
+  Test Accuracy: 0.3476
+  Test Balanced Acc: 0.3476
+  Test Macro F1: 0.1719
+
+  Prediction counts:
+    Healthy: 114
+    Mild: 212
+    Severe: 2
+
+  True Class: Healthy
+  Recall on True Class: 0.3476
+  ------------------------------
+Fold 4 | Epoch 23
+  Train Loss: 0.2417
+  Train Accuracy: 0.9900
+  Train Macro F1: 0.9878
+
+  Test Accuracy: 0.7043
+  Test Balanced Acc: 0.7043
+  Test Macro F1: 0.2755
+
+  Prediction counts:
+    Healthy: 231
+    Mild: 95
+    Severe: 2
+
+  True Class: Healthy
+  Recall on True Class: 0.7043
+  ------------------------------
+Fold 4 | Epoch 24
+  Train Loss: 0.2392
+  Train Accuracy: 0.9916
+  Train Macro F1: 0.9897
+
+  Test Accuracy: 0.6951
+  Test Balanced Acc: 0.6951
+  Test Macro F1: 0.2734
+
+  Prediction counts:
+    Healthy: 228
+    Mild: 99
+    Severe: 1
+
+  True Class: Healthy
+  Recall on True Class: 0.6951
+  ------------------------------
+Fold 4 | Epoch 25
+  Train Loss: 0.2393
+  Train Accuracy: 0.9916
+  Train Macro F1: 0.9898
+
+  Test Accuracy: 0.7957
+  Test Balanced Acc: 0.7957
+  Test Macro F1: 0.2954
+
+  Prediction counts:
+    Healthy: 261
+    Mild: 65
+    Severe: 2
+
+  True Class: Healthy
+  Recall on True Class: 0.7957
+  ------------------------------
+Fold 4 Best Model Test Result -> Acc: 0.7957, Bal Acc: 0.7957, Macro F1: 0.2954
+
+============================================================
+Starting Fold 5/15: Test Speaker = FC02
+============================================================
+Fold 5 | Epoch 01
+  Train Loss: 0.8146
+  Train Accuracy: 0.7109
+  Train Macro F1: 0.6184
+
+  Test Accuracy: 0.9734
+  Test Balanced Acc: 0.9734
+  Test Macro F1: 0.3288
+
+  Prediction counts:
+    Healthy: 1939
+    Mild: 50
+    Severe: 3
+
+  True Class: Healthy
+  Recall on True Class: 0.9734
+  ------------------------------
+Fold 5 | Epoch 02
+  Train Loss: 0.5620
+  Train Accuracy: 0.8289
+  Train Macro F1: 0.8016
+
+  Test Accuracy: 0.8509
+  Test Balanced Acc: 0.8509
+  Test Macro F1: 0.3065
+
+  Prediction counts:
+    Healthy: 1695
+    Mild: 288
+    Severe: 9
+
+  True Class: Healthy
+  Recall on True Class: 0.8509
+  ------------------------------
+Fold 5 | Epoch 03
+  Train Loss: 0.4672
+  Train Accuracy: 0.8783
+  Train Macro F1: 0.8616
+
+  Test Accuracy: 0.9483
+  Test Balanced Acc: 0.9483
+  Test Macro F1: 0.3245
+
+  Prediction counts:
+    Healthy: 1889
+    Mild: 96
+    Severe: 7
+
+  True Class: Healthy
+  Recall on True Class: 0.9483
+  ------------------------------
+Fold 5 | Epoch 04
+  Train Loss: 0.4060
+  Train Accuracy: 0.9129
+  Train Macro F1: 0.9015
+
+  Test Accuracy: 0.9302
+  Test Balanced Acc: 0.9302
+  Test Macro F1: 0.3213
+
+  Prediction counts:
+    Healthy: 1853
+    Mild: 136
+    Severe: 3
+
+  True Class: Healthy
+  Recall on True Class: 0.9302
+  ------------------------------
+Fold 5 | Epoch 05
+  Train Loss: 0.3774
+  Train Accuracy: 0.9260
+  Train Macro F1: 0.9163
+
+  Test Accuracy: 0.9503
+  Test Balanced Acc: 0.9503
+  Test Macro F1: 0.3248
+
+  Prediction counts:
+    Healthy: 1893
+    Mild: 97
+    Severe: 2
+
+  True Class: Healthy
+  Recall on True Class: 0.9503
+  ------------------------------
+Fold 5 | Epoch 06
+  Train Loss: 0.3498
+  Train Accuracy: 0.9386
+  Train Macro F1: 0.9309
+
+  Test Accuracy: 0.8991
+  Test Balanced Acc: 0.8991
+  Test Macro F1: 0.3156
+
+  Prediction counts:
+    Healthy: 1791
+    Mild: 198
+    Severe: 3
+
+  True Class: Healthy
+  Recall on True Class: 0.8991
+  ------------------------------
+Fold 5 | Epoch 07
+  Train Loss: 0.3229
+  Train Accuracy: 0.9523
+  Train Macro F1: 0.9456
+
+  Test Accuracy: 0.8484
+  Test Balanced Acc: 0.8484
+  Test Macro F1: 0.3060
+
+  Prediction counts:
+    Healthy: 1690
+    Mild: 299
+    Severe: 3
+
+  True Class: Healthy
+  Recall on True Class: 0.8484
+  ------------------------------
+Fold 5 | Epoch 08
+  Train Loss: 0.3103
+  Train Accuracy: 0.9584
+  Train Macro F1: 0.9520
+
+  Test Accuracy: 0.8464
+  Test Balanced Acc: 0.8464
+  Test Macro F1: 0.3056
+
+  Prediction counts:
+    Healthy: 1686
+    Mild: 305
+    Severe: 1
+
+  True Class: Healthy
+  Recall on True Class: 0.8464
+  ------------------------------
+Fold 5 | Epoch 09
+  Train Loss: 0.2955
+  Train Accuracy: 0.9635
+  Train Macro F1: 0.9584
+
+  Test Accuracy: 0.8017
+  Test Balanced Acc: 0.8017
+  Test Macro F1: 0.2966
+
+  Prediction counts:
+    Healthy: 1597
+    Mild: 392
+    Severe: 3
+
+  True Class: Healthy
+  Recall on True Class: 0.8017
+  ------------------------------
+Fold 5 | Epoch 10
+  Train Loss: 0.2868
+  Train Accuracy: 0.9679
+  Train Macro F1: 0.9630
+
+  Test Accuracy: 0.7866
+  Test Balanced Acc: 0.7866
+  Test Macro F1: 0.4403
+
+  Prediction counts:
+    Healthy: 1567
+    Mild: 425
+    Severe: 0
+
+  True Class: Healthy
+  Recall on True Class: 0.7866
+  ------------------------------
+Fold 5 | Epoch 11
+  Train Loss: 0.2753
+  Train Accuracy: 0.9721
+  Train Macro F1: 0.9675
+
+  Test Accuracy: 0.8419
+  Test Balanced Acc: 0.8419
+  Test Macro F1: 0.3047
+
+  Prediction counts:
+    Healthy: 1677
+    Mild: 311
+    Severe: 4
+
+  True Class: Healthy
+  Recall on True Class: 0.8419
+  ------------------------------
+Fold 5 | Epoch 12
+  Train Loss: 0.2692
+  Train Accuracy: 0.9756
+  Train Macro F1: 0.9719
+
+  Test Accuracy: 0.7701
+  Test Balanced Acc: 0.7701
+  Test Macro F1: 0.2900
+
+  Prediction counts:
+    Healthy: 1534
+    Mild: 453
+    Severe: 5
+
+  True Class: Healthy
+  Recall on True Class: 0.7701
+  ------------------------------
+Fold 5 | Epoch 13
+  Train Loss: 0.2657
+  Train Accuracy: 0.9768
+  Train Macro F1: 0.9728
+
+  Test Accuracy: 0.8589
+  Test Balanced Acc: 0.8589
+  Test Macro F1: 0.3080
+
+  Prediction counts:
+    Healthy: 1711
+    Mild: 280
+    Severe: 1
+
+  True Class: Healthy
+  Recall on True Class: 0.8589
+  ------------------------------
+Fold 5 | Epoch 14
+  Train Loss: 0.2589
+  Train Accuracy: 0.9788
+  Train Macro F1: 0.9756
+
+  Test Accuracy: 0.7992
+  Test Balanced Acc: 0.7992
+  Test Macro F1: 0.2961
+
+  Prediction counts:
+    Healthy: 1592
+    Mild: 399
+    Severe: 1
+
+  True Class: Healthy
+  Recall on True Class: 0.7992
+  ------------------------------
+Fold 5 | Epoch 15
+  Train Loss: 0.2568
+  Train Accuracy: 0.9808
+  Train Macro F1: 0.9775
+
+  Test Accuracy: 0.8308
+  Test Balanced Acc: 0.8308
+  Test Macro F1: 0.3025
+
+  Prediction counts:
+    Healthy: 1655
+    Mild: 334
+    Severe: 3
+
+  True Class: Healthy
+  Recall on True Class: 0.8308
+  ------------------------------
+Fold 5 | Epoch 16
+  Train Loss: 0.2465
+  Train Accuracy: 0.9844
+  Train Macro F1: 0.9823
+
+  Test Accuracy: 0.8745
+  Test Balanced Acc: 0.8745
+  Test Macro F1: 0.3110
+
+  Prediction counts:
+    Healthy: 1742
+    Mild: 249
+    Severe: 1
+
+  True Class: Healthy
+  Recall on True Class: 0.8745
+  ------------------------------
+Fold 5 | Epoch 17
+  Train Loss: 0.2469
+  Train Accuracy: 0.9853
+  Train Macro F1: 0.9829
+
+  Test Accuracy: 0.8670
+  Test Balanced Acc: 0.8670
+  Test Macro F1: 0.3096
+
+  Prediction counts:
+    Healthy: 1727
+    Mild: 262
+    Severe: 3
+
+  True Class: Healthy
+  Recall on True Class: 0.8670
+  ------------------------------
+Fold 5 | Epoch 18
+  Train Loss: 0.2410
+  Train Accuracy: 0.9868
+  Train Macro F1: 0.9850
+
+  Test Accuracy: 0.8072
+  Test Balanced Acc: 0.8072
+  Test Macro F1: 0.2978
+
+  Prediction counts:
+    Healthy: 1608
+    Mild: 379
+    Severe: 5
+
+  True Class: Healthy
+  Recall on True Class: 0.8072
+  ------------------------------
+Fold 5 | Epoch 19
+  Train Loss: 0.2391
+  Train Accuracy: 0.9880
+  Train Macro F1: 0.9860
+
+  Test Accuracy: 0.7520
+  Test Balanced Acc: 0.7520
+  Test Macro F1: 0.2862
+
+  Prediction counts:
+    Healthy: 1498
+    Mild: 493
+    Severe: 1
+
+  True Class: Healthy
+  Recall on True Class: 0.7520
+  ------------------------------
+Fold 5 | Epoch 20
+  Train Loss: 0.2403
+  Train Accuracy: 0.9869
+  Train Macro F1: 0.9846
+
+  Test Accuracy: 0.9036
+  Test Balanced Acc: 0.9036
+  Test Macro F1: 0.3165
+
+  Prediction counts:
+    Healthy: 1800
+    Mild: 191
+    Severe: 1
+
+  True Class: Healthy
+  Recall on True Class: 0.9036
+  ------------------------------
+Fold 5 | Epoch 21
+  Train Loss: 0.2346
+  Train Accuracy: 0.9889
+  Train Macro F1: 0.9872
+
+  Test Accuracy: 0.8363
+  Test Balanced Acc: 0.8363
+  Test Macro F1: 0.4554
+
+  Prediction counts:
+    Healthy: 1666
+    Mild: 326
+    Severe: 0
+
+  True Class: Healthy
+  Recall on True Class: 0.8363
+  ------------------------------
+Fold 5 | Epoch 22
+  Train Loss: 0.2329
+  Train Accuracy: 0.9900
+  Train Macro F1: 0.9887
+
+  Test Accuracy: 0.9262
+  Test Balanced Acc: 0.9262
+  Test Macro F1: 0.4808
+
+  Prediction counts:
+    Healthy: 1845
+    Mild: 147
+    Severe: 0
+
+  True Class: Healthy
+  Recall on True Class: 0.9262
+  ------------------------------
+Fold 5 | Epoch 23
+  Train Loss: 0.2347
+  Train Accuracy: 0.9896
+  Train Macro F1: 0.9882
+
+  Test Accuracy: 0.9011
+  Test Balanced Acc: 0.9011
+  Test Macro F1: 0.4740
+
+  Prediction counts:
+    Healthy: 1795
+    Mild: 197
+    Severe: 0
+
+  True Class: Healthy
+  Recall on True Class: 0.9011
+  ------------------------------
+Fold 5 | Epoch 24
+  Train Loss: 0.2353
+  Train Accuracy: 0.9896
+  Train Macro F1: 0.9874
+
+  Test Accuracy: 0.8619
+  Test Balanced Acc: 0.8619
+  Test Macro F1: 0.4629
+
+  Prediction counts:
+    Healthy: 1717
+    Mild: 275
+    Severe: 0
+
+  True Class: Healthy
+  Recall on True Class: 0.8619
+  ------------------------------
+Fold 5 | Epoch 25
+  Train Loss: 0.2309
+  Train Accuracy: 0.9909
+  Train Macro F1: 0.9896
+
+  Test Accuracy: 0.8509
+  Test Balanced Acc: 0.8509
+  Test Macro F1: 0.3065
+
+  Prediction counts:
+    Healthy: 1695
+    Mild: 295
+    Severe: 2
+
+  True Class: Healthy
+  Recall on True Class: 0.8509
+  ------------------------------
+Fold 5 Best Model Test Result -> Acc: 0.8509, Bal Acc: 0.8509, Macro F1: 0.3065
+
+============================================================
+Starting Fold 6/15: Test Speaker = FC03
+============================================================
+Fold 6 | Epoch 01
+  Train Loss: 0.7447
+  Train Accuracy: 0.7448
+  Train Macro F1: 0.6738
+
+  Test Accuracy: 0.4401
+  Test Balanced Acc: 0.4401
+  Test Macro F1: 0.2037
+
+  Prediction counts:
+    Healthy: 878
+    Mild: 1066
+    Severe: 51
+
+  True Class: Healthy
+  Recall on True Class: 0.4401
+  ------------------------------
+Fold 6 | Epoch 02
+  Train Loss: 0.4830
+  Train Accuracy: 0.8758
+  Train Macro F1: 0.8497
+
+  Test Accuracy: 0.2927
+  Test Balanced Acc: 0.2927
+  Test Macro F1: 0.1510
+
+  Prediction counts:
+    Healthy: 584
+    Mild: 1327
+    Severe: 84
+
+  True Class: Healthy
+  Recall on True Class: 0.2927
+  ------------------------------
+Fold 6 | Epoch 03
+  Train Loss: 0.4000
+  Train Accuracy: 0.9167
+  Train Macro F1: 0.9018
+
+  Test Accuracy: 0.3744
+  Test Balanced Acc: 0.3744
+  Test Macro F1: 0.1816
+
+  Prediction counts:
+    Healthy: 747
+    Mild: 1224
+    Severe: 24
+
+  True Class: Healthy
+  Recall on True Class: 0.3744
+  ------------------------------
+Fold 6 | Epoch 04
+  Train Loss: 0.3589
+  Train Accuracy: 0.9321
+  Train Macro F1: 0.9215
+
+  Test Accuracy: 0.5138
+  Test Balanced Acc: 0.5138
+  Test Macro F1: 0.2263
+
+  Prediction counts:
+    Healthy: 1025
+    Mild: 959
+    Severe: 11
+
+  True Class: Healthy
+  Recall on True Class: 0.5138
+  ------------------------------
+Fold 6 | Epoch 05
+  Train Loss: 0.3355
+  Train Accuracy: 0.9459
+  Train Macro F1: 0.9361
+
+  Test Accuracy: 0.3905
+  Test Balanced Acc: 0.3905
+  Test Macro F1: 0.1872
+
+  Prediction counts:
+    Healthy: 779
+    Mild: 1196
+    Severe: 20
+
+  True Class: Healthy
+  Recall on True Class: 0.3905
+  ------------------------------
+Fold 6 | Epoch 06
+  Train Loss: 0.3183
+  Train Accuracy: 0.9535
+  Train Macro F1: 0.9448
+
+  Test Accuracy: 0.4185
+  Test Balanced Acc: 0.4185
+  Test Macro F1: 0.1967
+
+  Prediction counts:
+    Healthy: 835
+    Mild: 1133
+    Severe: 27
+
+  True Class: Healthy
+  Recall on True Class: 0.4185
+  ------------------------------
+Fold 6 | Epoch 07
+  Train Loss: 0.3021
+  Train Accuracy: 0.9607
+  Train Macro F1: 0.9543
+
+  Test Accuracy: 0.4832
+  Test Balanced Acc: 0.4832
+  Test Macro F1: 0.2172
+
+  Prediction counts:
+    Healthy: 964
+    Mild: 1013
+    Severe: 18
+
+  True Class: Healthy
+  Recall on True Class: 0.4832
+  ------------------------------
+Fold 6 | Epoch 08
+  Train Loss: 0.2959
+  Train Accuracy: 0.9635
+  Train Macro F1: 0.9578
+
+  Test Accuracy: 0.4717
+  Test Balanced Acc: 0.4717
+  Test Macro F1: 0.2137
+
+  Prediction counts:
+    Healthy: 941
+    Mild: 1017
+    Severe: 37
+
+  True Class: Healthy
+  Recall on True Class: 0.4717
+  ------------------------------
+Fold 6 | Epoch 09
+  Train Loss: 0.2867
+  Train Accuracy: 0.9671
+  Train Macro F1: 0.9614
+
+  Test Accuracy: 0.4762
+  Test Balanced Acc: 0.4762
+  Test Macro F1: 0.2151
+
+  Prediction counts:
+    Healthy: 950
+    Mild: 1008
+    Severe: 37
+
+  True Class: Healthy
+  Recall on True Class: 0.4762
+  ------------------------------
+Fold 6 | Epoch 10
+  Train Loss: 0.2767
+  Train Accuracy: 0.9727
+  Train Macro F1: 0.9685
+
+  Test Accuracy: 0.4847
+  Test Balanced Acc: 0.4847
+  Test Macro F1: 0.2176
+
+  Prediction counts:
+    Healthy: 967
+    Mild: 1007
+    Severe: 21
+
+  True Class: Healthy
+  Recall on True Class: 0.4847
+  ------------------------------
+Fold 6 | Epoch 11
+  Train Loss: 0.2824
+  Train Accuracy: 0.9695
+  Train Macro F1: 0.9638
+
+  Test Accuracy: 0.4331
+  Test Balanced Acc: 0.4331
+  Test Macro F1: 0.2015
+
+  Prediction counts:
+    Healthy: 864
+    Mild: 1095
+    Severe: 36
+
+  True Class: Healthy
+  Recall on True Class: 0.4331
+  ------------------------------
+Fold 6 | Epoch 12
+  Train Loss: 0.2728
+  Train Accuracy: 0.9738
+  Train Macro F1: 0.9691
+
+  Test Accuracy: 0.5905
+  Test Balanced Acc: 0.5905
+  Test Macro F1: 0.2475
+
+  Prediction counts:
+    Healthy: 1178
+    Mild: 792
+    Severe: 25
+
+  True Class: Healthy
+  Recall on True Class: 0.5905
+  ------------------------------
+Fold 6 | Epoch 13
+  Train Loss: 0.2577
+  Train Accuracy: 0.9791
+  Train Macro F1: 0.9753
+
+  Test Accuracy: 0.4185
+  Test Balanced Acc: 0.4185
+  Test Macro F1: 0.1967
+
+  Prediction counts:
+    Healthy: 835
+    Mild: 1147
+    Severe: 13
+
+  True Class: Healthy
+  Recall on True Class: 0.4185
+  ------------------------------
+Fold 6 | Epoch 14
+  Train Loss: 0.2522
+  Train Accuracy: 0.9814
+  Train Macro F1: 0.9786
+
+  Test Accuracy: 0.5343
+  Test Balanced Acc: 0.5343
+  Test Macro F1: 0.2322
+
+  Prediction counts:
+    Healthy: 1066
+    Mild: 913
+    Severe: 16
+
+  True Class: Healthy
+  Recall on True Class: 0.5343
+  ------------------------------
+Fold 6 | Epoch 15
+  Train Loss: 0.2529
+  Train Accuracy: 0.9812
+  Train Macro F1: 0.9783
+
+  Test Accuracy: 0.3303
+  Test Balanced Acc: 0.3303
+  Test Macro F1: 0.1655
+
+  Prediction counts:
+    Healthy: 659
+    Mild: 1334
+    Severe: 2
+
+  True Class: Healthy
+  Recall on True Class: 0.3303
+  ------------------------------
+Fold 6 | Epoch 16
+  Train Loss: 0.2516
+  Train Accuracy: 0.9821
+  Train Macro F1: 0.9796
+
+  Test Accuracy: 0.4792
+  Test Balanced Acc: 0.4792
+  Test Macro F1: 0.2160
+
+  Prediction counts:
+    Healthy: 956
+    Mild: 1019
+    Severe: 20
+
+  True Class: Healthy
+  Recall on True Class: 0.4792
+  ------------------------------
+Fold 6 | Epoch 17
+  Train Loss: 0.2449
+  Train Accuracy: 0.9853
+  Train Macro F1: 0.9831
+
+  Test Accuracy: 0.4591
+  Test Balanced Acc: 0.4591
+  Test Macro F1: 0.2098
+
+  Prediction counts:
+    Healthy: 916
+    Mild: 1050
+    Severe: 29
+
+  True Class: Healthy
+  Recall on True Class: 0.4591
+  ------------------------------
+Fold 6 | Epoch 18
+  Train Loss: 0.2474
+  Train Accuracy: 0.9834
+  Train Macro F1: 0.9807
+
+  Test Accuracy: 0.3494
+  Test Balanced Acc: 0.3494
+  Test Macro F1: 0.1726
+
+  Prediction counts:
+    Healthy: 697
+    Mild: 1281
+    Severe: 17
+
+  True Class: Healthy
+  Recall on True Class: 0.3494
+  ------------------------------
+Fold 6 | Epoch 19
+  Train Loss: 0.2452
+  Train Accuracy: 0.9836
+  Train Macro F1: 0.9811
+
+  Test Accuracy: 0.5769
+  Test Balanced Acc: 0.5769
+  Test Macro F1: 0.2439
+
+  Prediction counts:
+    Healthy: 1151
+    Mild: 839
+    Severe: 5
+
+  True Class: Healthy
+  Recall on True Class: 0.5769
+  ------------------------------
+Fold 6 | Epoch 20
+  Train Loss: 0.2377
+  Train Accuracy: 0.9878
+  Train Macro F1: 0.9859
+
+  Test Accuracy: 0.5108
+  Test Balanced Acc: 0.5108
+  Test Macro F1: 0.2254
+
+  Prediction counts:
+    Healthy: 1019
+    Mild: 954
+    Severe: 22
+
+  True Class: Healthy
+  Recall on True Class: 0.5108
+  ------------------------------
+Fold 6 | Epoch 21
+  Train Loss: 0.2363
+  Train Accuracy: 0.9880
+  Train Macro F1: 0.9863
+
+  Test Accuracy: 0.5333
+  Test Balanced Acc: 0.5333
+  Test Macro F1: 0.2319
+
+  Prediction counts:
+    Healthy: 1064
+    Mild: 918
+    Severe: 13
+
+  True Class: Healthy
+  Recall on True Class: 0.5333
+  ------------------------------
+Fold 6 | Epoch 22
+  Train Loss: 0.2435
+  Train Accuracy: 0.9841
+  Train Macro F1: 0.9818
+
+  Test Accuracy: 0.6035
+  Test Balanced Acc: 0.6035
+  Test Macro F1: 0.2509
+
+  Prediction counts:
+    Healthy: 1204
+    Mild: 780
+    Severe: 11
+
+  True Class: Healthy
+  Recall on True Class: 0.6035
+  ------------------------------
+Fold 6 | Epoch 23
+  Train Loss: 0.2368
+  Train Accuracy: 0.9873
+  Train Macro F1: 0.9856
+
+  Test Accuracy: 0.4932
+  Test Balanced Acc: 0.4932
+  Test Macro F1: 0.2202
+
+  Prediction counts:
+    Healthy: 984
+    Mild: 985
+    Severe: 26
+
+  True Class: Healthy
+  Recall on True Class: 0.4932
+  ------------------------------
+Fold 6 | Epoch 24
+  Train Loss: 0.2267
+  Train Accuracy: 0.9927
+  Train Macro F1: 0.9918
+
+  Test Accuracy: 0.4175
+  Test Balanced Acc: 0.4175
+  Test Macro F1: 0.1964
+
+  Prediction counts:
+    Healthy: 833
+    Mild: 1148
+    Severe: 14
+
+  True Class: Healthy
+  Recall on True Class: 0.4175
+  ------------------------------
+Fold 6 | Epoch 25
+  Train Loss: 0.2275
+  Train Accuracy: 0.9918
+  Train Macro F1: 0.9907
+
+  Test Accuracy: 0.4662
+  Test Balanced Acc: 0.4662
+  Test Macro F1: 0.2120
+
+  Prediction counts:
+    Healthy: 930
+    Mild: 1047
+    Severe: 18
+
+  True Class: Healthy
+  Recall on True Class: 0.4662
+  ------------------------------
+Fold 6 Best Model Test Result -> Acc: 0.4175, Bal Acc: 0.4175, Macro F1: 0.1964
+
+============================================================
+Starting Fold 7/15: Test Speaker = M01
+============================================================
+Fold 7 | Epoch 01
+  Train Loss: 0.8167
+  Train Accuracy: 0.7414
+  Train Macro F1: 0.5936
+
+  Test Accuracy: 0.6822
+  Test Balanced Acc: 0.6822
+  Test Macro F1: 0.2704
+
+  Prediction counts:
+    Healthy: 111
+    Mild: 134
+    Severe: 526
+
+  True Class: Severe
+  Recall on True Class: 0.6822
+  ------------------------------
+Fold 7 | Epoch 02
+  Train Loss: 0.5815
+  Train Accuracy: 0.8374
+  Train Macro F1: 0.7898
+
+  Test Accuracy: 0.7730
+  Test Balanced Acc: 0.7730
+  Test Macro F1: 0.2907
+
+  Prediction counts:
+    Healthy: 56
+    Mild: 119
+    Severe: 596
+
+  True Class: Severe
+  Recall on True Class: 0.7730
+  ------------------------------
+Fold 7 | Epoch 03
+  Train Loss: 0.4884
+  Train Accuracy: 0.8826
+  Train Macro F1: 0.8587
+
+  Test Accuracy: 0.8353
+  Test Balanced Acc: 0.8353
+  Test Macro F1: 0.3034
+
+  Prediction counts:
+    Healthy: 34
+    Mild: 93
+    Severe: 644
+
+  True Class: Severe
+  Recall on True Class: 0.8353
+  ------------------------------
+Fold 7 | Epoch 04
+  Train Loss: 0.4296
+  Train Accuracy: 0.9139
+  Train Macro F1: 0.8969
+
+  Test Accuracy: 0.7938
+  Test Balanced Acc: 0.7938
+  Test Macro F1: 0.2950
+
+  Prediction counts:
+    Healthy: 32
+    Mild: 127
+    Severe: 612
+
+  True Class: Severe
+  Recall on True Class: 0.7938
+  ------------------------------
+Fold 7 | Epoch 05
+  Train Loss: 0.3932
+  Train Accuracy: 0.9331
+  Train Macro F1: 0.9189
+
+  Test Accuracy: 0.7886
+  Test Balanced Acc: 0.7886
+  Test Macro F1: 0.2939
+
+  Prediction counts:
+    Healthy: 11
+    Mild: 152
+    Severe: 608
+
+  True Class: Severe
+  Recall on True Class: 0.7886
+  ------------------------------
+Fold 7 | Epoch 06
+  Train Loss: 0.3650
+  Train Accuracy: 0.9458
+  Train Macro F1: 0.9348
+
+  Test Accuracy: 0.8016
+  Test Balanced Acc: 0.8016
+  Test Macro F1: 0.2966
+
+  Prediction counts:
+    Healthy: 28
+    Mild: 125
+    Severe: 618
+
+  True Class: Severe
+  Recall on True Class: 0.8016
+  ------------------------------
+Fold 7 | Epoch 07
+  Train Loss: 0.3514
+  Train Accuracy: 0.9518
+  Train Macro F1: 0.9410
+
+  Test Accuracy: 0.7795
+  Test Balanced Acc: 0.7795
+  Test Macro F1: 0.2920
+
+  Prediction counts:
+    Healthy: 16
+    Mild: 154
+    Severe: 601
+
+  True Class: Severe
+  Recall on True Class: 0.7795
+  ------------------------------
+Fold 7 | Epoch 08
+  Train Loss: 0.3366
+  Train Accuracy: 0.9604
+  Train Macro F1: 0.9512
+
+  Test Accuracy: 0.7782
+  Test Balanced Acc: 0.7782
+  Test Macro F1: 0.2918
+
+  Prediction counts:
+    Healthy: 18
+    Mild: 153
+    Severe: 600
+
+  True Class: Severe
+  Recall on True Class: 0.7782
+  ------------------------------
+Fold 7 | Epoch 09
+  Train Loss: 0.3207
+  Train Accuracy: 0.9655
+  Train Macro F1: 0.9582
+
+  Test Accuracy: 0.7393
+  Test Balanced Acc: 0.7393
+  Test Macro F1: 0.2834
+
+  Prediction counts:
+    Healthy: 25
+    Mild: 176
+    Severe: 570
+
+  True Class: Severe
+  Recall on True Class: 0.7393
+  ------------------------------
+Fold 7 | Epoch 10
+  Train Loss: 0.3168
+  Train Accuracy: 0.9669
+  Train Macro F1: 0.9595
+
+  Test Accuracy: 0.7873
+  Test Balanced Acc: 0.7873
+  Test Macro F1: 0.2937
+
+  Prediction counts:
+    Healthy: 24
+    Mild: 140
+    Severe: 607
+
+  True Class: Severe
+  Recall on True Class: 0.7873
+  ------------------------------
+Fold 7 | Epoch 11
+  Train Loss: 0.3092
+  Train Accuracy: 0.9719
+  Train Macro F1: 0.9647
+
+  Test Accuracy: 0.8003
+  Test Balanced Acc: 0.8003
+  Test Macro F1: 0.2963
+
+  Prediction counts:
+    Healthy: 17
+    Mild: 137
+    Severe: 617
+
+  True Class: Severe
+  Recall on True Class: 0.8003
+  ------------------------------
+Fold 7 | Epoch 12
+  Train Loss: 0.3026
+  Train Accuracy: 0.9740
+  Train Macro F1: 0.9681
+
+  Test Accuracy: 0.7601
+  Test Balanced Acc: 0.7601
+  Test Macro F1: 0.2879
+
+  Prediction counts:
+    Healthy: 29
+    Mild: 156
+    Severe: 586
+
+  True Class: Severe
+  Recall on True Class: 0.7601
+  ------------------------------
+Fold 7 | Epoch 13
+  Train Loss: 0.2977
+  Train Accuracy: 0.9755
+  Train Macro F1: 0.9695
+
+  Test Accuracy: 0.7562
+  Test Balanced Acc: 0.7562
+  Test Macro F1: 0.2871
+
+  Prediction counts:
+    Healthy: 34
+    Mild: 154
+    Severe: 583
+
+  True Class: Severe
+  Recall on True Class: 0.7562
+  ------------------------------
+Fold 7 | Epoch 14
+  Train Loss: 0.2895
+  Train Accuracy: 0.9794
+  Train Macro F1: 0.9740
+
+  Test Accuracy: 0.7964
+  Test Balanced Acc: 0.7964
+  Test Macro F1: 0.2955
+
+  Prediction counts:
+    Healthy: 9
+    Mild: 148
+    Severe: 614
+
+  True Class: Severe
+  Recall on True Class: 0.7964
+  ------------------------------
+Fold 7 | Epoch 15
+  Train Loss: 0.2844
+  Train Accuracy: 0.9815
+  Train Macro F1: 0.9772
+
+  Test Accuracy: 0.7782
+  Test Balanced Acc: 0.7782
+  Test Macro F1: 0.2918
+
+  Prediction counts:
+    Healthy: 19
+    Mild: 152
+    Severe: 600
+
+  True Class: Severe
+  Recall on True Class: 0.7782
+  ------------------------------
+Fold 7 | Epoch 16
+  Train Loss: 0.2810
+  Train Accuracy: 0.9841
+  Train Macro F1: 0.9808
+
+  Test Accuracy: 0.7873
+  Test Balanced Acc: 0.7873
+  Test Macro F1: 0.2937
+
+  Prediction counts:
+    Healthy: 17
+    Mild: 147
+    Severe: 607
+
+  True Class: Severe
+  Recall on True Class: 0.7873
+  ------------------------------
+Fold 7 | Epoch 17
+  Train Loss: 0.2760
+  Train Accuracy: 0.9855
+  Train Macro F1: 0.9822
+
+  Test Accuracy: 0.7678
+  Test Balanced Acc: 0.7678
+  Test Macro F1: 0.2896
+
+  Prediction counts:
+    Healthy: 44
+    Mild: 135
+    Severe: 592
+
+  True Class: Severe
+  Recall on True Class: 0.7678
+  ------------------------------
+Fold 7 | Epoch 18
+  Train Loss: 0.2776
+  Train Accuracy: 0.9851
+  Train Macro F1: 0.9817
+
+  Test Accuracy: 0.7938
+  Test Balanced Acc: 0.7938
+  Test Macro F1: 0.2950
+
+  Prediction counts:
+    Healthy: 18
+    Mild: 141
+    Severe: 612
+
+  True Class: Severe
+  Recall on True Class: 0.7938
+  ------------------------------
+Fold 7 | Epoch 19
+  Train Loss: 0.2752
+  Train Accuracy: 0.9865
+  Train Macro F1: 0.9824
+
+  Test Accuracy: 0.7717
+  Test Balanced Acc: 0.7717
+  Test Macro F1: 0.2904
+
+  Prediction counts:
+    Healthy: 14
+    Mild: 162
+    Severe: 595
+
+  True Class: Severe
+  Recall on True Class: 0.7717
+  ------------------------------
+Fold 7 | Epoch 20
+  Train Loss: 0.2716
+  Train Accuracy: 0.9882
+  Train Macro F1: 0.9848
+
+  Test Accuracy: 0.7938
+  Test Balanced Acc: 0.7938
+  Test Macro F1: 0.2950
+
+  Prediction counts:
+    Healthy: 19
+    Mild: 140
+    Severe: 612
+
+  True Class: Severe
+  Recall on True Class: 0.7938
+  ------------------------------
+Fold 7 | Epoch 21
+  Train Loss: 0.2643
+  Train Accuracy: 0.9909
+  Train Macro F1: 0.9886
+
+  Test Accuracy: 0.7536
+  Test Balanced Acc: 0.7536
+  Test Macro F1: 0.2865
+
+  Prediction counts:
+    Healthy: 19
+    Mild: 171
+    Severe: 581
+
+  True Class: Severe
+  Recall on True Class: 0.7536
+  ------------------------------
+Fold 7 | Epoch 22
+  Train Loss: 0.2638
+  Train Accuracy: 0.9893
+  Train Macro F1: 0.9871
+
+  Test Accuracy: 0.7782
+  Test Balanced Acc: 0.7782
+  Test Macro F1: 0.2918
+
+  Prediction counts:
+    Healthy: 24
+    Mild: 147
+    Severe: 600
+
+  True Class: Severe
+  Recall on True Class: 0.7782
+  ------------------------------
+Fold 7 | Epoch 23
+  Train Loss: 0.2641
+  Train Accuracy: 0.9905
+  Train Macro F1: 0.9884
+
+  Test Accuracy: 0.7730
+  Test Balanced Acc: 0.7730
+  Test Macro F1: 0.2907
+
+  Prediction counts:
+    Healthy: 25
+    Mild: 150
+    Severe: 596
+
+  True Class: Severe
+  Recall on True Class: 0.7730
+  ------------------------------
+Fold 7 | Epoch 24
+  Train Loss: 0.2664
+  Train Accuracy: 0.9881
+  Train Macro F1: 0.9846
+
+  Test Accuracy: 0.7860
+  Test Balanced Acc: 0.7860
+  Test Macro F1: 0.2934
+
+  Prediction counts:
+    Healthy: 11
+    Mild: 154
+    Severe: 606
+
+  True Class: Severe
+  Recall on True Class: 0.7860
+  ------------------------------
+Fold 7 | Epoch 25
+  Train Loss: 0.2629
+  Train Accuracy: 0.9906
+  Train Macro F1: 0.9885
+
+  Test Accuracy: 0.7588
+  Test Balanced Acc: 0.7588
+  Test Macro F1: 0.2876
+
+  Prediction counts:
+    Healthy: 20
+    Mild: 166
+    Severe: 585
+
+  True Class: Severe
+  Recall on True Class: 0.7588
+  ------------------------------
+Fold 7 Best Model Test Result -> Acc: 0.7536, Bal Acc: 0.7536, Macro F1: 0.2865
+
+============================================================
+Starting Fold 8/15: Test Speaker = M02
+============================================================
+Fold 8 | Epoch 01
+  Train Loss: 0.8024
+  Train Accuracy: 0.7588
+  Train Macro F1: 0.6151
+
+  Test Accuracy: 0.6267
+  Test Balanced Acc: 0.6267
+  Test Macro F1: 0.2568
+
+  Prediction counts:
+    Healthy: 153
+    Mild: 149
+    Severe: 507
+
+  True Class: Severe
+  Recall on True Class: 0.6267
+  ------------------------------
+Fold 8 | Epoch 02
+  Train Loss: 0.5887
+  Train Accuracy: 0.8472
+  Train Macro F1: 0.7944
+
+  Test Accuracy: 0.4376
+  Test Balanced Acc: 0.4376
+  Test Macro F1: 0.2029
+
+  Prediction counts:
+    Healthy: 205
+    Mild: 250
+    Severe: 354
+
+  True Class: Severe
+  Recall on True Class: 0.4376
+  ------------------------------
+Fold 8 | Epoch 03
+  Train Loss: 0.4983
+  Train Accuracy: 0.8839
+  Train Macro F1: 0.8551
+
+  Test Accuracy: 0.5970
+  Test Balanced Acc: 0.5970
+  Test Macro F1: 0.2492
+
+  Prediction counts:
+    Healthy: 160
+    Mild: 166
+    Severe: 483
+
+  True Class: Severe
+  Recall on True Class: 0.5970
+  ------------------------------
+Fold 8 | Epoch 04
+  Train Loss: 0.4459
+  Train Accuracy: 0.9079
+  Train Macro F1: 0.8865
+
+  Test Accuracy: 0.2658
+  Test Balanced Acc: 0.2658
+  Test Macro F1: 0.1400
+
+  Prediction counts:
+    Healthy: 196
+    Mild: 398
+    Severe: 215
+
+  True Class: Severe
+  Recall on True Class: 0.2658
+  ------------------------------
+Fold 8 | Epoch 05
+  Train Loss: 0.4118
+  Train Accuracy: 0.9235
+  Train Macro F1: 0.9061
+
+  Test Accuracy: 0.6415
+  Test Balanced Acc: 0.6415
+  Test Macro F1: 0.2605
+
+  Prediction counts:
+    Healthy: 202
+    Mild: 88
+    Severe: 519
+
+  True Class: Severe
+  Recall on True Class: 0.6415
+  ------------------------------
+Fold 8 | Epoch 06
+  Train Loss: 0.3899
+  Train Accuracy: 0.9364
+  Train Macro F1: 0.9212
+
+  Test Accuracy: 0.5711
+  Test Balanced Acc: 0.5711
+  Test Macro F1: 0.2423
+
+  Prediction counts:
+    Healthy: 129
+    Mild: 218
+    Severe: 462
+
+  True Class: Severe
+  Recall on True Class: 0.5711
+  ------------------------------
+Fold 8 | Epoch 07
+  Train Loss: 0.3666
+  Train Accuracy: 0.9469
+  Train Macro F1: 0.9329
+
+  Test Accuracy: 0.7120
+  Test Balanced Acc: 0.7120
+  Test Macro F1: 0.2773
+
+  Prediction counts:
+    Healthy: 108
+    Mild: 125
+    Severe: 576
+
+  True Class: Severe
+  Recall on True Class: 0.7120
+  ------------------------------
+Fold 8 | Epoch 08
+  Train Loss: 0.3439
+  Train Accuracy: 0.9559
+  Train Macro F1: 0.9456
+
+  Test Accuracy: 0.6996
+  Test Balanced Acc: 0.6996
+  Test Macro F1: 0.2744
+
+  Prediction counts:
+    Healthy: 103
+    Mild: 140
+    Severe: 566
+
+  True Class: Severe
+  Recall on True Class: 0.6996
+  ------------------------------
+Fold 8 | Epoch 09
+  Train Loss: 0.3342
+  Train Accuracy: 0.9602
+  Train Macro F1: 0.9503
+
+  Test Accuracy: 0.7157
+  Test Balanced Acc: 0.7157
+  Test Macro F1: 0.2781
+
+  Prediction counts:
+    Healthy: 109
+    Mild: 121
+    Severe: 579
+
+  True Class: Severe
+  Recall on True Class: 0.7157
+  ------------------------------
+Fold 8 | Epoch 10
+  Train Loss: 0.3240
+  Train Accuracy: 0.9645
+  Train Macro F1: 0.9564
+
+  Test Accuracy: 0.6316
+  Test Balanced Acc: 0.6316
+  Test Macro F1: 0.2581
+
+  Prediction counts:
+    Healthy: 167
+    Mild: 131
+    Severe: 511
+
+  True Class: Severe
+  Recall on True Class: 0.6316
+  ------------------------------
+Fold 8 | Epoch 11
+  Train Loss: 0.3168
+  Train Accuracy: 0.9684
+  Train Macro F1: 0.9606
+
+  Test Accuracy: 0.5822
+  Test Balanced Acc: 0.5822
+  Test Macro F1: 0.2453
+
+  Prediction counts:
+    Healthy: 140
+    Mild: 198
+    Severe: 471
+
+  True Class: Severe
+  Recall on True Class: 0.5822
+  ------------------------------
+Fold 8 | Epoch 12
+  Train Loss: 0.3118
+  Train Accuracy: 0.9705
+  Train Macro F1: 0.9615
+
+  Test Accuracy: 0.6403
+  Test Balanced Acc: 0.6403
+  Test Macro F1: 0.2602
+
+  Prediction counts:
+    Healthy: 118
+    Mild: 173
+    Severe: 518
+
+  True Class: Severe
+  Recall on True Class: 0.6403
+  ------------------------------
+Fold 8 | Epoch 13
+  Train Loss: 0.3048
+  Train Accuracy: 0.9728
+  Train Macro F1: 0.9665
+
+  Test Accuracy: 0.4920
+  Test Balanced Acc: 0.4920
+  Test Macro F1: 0.2198
+
+  Prediction counts:
+    Healthy: 282
+    Mild: 129
+    Severe: 398
+
+  True Class: Severe
+  Recall on True Class: 0.4920
+  ------------------------------
+Fold 8 | Epoch 14
+  Train Loss: 0.2972
+  Train Accuracy: 0.9756
+  Train Macro F1: 0.9701
+
+  Test Accuracy: 0.6428
+  Test Balanced Acc: 0.6428
+  Test Macro F1: 0.2608
+
+  Prediction counts:
+    Healthy: 121
+    Mild: 168
+    Severe: 520
+
+  True Class: Severe
+  Recall on True Class: 0.6428
+  ------------------------------
+Fold 8 | Epoch 15
+  Train Loss: 0.2947
+  Train Accuracy: 0.9786
+  Train Macro F1: 0.9732
+
+  Test Accuracy: 0.5192
+  Test Balanced Acc: 0.5192
+  Test Macro F1: 0.2278
+
+  Prediction counts:
+    Healthy: 185
+    Mild: 204
+    Severe: 420
+
+  True Class: Severe
+  Recall on True Class: 0.5192
+  ------------------------------
+Fold 8 | Epoch 16
+  Train Loss: 0.2877
+  Train Accuracy: 0.9802
+  Train Macro F1: 0.9753
+
+  Test Accuracy: 0.5859
+  Test Balanced Acc: 0.5859
+  Test Macro F1: 0.2463
+
+  Prediction counts:
+    Healthy: 122
+    Mild: 213
+    Severe: 474
+
+  True Class: Severe
+  Recall on True Class: 0.5859
+  ------------------------------
+Fold 8 | Epoch 17
+  Train Loss: 0.2834
+  Train Accuracy: 0.9811
+  Train Macro F1: 0.9771
+
+  Test Accuracy: 0.6242
+  Test Balanced Acc: 0.6242
+  Test Macro F1: 0.2562
+
+  Prediction counts:
+    Healthy: 185
+    Mild: 119
+    Severe: 505
+
+  True Class: Severe
+  Recall on True Class: 0.6242
+  ------------------------------
+Fold 8 | Epoch 18
+  Train Loss: 0.2786
+  Train Accuracy: 0.9841
+  Train Macro F1: 0.9803
+
+  Test Accuracy: 0.5995
+  Test Balanced Acc: 0.5995
+  Test Macro F1: 0.2499
+
+  Prediction counts:
+    Healthy: 137
+    Mild: 187
+    Severe: 485
+
+  True Class: Severe
+  Recall on True Class: 0.5995
+  ------------------------------
+Fold 8 | Epoch 19
+  Train Loss: 0.2804
+  Train Accuracy: 0.9825
+  Train Macro F1: 0.9782
+
+  Test Accuracy: 0.6823
+  Test Balanced Acc: 0.6823
+  Test Macro F1: 0.2704
+
+  Prediction counts:
+    Healthy: 174
+    Mild: 83
+    Severe: 552
+
+  True Class: Severe
+  Recall on True Class: 0.6823
+  ------------------------------
+Fold 8 | Epoch 20
+  Train Loss: 0.2749
+  Train Accuracy: 0.9859
+  Train Macro F1: 0.9820
+
+  Test Accuracy: 0.6514
+  Test Balanced Acc: 0.6514
+  Test Macro F1: 0.2630
+
+  Prediction counts:
+    Healthy: 75
+    Mild: 207
+    Severe: 527
+
+  True Class: Severe
+  Recall on True Class: 0.6514
+  ------------------------------
+Fold 8 | Epoch 21
+  Train Loss: 0.2723
+  Train Accuracy: 0.9852
+  Train Macro F1: 0.9818
+
+  Test Accuracy: 0.6316
+  Test Balanced Acc: 0.6316
+  Test Macro F1: 0.2581
+
+  Prediction counts:
+    Healthy: 99
+    Mild: 199
+    Severe: 511
+
+  True Class: Severe
+  Recall on True Class: 0.6316
+  ------------------------------
+Fold 8 | Epoch 22
+  Train Loss: 0.2746
+  Train Accuracy: 0.9852
+  Train Macro F1: 0.9816
+
+  Test Accuracy: 0.6082
+  Test Balanced Acc: 0.6082
+  Test Macro F1: 0.2521
+
+  Prediction counts:
+    Healthy: 135
+    Mild: 182
+    Severe: 492
+
+  True Class: Severe
+  Recall on True Class: 0.6082
+  ------------------------------
+Fold 8 | Epoch 23
+  Train Loss: 0.2684
+  Train Accuracy: 0.9880
+  Train Macro F1: 0.9847
+
+  Test Accuracy: 0.6391
+  Test Balanced Acc: 0.6391
+  Test Macro F1: 0.2599
+
+  Prediction counts:
+    Healthy: 133
+    Mild: 159
+    Severe: 517
+
+  True Class: Severe
+  Recall on True Class: 0.6391
+  ------------------------------
+Fold 8 | Epoch 24
+  Train Loss: 0.2656
+  Train Accuracy: 0.9889
+  Train Macro F1: 0.9860
+
+  Test Accuracy: 0.6823
+  Test Balanced Acc: 0.6823
+  Test Macro F1: 0.2704
+
+  Prediction counts:
+    Healthy: 111
+    Mild: 146
+    Severe: 552
+
+  True Class: Severe
+  Recall on True Class: 0.6823
+  ------------------------------
+Fold 8 | Epoch 25
+  Train Loss: 0.2660
+  Train Accuracy: 0.9875
+  Train Macro F1: 0.9847
+
+  Test Accuracy: 0.6638
+  Test Balanced Acc: 0.6638
+  Test Macro F1: 0.2660
+
+  Prediction counts:
+    Healthy: 134
+    Mild: 138
+    Severe: 537
+
+  True Class: Severe
+  Recall on True Class: 0.6638
+  ------------------------------
+Fold 8 Best Model Test Result -> Acc: 0.6823, Bal Acc: 0.6823, Macro F1: 0.2704
+
+============================================================
+Starting Fold 9/15: Test Speaker = M03
+============================================================
+Fold 9 | Epoch 01
+  Train Loss: 0.7351
+  Train Accuracy: 0.7842
+  Train Macro F1: 0.6591
+
+  Test Accuracy: 0.0526
+  Test Balanced Acc: 0.0526
+  Test Macro F1: 0.0333
+
+  Prediction counts:
+    Healthy: 491
+    Mild: 44
+    Severe: 301
+
+  True Class: Mild
+  Recall on True Class: 0.0526
+  ------------------------------
+Fold 9 | Epoch 02
+  Train Loss: 0.5195
+  Train Accuracy: 0.8777
+  Train Macro F1: 0.8244
+
+  Test Accuracy: 0.0933
+  Test Balanced Acc: 0.0933
+  Test Macro F1: 0.0569
+
+  Prediction counts:
+    Healthy: 545
+    Mild: 78
+    Severe: 213
+
+  True Class: Mild
+  Recall on True Class: 0.0933
+  ------------------------------
+Fold 9 | Epoch 03
+  Train Loss: 0.4358
+  Train Accuracy: 0.9139
+  Train Macro F1: 0.8783
+
+  Test Accuracy: 0.0670
+  Test Balanced Acc: 0.0670
+  Test Macro F1: 0.0419
+
+  Prediction counts:
+    Healthy: 647
+    Mild: 56
+    Severe: 133
+
+  True Class: Mild
+  Recall on True Class: 0.0670
+  ------------------------------
+Fold 9 | Epoch 04
+  Train Loss: 0.4103
+  Train Accuracy: 0.9245
+  Train Macro F1: 0.8925
+
+  Test Accuracy: 0.0275
+  Test Balanced Acc: 0.0275
+  Test Macro F1: 0.0179
+
+  Prediction counts:
+    Healthy: 696
+    Mild: 23
+    Severe: 117
+
+  True Class: Mild
+  Recall on True Class: 0.0275
+  ------------------------------
+Fold 9 | Epoch 05
+  Train Loss: 0.3743
+  Train Accuracy: 0.9397
+  Train Macro F1: 0.9143
+
+  Test Accuracy: 0.0407
+  Test Balanced Acc: 0.0407
+  Test Macro F1: 0.0261
+
+  Prediction counts:
+    Healthy: 685
+    Mild: 34
+    Severe: 117
+
+  True Class: Mild
+  Recall on True Class: 0.0407
+  ------------------------------
+Fold 9 | Epoch 06
+  Train Loss: 0.3502
+  Train Accuracy: 0.9507
+  Train Macro F1: 0.9305
+
+  Test Accuracy: 0.0275
+  Test Balanced Acc: 0.0275
+  Test Macro F1: 0.0179
+
+  Prediction counts:
+    Healthy: 636
+    Mild: 23
+    Severe: 177
+
+  True Class: Mild
+  Recall on True Class: 0.0275
+  ------------------------------
+Fold 9 | Epoch 07
+  Train Loss: 0.3352
+  Train Accuracy: 0.9570
+  Train Macro F1: 0.9387
+
+  Test Accuracy: 0.0299
+  Test Balanced Acc: 0.0299
+  Test Macro F1: 0.0194
+
+  Prediction counts:
+    Healthy: 516
+    Mild: 25
+    Severe: 295
+
+  True Class: Mild
+  Recall on True Class: 0.0299
+  ------------------------------
+Fold 9 | Epoch 08
+  Train Loss: 0.3196
+  Train Accuracy: 0.9631
+  Train Macro F1: 0.9478
+
+  Test Accuracy: 0.0514
+  Test Balanced Acc: 0.0514
+  Test Macro F1: 0.0326
+
+  Prediction counts:
+    Healthy: 577
+    Mild: 43
+    Severe: 216
+
+  True Class: Mild
+  Recall on True Class: 0.0514
+  ------------------------------
+Fold 9 | Epoch 09
+  Train Loss: 0.3074
+  Train Accuracy: 0.9692
+  Train Macro F1: 0.9567
+
+  Test Accuracy: 0.0335
+  Test Balanced Acc: 0.0335
+  Test Macro F1: 0.0216
+
+  Prediction counts:
+    Healthy: 650
+    Mild: 28
+    Severe: 158
+
+  True Class: Mild
+  Recall on True Class: 0.0335
+  ------------------------------
+Fold 9 | Epoch 10
+  Train Loss: 0.3014
+  Train Accuracy: 0.9721
+  Train Macro F1: 0.9602
+
+  Test Accuracy: 0.0144
+  Test Balanced Acc: 0.0144
+  Test Macro F1: 0.0094
+
+  Prediction counts:
+    Healthy: 612
+    Mild: 12
+    Severe: 212
+
+  True Class: Mild
+  Recall on True Class: 0.0144
+  ------------------------------
+Fold 9 | Epoch 11
+  Train Loss: 0.2950
+  Train Accuracy: 0.9743
+  Train Macro F1: 0.9631
+
+  Test Accuracy: 0.0275
+  Test Balanced Acc: 0.0275
+  Test Macro F1: 0.0179
+
+  Prediction counts:
+    Healthy: 538
+    Mild: 23
+    Severe: 275
+
+  True Class: Mild
+  Recall on True Class: 0.0275
+  ------------------------------
+Fold 9 | Epoch 12
+  Train Loss: 0.2886
+  Train Accuracy: 0.9764
+  Train Macro F1: 0.9662
+
+  Test Accuracy: 0.0179
+  Test Balanced Acc: 0.0179
+  Test Macro F1: 0.0118
+
+  Prediction counts:
+    Healthy: 745
+    Mild: 15
+    Severe: 76
+
+  True Class: Mild
+  Recall on True Class: 0.0179
+  ------------------------------
+Fold 9 | Epoch 13
+  Train Loss: 0.2854
+  Train Accuracy: 0.9781
+  Train Macro F1: 0.9688
+
+  Test Accuracy: 0.0156
+  Test Balanced Acc: 0.0156
+  Test Macro F1: 0.0102
+
+  Prediction counts:
+    Healthy: 673
+    Mild: 13
+    Severe: 150
+
+  True Class: Mild
+  Recall on True Class: 0.0156
+  ------------------------------
+Fold 9 | Epoch 14
+  Train Loss: 0.2863
+  Train Accuracy: 0.9777
+  Train Macro F1: 0.9681
+
+  Test Accuracy: 0.0132
+  Test Balanced Acc: 0.0132
+  Test Macro F1: 0.0087
+
+  Prediction counts:
+    Healthy: 754
+    Mild: 11
+    Severe: 71
+
+  True Class: Mild
+  Recall on True Class: 0.0132
+  ------------------------------
+Fold 9 | Epoch 15
+  Train Loss: 0.2767
+  Train Accuracy: 0.9799
+  Train Macro F1: 0.9717
+
+  Test Accuracy: 0.0203
+  Test Balanced Acc: 0.0203
+  Test Macro F1: 0.0133
+
+  Prediction counts:
+    Healthy: 655
+    Mild: 17
+    Severe: 164
+
+  True Class: Mild
+  Recall on True Class: 0.0203
+  ------------------------------
+Fold 9 | Epoch 16
+  Train Loss: 0.2731
+  Train Accuracy: 0.9827
+  Train Macro F1: 0.9752
+
+  Test Accuracy: 0.0179
+  Test Balanced Acc: 0.0179
+  Test Macro F1: 0.0118
+
+  Prediction counts:
+    Healthy: 705
+    Mild: 15
+    Severe: 116
+
+  True Class: Mild
+  Recall on True Class: 0.0179
+  ------------------------------
+Fold 9 | Epoch 17
+  Train Loss: 0.2682
+  Train Accuracy: 0.9842
+  Train Macro F1: 0.9779
+
+  Test Accuracy: 0.0191
+  Test Balanced Acc: 0.0191
+  Test Macro F1: 0.0125
+
+  Prediction counts:
+    Healthy: 589
+    Mild: 16
+    Severe: 231
+
+  True Class: Mild
+  Recall on True Class: 0.0191
+  ------------------------------
+Fold 9 | Epoch 18
+  Train Loss: 0.2792
+  Train Accuracy: 0.9789
+  Train Macro F1: 0.9693
+
+  Test Accuracy: 0.0311
+  Test Balanced Acc: 0.0311
+  Test Macro F1: 0.0201
+
+  Prediction counts:
+    Healthy: 626
+    Mild: 26
+    Severe: 184
+
+  True Class: Mild
+  Recall on True Class: 0.0311
+  ------------------------------
+Fold 9 | Epoch 19
+  Train Loss: 0.2668
+  Train Accuracy: 0.9851
+  Train Macro F1: 0.9789
+
+  Test Accuracy: 0.0299
+  Test Balanced Acc: 0.0299
+  Test Macro F1: 0.0194
+
+  Prediction counts:
+    Healthy: 662
+    Mild: 25
+    Severe: 149
+
+  True Class: Mild
+  Recall on True Class: 0.0299
+  ------------------------------
+Fold 9 | Epoch 20
+  Train Loss: 0.2592
+  Train Accuracy: 0.9879
+  Train Macro F1: 0.9829
+
+  Test Accuracy: 0.0311
+  Test Balanced Acc: 0.0311
+  Test Macro F1: 0.0201
+
+  Prediction counts:
+    Healthy: 630
+    Mild: 26
+    Severe: 180
+
+  True Class: Mild
+  Recall on True Class: 0.0311
+  ------------------------------
+Fold 9 | Epoch 21
+  Train Loss: 0.2608
+  Train Accuracy: 0.9879
+  Train Macro F1: 0.9826
+
+  Test Accuracy: 0.0251
+  Test Balanced Acc: 0.0251
+  Test Macro F1: 0.0163
+
+  Prediction counts:
+    Healthy: 709
+    Mild: 21
+    Severe: 106
+
+  True Class: Mild
+  Recall on True Class: 0.0251
+  ------------------------------
+Fold 9 | Epoch 22
+  Train Loss: 0.2558
+  Train Accuracy: 0.9886
+  Train Macro F1: 0.9841
+
+  Test Accuracy: 0.0156
+  Test Balanced Acc: 0.0156
+  Test Macro F1: 0.0102
+
+  Prediction counts:
+    Healthy: 603
+    Mild: 13
+    Severe: 220
+
+  True Class: Mild
+  Recall on True Class: 0.0156
+  ------------------------------
+Fold 9 | Epoch 23
+  Train Loss: 0.2561
+  Train Accuracy: 0.9883
+  Train Macro F1: 0.9839
+
+  Test Accuracy: 0.0251
+  Test Balanced Acc: 0.0251
+  Test Macro F1: 0.0163
+
+  Prediction counts:
+    Healthy: 488
+    Mild: 21
+    Severe: 327
+
+  True Class: Mild
+  Recall on True Class: 0.0251
+  ------------------------------
+Fold 9 | Epoch 24
+  Train Loss: 0.2562
+  Train Accuracy: 0.9889
+  Train Macro F1: 0.9844
+
+  Test Accuracy: 0.0156
+  Test Balanced Acc: 0.0156
+  Test Macro F1: 0.0102
+
+  Prediction counts:
+    Healthy: 466
+    Mild: 13
+    Severe: 357
+
+  True Class: Mild
+  Recall on True Class: 0.0156
+  ------------------------------
+Fold 9 | Epoch 25
+  Train Loss: 0.2539
+  Train Accuracy: 0.9900
+  Train Macro F1: 0.9856
+
+  Test Accuracy: 0.0144
+  Test Balanced Acc: 0.0144
+  Test Macro F1: 0.0094
+
+  Prediction counts:
+    Healthy: 607
+    Mild: 12
+    Severe: 217
+
+  True Class: Mild
+  Recall on True Class: 0.0144
+  ------------------------------
+Fold 9 Best Model Test Result -> Acc: 0.0144, Bal Acc: 0.0144, Macro F1: 0.0094
+
+============================================================
+Starting Fold 10/15: Test Speaker = M04
+============================================================
+Fold 10 | Epoch 01
+  Train Loss: 0.7581
+  Train Accuracy: 0.7548
+  Train Macro F1: 0.6634
+
+  Test Accuracy: 0.2517
+  Test Balanced Acc: 0.2517
+  Test Macro F1: 0.1341
+
+  Prediction counts:
+    Healthy: 33
+    Mild: 410
+    Severe: 149
+
+  True Class: Severe
+  Recall on True Class: 0.2517
+  ------------------------------
+Fold 10 | Epoch 02
+  Train Loss: 0.5626
+  Train Accuracy: 0.8434
+  Train Macro F1: 0.8030
+
+  Test Accuracy: 0.2078
+  Test Balanced Acc: 0.2078
+  Test Macro F1: 0.1147
+
+  Prediction counts:
+    Healthy: 38
+    Mild: 431
+    Severe: 123
+
+  True Class: Severe
+  Recall on True Class: 0.2078
+  ------------------------------
+Fold 10 | Epoch 03
+  Train Loss: 0.4865
+  Train Accuracy: 0.8834
+  Train Macro F1: 0.8569
+
+  Test Accuracy: 0.0963
+  Test Balanced Acc: 0.0963
+  Test Macro F1: 0.0586
+
+  Prediction counts:
+    Healthy: 103
+    Mild: 432
+    Severe: 57
+
+  True Class: Severe
+  Recall on True Class: 0.0963
+  ------------------------------
+Fold 10 | Epoch 04
+  Train Loss: 0.4209
+  Train Accuracy: 0.9159
+  Train Macro F1: 0.8967
+
+  Test Accuracy: 0.1909
+  Test Balanced Acc: 0.1909
+  Test Macro F1: 0.1069
+
+  Prediction counts:
+    Healthy: 19
+    Mild: 460
+    Severe: 113
+
+  True Class: Severe
+  Recall on True Class: 0.1909
+  ------------------------------
+Fold 10 | Epoch 05
+  Train Loss: 0.3811
+  Train Accuracy: 0.9358
+  Train Macro F1: 0.9213
+
+  Test Accuracy: 0.2584
+  Test Balanced Acc: 0.2584
+  Test Macro F1: 0.1369
+
+  Prediction counts:
+    Healthy: 11
+    Mild: 428
+    Severe: 153
+
+  True Class: Severe
+  Recall on True Class: 0.2584
+  ------------------------------
+Fold 10 | Epoch 06
+  Train Loss: 0.3561
+  Train Accuracy: 0.9492
+  Train Macro F1: 0.9370
+
+  Test Accuracy: 0.0828
+  Test Balanced Acc: 0.0828
+  Test Macro F1: 0.0510
+
+  Prediction counts:
+    Healthy: 19
+    Mild: 524
+    Severe: 49
+
+  True Class: Severe
+  Recall on True Class: 0.0828
+  ------------------------------
+Fold 10 | Epoch 07
+  Train Loss: 0.3366
+  Train Accuracy: 0.9563
+  Train Macro F1: 0.9460
+
+  Test Accuracy: 0.1774
+  Test Balanced Acc: 0.1774
+  Test Macro F1: 0.1004
+
+  Prediction counts:
+    Healthy: 4
+    Mild: 483
+    Severe: 105
+
+  True Class: Severe
+  Recall on True Class: 0.1774
+  ------------------------------
+Fold 10 | Epoch 08
+  Train Loss: 0.3237
+  Train Accuracy: 0.9639
+  Train Macro F1: 0.9551
+
+  Test Accuracy: 0.0557
+  Test Balanced Acc: 0.0557
+  Test Macro F1: 0.0352
+
+  Prediction counts:
+    Healthy: 87
+    Mild: 472
+    Severe: 33
+
+  True Class: Severe
+  Recall on True Class: 0.0557
+  ------------------------------
+Fold 10 | Epoch 09
+  Train Loss: 0.3114
+  Train Accuracy: 0.9673
+  Train Macro F1: 0.9586
+
+  Test Accuracy: 0.0946
+  Test Balanced Acc: 0.0946
+  Test Macro F1: 0.0576
+
+  Prediction counts:
+    Healthy: 27
+    Mild: 509
+    Severe: 56
+
+  True Class: Severe
+  Recall on True Class: 0.0946
+  ------------------------------
+Fold 10 | Epoch 10
+  Train Loss: 0.3066
+  Train Accuracy: 0.9704
+  Train Macro F1: 0.9624
+
+  Test Accuracy: 0.2466
+  Test Balanced Acc: 0.2466
+  Test Macro F1: 0.1319
+
+  Prediction counts:
+    Healthy: 55
+    Mild: 391
+    Severe: 146
+
+  True Class: Severe
+  Recall on True Class: 0.2466
+  ------------------------------
+Fold 10 | Epoch 11
+  Train Loss: 0.2946
+  Train Accuracy: 0.9741
+  Train Macro F1: 0.9680
+
+  Test Accuracy: 0.1959
+  Test Balanced Acc: 0.1959
+  Test Macro F1: 0.1092
+
+  Prediction counts:
+    Healthy: 31
+    Mild: 445
+    Severe: 116
+
+  True Class: Severe
+  Recall on True Class: 0.1959
+  ------------------------------
+Fold 10 | Epoch 12
+  Train Loss: 0.2893
+  Train Accuracy: 0.9776
+  Train Macro F1: 0.9728
+
+  Test Accuracy: 0.0574
+  Test Balanced Acc: 0.0574
+  Test Macro F1: 0.0362
+
+  Prediction counts:
+    Healthy: 68
+    Mild: 490
+    Severe: 34
+
+  True Class: Severe
+  Recall on True Class: 0.0574
+  ------------------------------
+Fold 10 | Epoch 13
+  Train Loss: 0.2895
+  Train Accuracy: 0.9773
+  Train Macro F1: 0.9718
+
+  Test Accuracy: 0.1267
+  Test Balanced Acc: 0.1267
+  Test Macro F1: 0.0750
+
+  Prediction counts:
+    Healthy: 9
+    Mild: 508
+    Severe: 75
+
+  True Class: Severe
+  Recall on True Class: 0.1267
+  ------------------------------
+Fold 10 | Epoch 14
+  Train Loss: 0.2802
+  Train Accuracy: 0.9797
+  Train Macro F1: 0.9756
+
+  Test Accuracy: 0.0456
+  Test Balanced Acc: 0.0456
+  Test Macro F1: 0.0291
+
+  Prediction counts:
+    Healthy: 39
+    Mild: 526
+    Severe: 27
+
+  True Class: Severe
+  Recall on True Class: 0.0456
+  ------------------------------
+Fold 10 | Epoch 15
+  Train Loss: 0.2755
+  Train Accuracy: 0.9819
+  Train Macro F1: 0.9778
+
+  Test Accuracy: 0.0709
+  Test Balanced Acc: 0.0709
+  Test Macro F1: 0.0442
+
+  Prediction counts:
+    Healthy: 13
+    Mild: 537
+    Severe: 42
+
+  True Class: Severe
+  Recall on True Class: 0.0709
+  ------------------------------
+Fold 10 | Epoch 16
+  Train Loss: 0.2773
+  Train Accuracy: 0.9815
+  Train Macro F1: 0.9767
+
+  Test Accuracy: 0.0152
+  Test Balanced Acc: 0.0152
+  Test Macro F1: 0.0100
+
+  Prediction counts:
+    Healthy: 92
+    Mild: 491
+    Severe: 9
+
+  True Class: Severe
+  Recall on True Class: 0.0152
+  ------------------------------
+Fold 10 | Epoch 17
+  Train Loss: 0.2754
+  Train Accuracy: 0.9825
+  Train Macro F1: 0.9779
+
+  Test Accuracy: 0.1334
+  Test Balanced Acc: 0.1334
+  Test Macro F1: 0.0785
+
+  Prediction counts:
+    Healthy: 42
+    Mild: 471
+    Severe: 79
+
+  True Class: Severe
+  Recall on True Class: 0.1334
+  ------------------------------
+Fold 10 | Epoch 18
+  Train Loss: 0.2665
+  Train Accuracy: 0.9863
+  Train Macro F1: 0.9830
+
+  Test Accuracy: 0.0253
+  Test Balanced Acc: 0.0253
+  Test Macro F1: 0.0165
+
+  Prediction counts:
+    Healthy: 84
+    Mild: 493
+    Severe: 15
+
+  True Class: Severe
+  Recall on True Class: 0.0253
+  ------------------------------
+Fold 10 | Epoch 19
+  Train Loss: 0.2614
+  Train Accuracy: 0.9875
+  Train Macro F1: 0.9847
+
+  Test Accuracy: 0.1858
+  Test Balanced Acc: 0.1858
+  Test Macro F1: 0.1045
+
+  Prediction counts:
+    Healthy: 31
+    Mild: 451
+    Severe: 110
+
+  True Class: Severe
+  Recall on True Class: 0.1858
+  ------------------------------
+Fold 10 | Epoch 20
+  Train Loss: 0.2620
+  Train Accuracy: 0.9875
+  Train Macro F1: 0.9849
+
+  Test Accuracy: 0.1520
+  Test Balanced Acc: 0.1520
+  Test Macro F1: 0.0880
+
+  Prediction counts:
+    Healthy: 18
+    Mild: 484
+    Severe: 90
+
+  True Class: Severe
+  Recall on True Class: 0.1520
+  ------------------------------
+Fold 10 | Epoch 21
+  Train Loss: 0.2613
+  Train Accuracy: 0.9871
+  Train Macro F1: 0.9837
+
+  Test Accuracy: 0.0878
+  Test Balanced Acc: 0.0878
+  Test Macro F1: 0.0538
+
+  Prediction counts:
+    Healthy: 22
+    Mild: 518
+    Severe: 52
+
+  True Class: Severe
+  Recall on True Class: 0.0878
+  ------------------------------
+Fold 10 | Epoch 22
+  Train Loss: 0.2577
+  Train Accuracy: 0.9895
+  Train Macro F1: 0.9870
+
+  Test Accuracy: 0.1554
+  Test Balanced Acc: 0.1554
+  Test Macro F1: 0.0897
+
+  Prediction counts:
+    Healthy: 16
+    Mild: 484
+    Severe: 92
+
+  True Class: Severe
+  Recall on True Class: 0.1554
+  ------------------------------
+Fold 10 | Epoch 23
+  Train Loss: 0.2716
+  Train Accuracy: 0.9822
+  Train Macro F1: 0.9786
+
+  Test Accuracy: 0.0439
+  Test Balanced Acc: 0.0439
+  Test Macro F1: 0.0280
+
+  Prediction counts:
+    Healthy: 115
+    Mild: 451
+    Severe: 26
+
+  True Class: Severe
+  Recall on True Class: 0.0439
+  ------------------------------
+Fold 10 | Epoch 24
+  Train Loss: 0.2791
+  Train Accuracy: 0.9806
+  Train Macro F1: 0.9752
+
+  Test Accuracy: 0.0963
+  Test Balanced Acc: 0.0963
+  Test Macro F1: 0.0586
+
+  Prediction counts:
+    Healthy: 93
+    Mild: 442
+    Severe: 57
+
+  True Class: Severe
+  Recall on True Class: 0.0963
+  ------------------------------
+Fold 10 | Epoch 25
+  Train Loss: 0.2545
+  Train Accuracy: 0.9904
+  Train Macro F1: 0.9877
+
+  Test Accuracy: 0.0693
+  Test Balanced Acc: 0.0693
+  Test Macro F1: 0.0432
+
+  Prediction counts:
+    Healthy: 67
+    Mild: 484
+    Severe: 41
+
+  True Class: Severe
+  Recall on True Class: 0.0693
+  ------------------------------
+Fold 10 Best Model Test Result -> Acc: 0.0693, Bal Acc: 0.0693, Macro F1: 0.0432
+
+============================================================
+Starting Fold 11/15: Test Speaker = M05
+============================================================
+Fold 11 | Epoch 01
+  Train Loss: 0.7536
+  Train Accuracy: 0.7588
+  Train Macro F1: 0.6284
+
+  Test Accuracy: 0.0876
+  Test Balanced Acc: 0.0876
+  Test Macro F1: 0.0537
+
+  Prediction counts:
+    Healthy: 199
+    Mild: 57
+    Severe: 395
+
+  True Class: Mild
+  Recall on True Class: 0.0876
+  ------------------------------
+Fold 11 | Epoch 02
+  Train Loss: 0.5310
+  Train Accuracy: 0.8590
+  Train Macro F1: 0.8133
+
+  Test Accuracy: 0.0722
+  Test Balanced Acc: 0.0722
+  Test Macro F1: 0.0449
+
+  Prediction counts:
+    Healthy: 132
+    Mild: 47
+    Severe: 472
+
+  True Class: Mild
+  Recall on True Class: 0.0722
+  ------------------------------
+Fold 11 | Epoch 03
+  Train Loss: 0.4422
+  Train Accuracy: 0.9003
+  Train Macro F1: 0.8721
+
+  Test Accuracy: 0.0307
+  Test Balanced Acc: 0.0307
+  Test Macro F1: 0.0199
+
+  Prediction counts:
+    Healthy: 125
+    Mild: 20
+    Severe: 506
+
+  True Class: Mild
+  Recall on True Class: 0.0307
+  ------------------------------
+Fold 11 | Epoch 04
+  Train Loss: 0.4087
+  Train Accuracy: 0.9191
+  Train Macro F1: 0.8945
+
+  Test Accuracy: 0.0445
+  Test Balanced Acc: 0.0445
+  Test Macro F1: 0.0284
+
+  Prediction counts:
+    Healthy: 103
+    Mild: 29
+    Severe: 519
+
+  True Class: Mild
+  Recall on True Class: 0.0445
+  ------------------------------
+Fold 11 | Epoch 05
+  Train Loss: 0.3834
+  Train Accuracy: 0.9312
+  Train Macro F1: 0.9094
+
+  Test Accuracy: 0.0230
+  Test Balanced Acc: 0.0230
+  Test Macro F1: 0.0150
+
+  Prediction counts:
+    Healthy: 96
+    Mild: 15
+    Severe: 540
+
+  True Class: Mild
+  Recall on True Class: 0.0230
+  ------------------------------
+Fold 11 | Epoch 06
+  Train Loss: 0.3605
+  Train Accuracy: 0.9434
+  Train Macro F1: 0.9255
+
+  Test Accuracy: 0.0369
+  Test Balanced Acc: 0.0369
+  Test Macro F1: 0.0237
+
+  Prediction counts:
+    Healthy: 103
+    Mild: 24
+    Severe: 524
+
+  True Class: Mild
+  Recall on True Class: 0.0369
+  ------------------------------
+Fold 11 | Epoch 07
+  Train Loss: 0.3413
+  Train Accuracy: 0.9530
+  Train Macro F1: 0.9379
+
+  Test Accuracy: 0.0507
+  Test Balanced Acc: 0.0507
+  Test Macro F1: 0.0322
+
+  Prediction counts:
+    Healthy: 75
+    Mild: 33
+    Severe: 543
+
+  True Class: Mild
+  Recall on True Class: 0.0507
+  ------------------------------
+Fold 11 | Epoch 08
+  Train Loss: 0.3278
+  Train Accuracy: 0.9583
+  Train Macro F1: 0.9442
+
+  Test Accuracy: 0.0215
+  Test Balanced Acc: 0.0215
+  Test Macro F1: 0.0140
+
+  Prediction counts:
+    Healthy: 47
+    Mild: 14
+    Severe: 590
+
+  True Class: Mild
+  Recall on True Class: 0.0215
+  ------------------------------
+Fold 11 | Epoch 09
+  Train Loss: 0.3143
+  Train Accuracy: 0.9643
+  Train Macro F1: 0.9522
+
+  Test Accuracy: 0.0292
+  Test Balanced Acc: 0.0292
+  Test Macro F1: 0.0189
+
+  Prediction counts:
+    Healthy: 59
+    Mild: 19
+    Severe: 573
+
+  True Class: Mild
+  Recall on True Class: 0.0292
+  ------------------------------
+Fold 11 | Epoch 10
+  Train Loss: 0.3066
+  Train Accuracy: 0.9678
+  Train Macro F1: 0.9566
+
+  Test Accuracy: 0.0200
+  Test Balanced Acc: 0.0200
+  Test Macro F1: 0.0131
+
+  Prediction counts:
+    Healthy: 53
+    Mild: 13
+    Severe: 585
+
+  True Class: Mild
+  Recall on True Class: 0.0200
+  ------------------------------
+Fold 11 | Epoch 11
+  Train Loss: 0.2997
+  Train Accuracy: 0.9706
+  Train Macro F1: 0.9604
+
+  Test Accuracy: 0.0292
+  Test Balanced Acc: 0.0292
+  Test Macro F1: 0.0189
+
+  Prediction counts:
+    Healthy: 73
+    Mild: 19
+    Severe: 559
+
+  True Class: Mild
+  Recall on True Class: 0.0292
+  ------------------------------
+Fold 11 | Epoch 12
+  Train Loss: 0.2901
+  Train Accuracy: 0.9734
+  Train Macro F1: 0.9641
+
+  Test Accuracy: 0.0338
+  Test Balanced Acc: 0.0338
+  Test Macro F1: 0.0218
+
+  Prediction counts:
+    Healthy: 47
+    Mild: 22
+    Severe: 582
+
+  True Class: Mild
+  Recall on True Class: 0.0338
+  ------------------------------
+Fold 11 | Epoch 13
+  Train Loss: 0.2856
+  Train Accuracy: 0.9757
+  Train Macro F1: 0.9674
+
+  Test Accuracy: 0.0184
+  Test Balanced Acc: 0.0184
+  Test Macro F1: 0.0121
+
+  Prediction counts:
+    Healthy: 37
+    Mild: 12
+    Severe: 602
+
+  True Class: Mild
+  Recall on True Class: 0.0184
+  ------------------------------
+Fold 11 | Epoch 14
+  Train Loss: 0.2795
+  Train Accuracy: 0.9799
+  Train Macro F1: 0.9729
+
+  Test Accuracy: 0.0261
+  Test Balanced Acc: 0.0261
+  Test Macro F1: 0.0170
+
+  Prediction counts:
+    Healthy: 38
+    Mild: 17
+    Severe: 596
+
+  True Class: Mild
+  Recall on True Class: 0.0261
+  ------------------------------
+Fold 11 | Epoch 15
+  Train Loss: 0.2740
+  Train Accuracy: 0.9819
+  Train Macro F1: 0.9755
+
+  Test Accuracy: 0.0184
+  Test Balanced Acc: 0.0184
+  Test Macro F1: 0.0121
+
+  Prediction counts:
+    Healthy: 61
+    Mild: 12
+    Severe: 578
+
+  True Class: Mild
+  Recall on True Class: 0.0184
+  ------------------------------
+Fold 11 | Epoch 16
+  Train Loss: 0.2717
+  Train Accuracy: 0.9810
+  Train Macro F1: 0.9743
+
+  Test Accuracy: 0.0369
+  Test Balanced Acc: 0.0369
+  Test Macro F1: 0.0237
+
+  Prediction counts:
+    Healthy: 100
+    Mild: 24
+    Severe: 527
+
+  True Class: Mild
+  Recall on True Class: 0.0369
+  ------------------------------
+Fold 11 | Epoch 17
+  Train Loss: 0.2683
+  Train Accuracy: 0.9834
+  Train Macro F1: 0.9772
+
+  Test Accuracy: 0.0200
+  Test Balanced Acc: 0.0200
+  Test Macro F1: 0.0131
+
+  Prediction counts:
+    Healthy: 41
+    Mild: 13
+    Severe: 597
+
+  True Class: Mild
+  Recall on True Class: 0.0200
+  ------------------------------
+Fold 11 | Epoch 18
+  Train Loss: 0.2677
+  Train Accuracy: 0.9845
+  Train Macro F1: 0.9789
+
+  Test Accuracy: 0.0138
+  Test Balanced Acc: 0.0138
+  Test Macro F1: 0.0091
+
+  Prediction counts:
+    Healthy: 88
+    Mild: 9
+    Severe: 554
+
+  True Class: Mild
+  Recall on True Class: 0.0138
+  ------------------------------
+Fold 11 | Epoch 19
+  Train Loss: 0.2593
+  Train Accuracy: 0.9879
+  Train Macro F1: 0.9830
+
+  Test Accuracy: 0.0338
+  Test Balanced Acc: 0.0338
+  Test Macro F1: 0.0218
+
+  Prediction counts:
+    Healthy: 98
+    Mild: 22
+    Severe: 531
+
+  True Class: Mild
+  Recall on True Class: 0.0338
+  ------------------------------
+Fold 11 | Epoch 20
+  Train Loss: 0.2567
+  Train Accuracy: 0.9885
+  Train Macro F1: 0.9843
+
+  Test Accuracy: 0.0046
+  Test Balanced Acc: 0.0046
+  Test Macro F1: 0.0031
+
+  Prediction counts:
+    Healthy: 55
+    Mild: 3
+    Severe: 593
+
+  True Class: Mild
+  Recall on True Class: 0.0046
+  ------------------------------
+Fold 11 | Epoch 21
+  Train Loss: 0.2577
+  Train Accuracy: 0.9886
+  Train Macro F1: 0.9842
+
+  Test Accuracy: 0.0584
+  Test Balanced Acc: 0.0584
+  Test Macro F1: 0.0368
+
+  Prediction counts:
+    Healthy: 61
+    Mild: 38
+    Severe: 552
+
+  True Class: Mild
+  Recall on True Class: 0.0584
+  ------------------------------
+Fold 11 | Epoch 22
+  Train Loss: 0.2604
+  Train Accuracy: 0.9876
+  Train Macro F1: 0.9830
+
+  Test Accuracy: 0.0200
+  Test Balanced Acc: 0.0200
+  Test Macro F1: 0.0131
+
+  Prediction counts:
+    Healthy: 78
+    Mild: 13
+    Severe: 560
+
+  True Class: Mild
+  Recall on True Class: 0.0200
+  ------------------------------
+Fold 11 | Epoch 23
+  Train Loss: 0.2544
+  Train Accuracy: 0.9891
+  Train Macro F1: 0.9850
+
+  Test Accuracy: 0.0507
+  Test Balanced Acc: 0.0507
+  Test Macro F1: 0.0322
+
+  Prediction counts:
+    Healthy: 92
+    Mild: 33
+    Severe: 526
+
+  True Class: Mild
+  Recall on True Class: 0.0507
+  ------------------------------
+Fold 11 | Epoch 24
+  Train Loss: 0.2492
+  Train Accuracy: 0.9918
+  Train Macro F1: 0.9889
+
+  Test Accuracy: 0.0215
+  Test Balanced Acc: 0.0215
+  Test Macro F1: 0.0140
+
+  Prediction counts:
+    Healthy: 72
+    Mild: 14
+    Severe: 565
+
+  True Class: Mild
+  Recall on True Class: 0.0215
+  ------------------------------
+Fold 11 | Epoch 25
+  Train Loss: 0.2468
+  Train Accuracy: 0.9930
+  Train Macro F1: 0.9901
+
+  Test Accuracy: 0.0169
+  Test Balanced Acc: 0.0169
+  Test Macro F1: 0.0111
+
+  Prediction counts:
+    Healthy: 114
+    Mild: 11
+    Severe: 526
+
+  True Class: Mild
+  Recall on True Class: 0.0169
+  ------------------------------
+Fold 11 Best Model Test Result -> Acc: 0.0169, Bal Acc: 0.0169, Macro F1: 0.0111
+
+============================================================
+Starting Fold 12/15: Test Speaker = MC01
+============================================================
+Fold 12 | Epoch 01
+  Train Loss: 0.7945
+  Train Accuracy: 0.7166
+  Train Macro F1: 0.6302
+
+  Test Accuracy: 0.6041
+  Test Balanced Acc: 0.6041
+  Test Macro F1: 0.2511
+
+  Prediction counts:
+    Healthy: 1338
+    Mild: 557
+    Severe: 320
+
+  True Class: Healthy
+  Recall on True Class: 0.6041
+  ------------------------------
+Fold 12 | Epoch 02
+  Train Loss: 0.5559
+  Train Accuracy: 0.8294
+  Train Macro F1: 0.8002
+
+  Test Accuracy: 0.7309
+  Test Balanced Acc: 0.7309
+  Test Macro F1: 0.2815
+
+  Prediction counts:
+    Healthy: 1619
+    Mild: 554
+    Severe: 42
+
+  True Class: Healthy
+  Recall on True Class: 0.7309
+  ------------------------------
+Fold 12 | Epoch 03
+  Train Loss: 0.4586
+  Train Accuracy: 0.8784
+  Train Macro F1: 0.8629
+
+  Test Accuracy: 0.7919
+  Test Balanced Acc: 0.7919
+  Test Macro F1: 0.2946
+
+  Prediction counts:
+    Healthy: 1754
+    Mild: 420
+    Severe: 41
+
+  True Class: Healthy
+  Recall on True Class: 0.7919
+  ------------------------------
+Fold 12 | Epoch 04
+  Train Loss: 0.4089
+  Train Accuracy: 0.9114
+  Train Macro F1: 0.8980
+
+  Test Accuracy: 0.8619
+  Test Balanced Acc: 0.8619
+  Test Macro F1: 0.3086
+
+  Prediction counts:
+    Healthy: 1909
+    Mild: 243
+    Severe: 63
+
+  True Class: Healthy
+  Recall on True Class: 0.8619
+  ------------------------------
+Fold 12 | Epoch 05
+  Train Loss: 0.3693
+  Train Accuracy: 0.9293
+  Train Macro F1: 0.9201
+
+  Test Accuracy: 0.7413
+  Test Balanced Acc: 0.7413
+  Test Macro F1: 0.2838
+
+  Prediction counts:
+    Healthy: 1642
+    Mild: 520
+    Severe: 53
+
+  True Class: Healthy
+  Recall on True Class: 0.7413
+  ------------------------------
+Fold 12 | Epoch 06
+  Train Loss: 0.3456
+  Train Accuracy: 0.9387
+  Train Macro F1: 0.9301
+
+  Test Accuracy: 0.8989
+  Test Balanced Acc: 0.8989
+  Test Macro F1: 0.3156
+
+  Prediction counts:
+    Healthy: 1991
+    Mild: 189
+    Severe: 35
+
+  True Class: Healthy
+  Recall on True Class: 0.8989
+  ------------------------------
+Fold 12 | Epoch 07
+  Train Loss: 0.3287
+  Train Accuracy: 0.9473
+  Train Macro F1: 0.9399
+
+  Test Accuracy: 0.8930
+  Test Balanced Acc: 0.8930
+  Test Macro F1: 0.3145
+
+  Prediction counts:
+    Healthy: 1978
+    Mild: 188
+    Severe: 49
+
+  True Class: Healthy
+  Recall on True Class: 0.8930
+  ------------------------------
+Fold 12 | Epoch 08
+  Train Loss: 0.3107
+  Train Accuracy: 0.9557
+  Train Macro F1: 0.9493
+
+  Test Accuracy: 0.7693
+  Test Balanced Acc: 0.7693
+  Test Macro F1: 0.2899
+
+  Prediction counts:
+    Healthy: 1704
+    Mild: 396
+    Severe: 115
+
+  True Class: Healthy
+  Recall on True Class: 0.7693
+  ------------------------------
+Fold 12 | Epoch 09
+  Train Loss: 0.3060
+  Train Accuracy: 0.9563
+  Train Macro F1: 0.9509
+
+  Test Accuracy: 0.7639
+  Test Balanced Acc: 0.7639
+  Test Macro F1: 0.2887
+
+  Prediction counts:
+    Healthy: 1692
+    Mild: 501
+    Severe: 22
+
+  True Class: Healthy
+  Recall on True Class: 0.7639
+  ------------------------------
+Fold 12 | Epoch 10
+  Train Loss: 0.2951
+  Train Accuracy: 0.9624
+  Train Macro F1: 0.9574
+
+  Test Accuracy: 0.8226
+  Test Balanced Acc: 0.8226
+  Test Macro F1: 0.3009
+
+  Prediction counts:
+    Healthy: 1822
+    Mild: 263
+    Severe: 130
+
+  True Class: Healthy
+  Recall on True Class: 0.8226
+  ------------------------------
+Fold 12 | Epoch 11
+  Train Loss: 0.2826
+  Train Accuracy: 0.9690
+  Train Macro F1: 0.9647
+
+  Test Accuracy: 0.7896
+  Test Balanced Acc: 0.7896
+  Test Macro F1: 0.2941
+
+  Prediction counts:
+    Healthy: 1749
+    Mild: 427
+    Severe: 39
+
+  True Class: Healthy
+  Recall on True Class: 0.7896
+  ------------------------------
+Fold 12 | Epoch 12
+  Train Loss: 0.2776
+  Train Accuracy: 0.9693
+  Train Macro F1: 0.9652
+
+  Test Accuracy: 0.8438
+  Test Balanced Acc: 0.8438
+  Test Macro F1: 0.3051
+
+  Prediction counts:
+    Healthy: 1869
+    Mild: 317
+    Severe: 29
+
+  True Class: Healthy
+  Recall on True Class: 0.8438
+  ------------------------------
+Fold 12 | Epoch 13
+  Train Loss: 0.2707
+  Train Accuracy: 0.9726
+  Train Macro F1: 0.9686
+
+  Test Accuracy: 0.8984
+  Test Balanced Acc: 0.8984
+  Test Macro F1: 0.3155
+
+  Prediction counts:
+    Healthy: 1990
+    Mild: 166
+    Severe: 59
+
+  True Class: Healthy
+  Recall on True Class: 0.8984
+  ------------------------------
+Fold 12 | Epoch 14
+  Train Loss: 0.2657
+  Train Accuracy: 0.9752
+  Train Macro F1: 0.9717
+
+  Test Accuracy: 0.9336
+  Test Balanced Acc: 0.9336
+  Test Macro F1: 0.3219
+
+  Prediction counts:
+    Healthy: 2068
+    Mild: 129
+    Severe: 18
+
+  True Class: Healthy
+  Recall on True Class: 0.9336
+  ------------------------------
+Fold 12 | Epoch 15
+  Train Loss: 0.2617
+  Train Accuracy: 0.9773
+  Train Macro F1: 0.9733
+
+  Test Accuracy: 0.8984
+  Test Balanced Acc: 0.8984
+  Test Macro F1: 0.3155
+
+  Prediction counts:
+    Healthy: 1990
+    Mild: 153
+    Severe: 72
+
+  True Class: Healthy
+  Recall on True Class: 0.8984
+  ------------------------------
+Fold 12 | Epoch 16
+  Train Loss: 0.2554
+  Train Accuracy: 0.9797
+  Train Macro F1: 0.9774
+
+  Test Accuracy: 0.8695
+  Test Balanced Acc: 0.8695
+  Test Macro F1: 0.3101
+
+  Prediction counts:
+    Healthy: 1926
+    Mild: 228
+    Severe: 61
+
+  True Class: Healthy
+  Recall on True Class: 0.8695
+  ------------------------------
+Fold 12 | Epoch 17
+  Train Loss: 0.2510
+  Train Accuracy: 0.9823
+  Train Macro F1: 0.9796
+
+  Test Accuracy: 0.7725
+  Test Balanced Acc: 0.7725
+  Test Macro F1: 0.2905
+
+  Prediction counts:
+    Healthy: 1711
+    Mild: 444
+    Severe: 60
+
+  True Class: Healthy
+  Recall on True Class: 0.7725
+  ------------------------------
+Fold 12 | Epoch 18
+  Train Loss: 0.2477
+  Train Accuracy: 0.9823
+  Train Macro F1: 0.9802
+
+  Test Accuracy: 0.8402
+  Test Balanced Acc: 0.8402
+  Test Macro F1: 0.3044
+
+  Prediction counts:
+    Healthy: 1861
+    Mild: 330
+    Severe: 24
+
+  True Class: Healthy
+  Recall on True Class: 0.8402
+  ------------------------------
+Fold 12 | Epoch 19
+  Train Loss: 0.2459
+  Train Accuracy: 0.9834
+  Train Macro F1: 0.9812
+
+  Test Accuracy: 0.8799
+  Test Balanced Acc: 0.8799
+  Test Macro F1: 0.3120
+
+  Prediction counts:
+    Healthy: 1949
+    Mild: 180
+    Severe: 86
+
+  True Class: Healthy
+  Recall on True Class: 0.8799
+  ------------------------------
+Fold 12 | Epoch 20
+  Train Loss: 0.2424
+  Train Accuracy: 0.9852
+  Train Macro F1: 0.9825
+
+  Test Accuracy: 0.8664
+  Test Balanced Acc: 0.8664
+  Test Macro F1: 0.3095
+
+  Prediction counts:
+    Healthy: 1919
+    Mild: 217
+    Severe: 79
+
+  True Class: Healthy
+  Recall on True Class: 0.8664
+  ------------------------------
+Fold 12 | Epoch 21
+  Train Loss: 0.2395
+  Train Accuracy: 0.9873
+  Train Macro F1: 0.9853
+
+  Test Accuracy: 0.8862
+  Test Balanced Acc: 0.8862
+  Test Macro F1: 0.3132
+
+  Prediction counts:
+    Healthy: 1963
+    Mild: 230
+    Severe: 22
+
+  True Class: Healthy
+  Recall on True Class: 0.8862
+  ------------------------------
+Fold 12 | Epoch 22
+  Train Loss: 0.2444
+  Train Accuracy: 0.9845
+  Train Macro F1: 0.9819
+
+  Test Accuracy: 0.8646
+  Test Balanced Acc: 0.8646
+  Test Macro F1: 0.3091
+
+  Prediction counts:
+    Healthy: 1915
+    Mild: 263
+    Severe: 37
+
+  True Class: Healthy
+  Recall on True Class: 0.8646
+  ------------------------------
+Fold 12 | Epoch 23
+  Train Loss: 0.2335
+  Train Accuracy: 0.9894
+  Train Macro F1: 0.9881
+
+  Test Accuracy: 0.8628
+  Test Balanced Acc: 0.8628
+  Test Macro F1: 0.3088
+
+  Prediction counts:
+    Healthy: 1911
+    Mild: 281
+    Severe: 23
+
+  True Class: Healthy
+  Recall on True Class: 0.8628
+  ------------------------------
+Fold 12 | Epoch 24
+  Train Loss: 0.2331
+  Train Accuracy: 0.9885
+  Train Macro F1: 0.9871
+
+  Test Accuracy: 0.8393
+  Test Balanced Acc: 0.8393
+  Test Macro F1: 0.3042
+
+  Prediction counts:
+    Healthy: 1859
+    Mild: 284
+    Severe: 72
+
+  True Class: Healthy
+  Recall on True Class: 0.8393
+  ------------------------------
+Fold 12 | Epoch 25
+  Train Loss: 0.2365
+  Train Accuracy: 0.9876
+  Train Macro F1: 0.9859
+
+  Test Accuracy: 0.8907
+  Test Balanced Acc: 0.8907
+  Test Macro F1: 0.3141
+
+  Prediction counts:
+    Healthy: 1973
+    Mild: 222
+    Severe: 20
+
+  True Class: Healthy
+  Recall on True Class: 0.8907
+  ------------------------------
+Fold 12 Best Model Test Result -> Acc: 0.8628, Bal Acc: 0.8628, Macro F1: 0.3088
+
+============================================================
+Starting Fold 13/15: Test Speaker = MC02
+============================================================
+Fold 13 | Epoch 01
+  Train Loss: 0.7867
+  Train Accuracy: 0.7345
+  Train Macro F1: 0.6203
+
+  Test Accuracy: 0.9297
+  Test Balanced Acc: 0.9297
+  Test Macro F1: 0.3212
+
+  Prediction counts:
+    Healthy: 860
+    Mild: 13
+    Severe: 52
+
+  True Class: Healthy
+  Recall on True Class: 0.9297
+  ------------------------------
+Fold 13 | Epoch 02
+  Train Loss: 0.5477
+  Train Accuracy: 0.8453
+  Train Macro F1: 0.8088
+
+  Test Accuracy: 0.8011
+  Test Balanced Acc: 0.8011
+  Test Macro F1: 0.2965
+
+  Prediction counts:
+    Healthy: 741
+    Mild: 181
+    Severe: 3
+
+  True Class: Healthy
+  Recall on True Class: 0.8011
+  ------------------------------
+Fold 13 | Epoch 03
+  Train Loss: 0.4668
+  Train Accuracy: 0.8872
+  Train Macro F1: 0.8659
+
+  Test Accuracy: 0.7622
+  Test Balanced Acc: 0.7622
+  Test Macro F1: 0.2883
+
+  Prediction counts:
+    Healthy: 705
+    Mild: 215
+    Severe: 5
+
+  True Class: Healthy
+  Recall on True Class: 0.7622
+  ------------------------------
+Fold 13 | Epoch 04
+  Train Loss: 0.3895
+  Train Accuracy: 0.9242
+  Train Macro F1: 0.9102
+
+  Test Accuracy: 0.7200
+  Test Balanced Acc: 0.7200
+  Test Macro F1: 0.2791
+
+  Prediction counts:
+    Healthy: 666
+    Mild: 248
+    Severe: 11
+
+  True Class: Healthy
+  Recall on True Class: 0.7200
+  ------------------------------
+Fold 13 | Epoch 05
+  Train Loss: 0.3644
+  Train Accuracy: 0.9361
+  Train Macro F1: 0.9236
+
+  Test Accuracy: 0.7643
+  Test Balanced Acc: 0.7643
+  Test Macro F1: 0.2888
+
+  Prediction counts:
+    Healthy: 707
+    Mild: 214
+    Severe: 4
+
+  True Class: Healthy
+  Recall on True Class: 0.7643
+  ------------------------------
+Fold 13 | Epoch 06
+  Train Loss: 0.3349
+  Train Accuracy: 0.9515
+  Train Macro F1: 0.9418
+
+  Test Accuracy: 0.8097
+  Test Balanced Acc: 0.8097
+  Test Macro F1: 0.2983
+
+  Prediction counts:
+    Healthy: 749
+    Mild: 174
+    Severe: 2
+
+  True Class: Healthy
+  Recall on True Class: 0.8097
+  ------------------------------
+Fold 13 | Epoch 07
+  Train Loss: 0.3236
+  Train Accuracy: 0.9542
+  Train Macro F1: 0.9447
+
+  Test Accuracy: 0.7232
+  Test Balanced Acc: 0.7232
+  Test Macro F1: 0.2798
+
+  Prediction counts:
+    Healthy: 669
+    Mild: 242
+    Severe: 14
+
+  True Class: Healthy
+  Recall on True Class: 0.7232
+  ------------------------------
+Fold 13 | Epoch 08
+  Train Loss: 0.3118
+  Train Accuracy: 0.9605
+  Train Macro F1: 0.9526
+
+  Test Accuracy: 0.7005
+  Test Balanced Acc: 0.7005
+  Test Macro F1: 0.2746
+
+  Prediction counts:
+    Healthy: 648
+    Mild: 269
+    Severe: 8
+
+  True Class: Healthy
+  Recall on True Class: 0.7005
+  ------------------------------
+Fold 13 | Epoch 09
+  Train Loss: 0.3012
+  Train Accuracy: 0.9660
+  Train Macro F1: 0.9588
+
+  Test Accuracy: 0.6703
+  Test Balanced Acc: 0.6703
+  Test Macro F1: 0.2675
+
+  Prediction counts:
+    Healthy: 620
+    Mild: 296
+    Severe: 9
+
+  True Class: Healthy
+  Recall on True Class: 0.6703
+  ------------------------------
+Fold 13 | Epoch 10
+  Train Loss: 0.2890
+  Train Accuracy: 0.9702
+  Train Macro F1: 0.9643
+
+  Test Accuracy: 0.7265
+  Test Balanced Acc: 0.7265
+  Test Macro F1: 0.2805
+
+  Prediction counts:
+    Healthy: 672
+    Mild: 251
+    Severe: 2
+
+  True Class: Healthy
+  Recall on True Class: 0.7265
+  ------------------------------
+Fold 13 | Epoch 11
+  Train Loss: 0.2841
+  Train Accuracy: 0.9725
+  Train Macro F1: 0.9672
+
+  Test Accuracy: 0.7470
+  Test Balanced Acc: 0.7470
+  Test Macro F1: 0.2851
+
+  Prediction counts:
+    Healthy: 691
+    Mild: 230
+    Severe: 4
+
+  True Class: Healthy
+  Recall on True Class: 0.7470
+  ------------------------------
+Fold 13 | Epoch 12
+  Train Loss: 0.2747
+  Train Accuracy: 0.9760
+  Train Macro F1: 0.9710
+
+  Test Accuracy: 0.7081
+  Test Balanced Acc: 0.7081
+  Test Macro F1: 0.2764
+
+  Prediction counts:
+    Healthy: 655
+    Mild: 266
+    Severe: 4
+
+  True Class: Healthy
+  Recall on True Class: 0.7081
+  ------------------------------
+Fold 13 | Epoch 13
+  Train Loss: 0.2704
+  Train Accuracy: 0.9778
+  Train Macro F1: 0.9729
+
+  Test Accuracy: 0.7719
+  Test Balanced Acc: 0.7719
+  Test Macro F1: 0.2904
+
+  Prediction counts:
+    Healthy: 714
+    Mild: 208
+    Severe: 3
+
+  True Class: Healthy
+  Recall on True Class: 0.7719
+  ------------------------------
+Fold 13 | Epoch 14
+  Train Loss: 0.2674
+  Train Accuracy: 0.9793
+  Train Macro F1: 0.9749
+
+  Test Accuracy: 0.7416
+  Test Balanced Acc: 0.7416
+  Test Macro F1: 0.2839
+
+  Prediction counts:
+    Healthy: 686
+    Mild: 232
+    Severe: 7
+
+  True Class: Healthy
+  Recall on True Class: 0.7416
+  ------------------------------
+Fold 13 | Epoch 15
+  Train Loss: 0.2634
+  Train Accuracy: 0.9809
+  Train Macro F1: 0.9768
+
+  Test Accuracy: 0.6724
+  Test Balanced Acc: 0.6724
+  Test Macro F1: 0.2680
+
+  Prediction counts:
+    Healthy: 622
+    Mild: 290
+    Severe: 13
+
+  True Class: Healthy
+  Recall on True Class: 0.6724
+  ------------------------------
+Fold 13 | Epoch 16
+  Train Loss: 0.2603
+  Train Accuracy: 0.9819
+  Train Macro F1: 0.9784
+
+  Test Accuracy: 0.7178
+  Test Balanced Acc: 0.7178
+  Test Macro F1: 0.2786
+
+  Prediction counts:
+    Healthy: 664
+    Mild: 257
+    Severe: 4
+
+  True Class: Healthy
+  Recall on True Class: 0.7178
+  ------------------------------
+Fold 13 | Epoch 17
+  Train Loss: 0.2562
+  Train Accuracy: 0.9855
+  Train Macro F1: 0.9823
+
+  Test Accuracy: 0.8314
+  Test Balanced Acc: 0.8314
+  Test Macro F1: 0.3026
+
+  Prediction counts:
+    Healthy: 769
+    Mild: 151
+    Severe: 5
+
+  True Class: Healthy
+  Recall on True Class: 0.8314
+  ------------------------------
+Fold 13 | Epoch 18
+  Train Loss: 0.2560
+  Train Accuracy: 0.9836
+  Train Macro F1: 0.9804
+
+  Test Accuracy: 0.7211
+  Test Balanced Acc: 0.7211
+  Test Macro F1: 0.2793
+
+  Prediction counts:
+    Healthy: 667
+    Mild: 249
+    Severe: 9
+
+  True Class: Healthy
+  Recall on True Class: 0.7211
+  ------------------------------
+Fold 13 | Epoch 19
+  Train Loss: 0.2470
+  Train Accuracy: 0.9883
+  Train Macro F1: 0.9859
+
+  Test Accuracy: 0.6995
+  Test Balanced Acc: 0.6995
+  Test Macro F1: 0.2744
+
+  Prediction counts:
+    Healthy: 647
+    Mild: 275
+    Severe: 3
+
+  True Class: Healthy
+  Recall on True Class: 0.6995
+  ------------------------------
+Fold 13 | Epoch 20
+  Train Loss: 0.2449
+  Train Accuracy: 0.9886
+  Train Macro F1: 0.9864
+
+  Test Accuracy: 0.7557
+  Test Balanced Acc: 0.7557
+  Test Macro F1: 0.2869
+
+  Prediction counts:
+    Healthy: 699
+    Mild: 220
+    Severe: 6
+
+  True Class: Healthy
+  Recall on True Class: 0.7557
+  ------------------------------
+Fold 13 | Epoch 21
+  Train Loss: 0.2475
+  Train Accuracy: 0.9881
+  Train Macro F1: 0.9852
+
+  Test Accuracy: 0.8476
+  Test Balanced Acc: 0.8476
+  Test Macro F1: 0.3058
+
+  Prediction counts:
+    Healthy: 784
+    Mild: 137
+    Severe: 4
+
+  True Class: Healthy
+  Recall on True Class: 0.8476
+  ------------------------------
+Fold 13 | Epoch 22
+  Train Loss: 0.2422
+  Train Accuracy: 0.9900
+  Train Macro F1: 0.9881
+
+  Test Accuracy: 0.6973
+  Test Balanced Acc: 0.6973
+  Test Macro F1: 0.2739
+
+  Prediction counts:
+    Healthy: 645
+    Mild: 271
+    Severe: 9
+
+  True Class: Healthy
+  Recall on True Class: 0.6973
+  ------------------------------
+Fold 13 | Epoch 23
+  Train Loss: 0.2401
+  Train Accuracy: 0.9911
+  Train Macro F1: 0.9893
+
+  Test Accuracy: 0.6670
+  Test Balanced Acc: 0.6670
+  Test Macro F1: 0.2668
+
+  Prediction counts:
+    Healthy: 617
+    Mild: 303
+    Severe: 5
+
+  True Class: Healthy
+  Recall on True Class: 0.6670
+  ------------------------------
+Fold 13 | Epoch 24
+  Train Loss: 0.2357
+  Train Accuracy: 0.9925
+  Train Macro F1: 0.9910
+
+  Test Accuracy: 0.6627
+  Test Balanced Acc: 0.6627
+  Test Macro F1: 0.2657
+
+  Prediction counts:
+    Healthy: 613
+    Mild: 305
+    Severe: 7
+
+  True Class: Healthy
+  Recall on True Class: 0.6627
+  ------------------------------
+Fold 13 | Epoch 25
+  Train Loss: 0.2397
+  Train Accuracy: 0.9906
+  Train Macro F1: 0.9887
+
+  Test Accuracy: 0.6941
+  Test Balanced Acc: 0.6941
+  Test Macro F1: 0.2731
+
+  Prediction counts:
+    Healthy: 642
+    Mild: 266
+    Severe: 17
+
+  True Class: Healthy
+  Recall on True Class: 0.6941
+  ------------------------------
+Fold 13 Best Model Test Result -> Acc: 0.6627, Bal Acc: 0.6627, Macro F1: 0.2657
+
+============================================================
+Starting Fold 14/15: Test Speaker = MC03
+============================================================
+Fold 14 | Epoch 01
+  Train Loss: 0.7595
+  Train Accuracy: 0.7399
+  Train Macro F1: 0.6500
+
+  Test Accuracy: 0.7693
+  Test Balanced Acc: 0.7693
+  Test Macro F1: 0.2899
+
+  Prediction counts:
+    Healthy: 1274
+    Mild: 375
+    Severe: 7
+
+  True Class: Healthy
+  Recall on True Class: 0.7693
+  ------------------------------
+Fold 14 | Epoch 02
+  Train Loss: 0.5426
+  Train Accuracy: 0.8427
+  Train Macro F1: 0.8125
+
+  Test Accuracy: 0.8056
+  Test Balanced Acc: 0.8056
+  Test Macro F1: 0.2974
+
+  Prediction counts:
+    Healthy: 1334
+    Mild: 211
+    Severe: 111
+
+  True Class: Healthy
+  Recall on True Class: 0.8056
+  ------------------------------
+Fold 14 | Epoch 03
+  Train Loss: 0.4537
+  Train Accuracy: 0.8872
+  Train Macro F1: 0.8694
+
+  Test Accuracy: 0.8671
+  Test Balanced Acc: 0.8671
+  Test Macro F1: 0.3096
+
+  Prediction counts:
+    Healthy: 1436
+    Mild: 137
+    Severe: 83
+
+  True Class: Healthy
+  Recall on True Class: 0.8671
+  ------------------------------
+Fold 14 | Epoch 04
+  Train Loss: 0.4125
+  Train Accuracy: 0.9081
+  Train Macro F1: 0.8943
+
+  Test Accuracy: 0.8025
+  Test Balanced Acc: 0.8025
+  Test Macro F1: 0.2968
+
+  Prediction counts:
+    Healthy: 1329
+    Mild: 292
+    Severe: 35
+
+  True Class: Healthy
+  Recall on True Class: 0.8025
+  ------------------------------
+Fold 14 | Epoch 05
+  Train Loss: 0.3702
+  Train Accuracy: 0.9296
+  Train Macro F1: 0.9183
+
+  Test Accuracy: 0.8792
+  Test Balanced Acc: 0.8792
+  Test Macro F1: 0.3119
+
+  Prediction counts:
+    Healthy: 1456
+    Mild: 151
+    Severe: 49
+
+  True Class: Healthy
+  Recall on True Class: 0.8792
+  ------------------------------
+Fold 14 | Epoch 06
+  Train Loss: 0.3470
+  Train Accuracy: 0.9419
+  Train Macro F1: 0.9324
+
+  Test Accuracy: 0.8267
+  Test Balanced Acc: 0.8267
+  Test Macro F1: 0.3017
+
+  Prediction counts:
+    Healthy: 1369
+    Mild: 280
+    Severe: 7
+
+  True Class: Healthy
+  Recall on True Class: 0.8267
+  ------------------------------
+Fold 14 | Epoch 07
+  Train Loss: 0.3324
+  Train Accuracy: 0.9457
+  Train Macro F1: 0.9369
+
+  Test Accuracy: 0.8213
+  Test Balanced Acc: 0.8213
+  Test Macro F1: 0.3006
+
+  Prediction counts:
+    Healthy: 1360
+    Mild: 290
+    Severe: 6
+
+  True Class: Healthy
+  Recall on True Class: 0.8213
+  ------------------------------
+Fold 14 | Epoch 08
+  Train Loss: 0.3156
+  Train Accuracy: 0.9550
+  Train Macro F1: 0.9476
+
+  Test Accuracy: 0.8170
+  Test Balanced Acc: 0.8170
+  Test Macro F1: 0.2998
+
+  Prediction counts:
+    Healthy: 1353
+    Mild: 290
+    Severe: 13
+
+  True Class: Healthy
+  Recall on True Class: 0.8170
+  ------------------------------
+Fold 14 | Epoch 09
+  Train Loss: 0.3031
+  Train Accuracy: 0.9605
+  Train Macro F1: 0.9536
+
+  Test Accuracy: 0.7705
+  Test Balanced Acc: 0.7705
+  Test Macro F1: 0.2901
+
+  Prediction counts:
+    Healthy: 1276
+    Mild: 361
+    Severe: 19
+
+  True Class: Healthy
+  Recall on True Class: 0.7705
+  ------------------------------
+Fold 14 | Epoch 10
+  Train Loss: 0.2991
+  Train Accuracy: 0.9610
+  Train Macro F1: 0.9550
+
+  Test Accuracy: 0.8720
+  Test Balanced Acc: 0.8720
+  Test Macro F1: 0.3105
+
+  Prediction counts:
+    Healthy: 1444
+    Mild: 183
+    Severe: 29
+
+  True Class: Healthy
+  Recall on True Class: 0.8720
+  ------------------------------
+Fold 14 | Epoch 11
+  Train Loss: 0.2844
+  Train Accuracy: 0.9696
+  Train Macro F1: 0.9651
+
+  Test Accuracy: 0.8098
+  Test Balanced Acc: 0.8098
+  Test Macro F1: 0.2983
+
+  Prediction counts:
+    Healthy: 1341
+    Mild: 243
+    Severe: 72
+
+  True Class: Healthy
+  Recall on True Class: 0.8098
+  ------------------------------
+Fold 14 | Epoch 12
+  Train Loss: 0.2750
+  Train Accuracy: 0.9742
+  Train Macro F1: 0.9700
+
+  Test Accuracy: 0.8050
+  Test Balanced Acc: 0.8050
+  Test Macro F1: 0.2973
+
+  Prediction counts:
+    Healthy: 1333
+    Mild: 317
+    Severe: 6
+
+  True Class: Healthy
+  Recall on True Class: 0.8050
+  ------------------------------
+Fold 14 | Epoch 13
+  Train Loss: 0.2709
+  Train Accuracy: 0.9753
+  Train Macro F1: 0.9717
+
+  Test Accuracy: 0.8623
+  Test Balanced Acc: 0.8623
+  Test Macro F1: 0.3087
+
+  Prediction counts:
+    Healthy: 1428
+    Mild: 160
+    Severe: 68
+
+  True Class: Healthy
+  Recall on True Class: 0.8623
+  ------------------------------
+Fold 14 | Epoch 14
+  Train Loss: 0.2673
+  Train Accuracy: 0.9768
+  Train Macro F1: 0.9732
+
+  Test Accuracy: 0.8424
+  Test Balanced Acc: 0.8424
+  Test Macro F1: 0.3048
+
+  Prediction counts:
+    Healthy: 1395
+    Mild: 205
+    Severe: 56
+
+  True Class: Healthy
+  Recall on True Class: 0.8424
+  ------------------------------
+Fold 14 | Epoch 15
+  Train Loss: 0.2591
+  Train Accuracy: 0.9812
+  Train Macro F1: 0.9782
+
+  Test Accuracy: 0.8641
+  Test Balanced Acc: 0.8641
+  Test Macro F1: 0.3090
+
+  Prediction counts:
+    Healthy: 1431
+    Mild: 209
+    Severe: 16
+
+  True Class: Healthy
+  Recall on True Class: 0.8641
+  ------------------------------
+Fold 14 | Epoch 16
+  Train Loss: 0.2541
+  Train Accuracy: 0.9835
+  Train Macro F1: 0.9811
+
+  Test Accuracy: 0.8466
+  Test Balanced Acc: 0.8466
+  Test Macro F1: 0.3056
+
+  Prediction counts:
+    Healthy: 1402
+    Mild: 247
+    Severe: 7
+
+  True Class: Healthy
+  Recall on True Class: 0.8466
+  ------------------------------
+Fold 14 | Epoch 17
+  Train Loss: 0.2518
+  Train Accuracy: 0.9825
+  Train Macro F1: 0.9798
+
+  Test Accuracy: 0.8714
+  Test Balanced Acc: 0.8714
+  Test Macro F1: 0.3104
+
+  Prediction counts:
+    Healthy: 1443
+    Mild: 194
+    Severe: 19
+
+  True Class: Healthy
+  Recall on True Class: 0.8714
+  ------------------------------
+Fold 14 | Epoch 18
+  Train Loss: 0.2502
+  Train Accuracy: 0.9839
+  Train Macro F1: 0.9814
+
+  Test Accuracy: 0.8545
+  Test Balanced Acc: 0.8545
+  Test Macro F1: 0.3072
+
+  Prediction counts:
+    Healthy: 1415
+    Mild: 232
+    Severe: 9
+
+  True Class: Healthy
+  Recall on True Class: 0.8545
+  ------------------------------
+Fold 14 | Epoch 19
+  Train Loss: 0.2452
+  Train Accuracy: 0.9860
+  Train Macro F1: 0.9839
+
+  Test Accuracy: 0.8472
+  Test Balanced Acc: 0.8472
+  Test Macro F1: 0.3058
+
+  Prediction counts:
+    Healthy: 1403
+    Mild: 247
+    Severe: 6
+
+  True Class: Healthy
+  Recall on True Class: 0.8472
+  ------------------------------
+Fold 14 | Epoch 20
+  Train Loss: 0.2414
+  Train Accuracy: 0.9869
+  Train Macro F1: 0.9853
+
+  Test Accuracy: 0.8690
+  Test Balanced Acc: 0.8690
+  Test Macro F1: 0.3100
+
+  Prediction counts:
+    Healthy: 1439
+    Mild: 213
+    Severe: 4
+
+  True Class: Healthy
+  Recall on True Class: 0.8690
+  ------------------------------
+Fold 14 | Epoch 21
+  Train Loss: 0.2365
+  Train Accuracy: 0.9903
+  Train Macro F1: 0.9890
+
+  Test Accuracy: 0.8207
+  Test Balanced Acc: 0.8207
+  Test Macro F1: 0.3005
+
+  Prediction counts:
+    Healthy: 1359
+    Mild: 288
+    Severe: 9
+
+  True Class: Healthy
+  Recall on True Class: 0.8207
+  ------------------------------
+Fold 14 | Epoch 22
+  Train Loss: 0.2370
+  Train Accuracy: 0.9892
+  Train Macro F1: 0.9875
+
+  Test Accuracy: 0.8400
+  Test Balanced Acc: 0.8400
+  Test Macro F1: 0.3043
+
+  Prediction counts:
+    Healthy: 1391
+    Mild: 251
+    Severe: 14
+
+  True Class: Healthy
+  Recall on True Class: 0.8400
+  ------------------------------
+Fold 14 | Epoch 23
+  Train Loss: 0.2433
+  Train Accuracy: 0.9863
+  Train Macro F1: 0.9841
+
+  Test Accuracy: 0.7995
+  Test Balanced Acc: 0.7995
+  Test Macro F1: 0.2962
+
+  Prediction counts:
+    Healthy: 1324
+    Mild: 324
+    Severe: 8
+
+  True Class: Healthy
+  Recall on True Class: 0.7995
+  ------------------------------
+Fold 14 | Epoch 24
+  Train Loss: 0.2282
+  Train Accuracy: 0.9937
+  Train Macro F1: 0.9928
+
+  Test Accuracy: 0.8134
+  Test Balanced Acc: 0.8134
+  Test Macro F1: 0.2990
+
+  Prediction counts:
+    Healthy: 1347
+    Mild: 279
+    Severe: 30
+
+  True Class: Healthy
+  Recall on True Class: 0.8134
+  ------------------------------
+Fold 14 | Epoch 25
+  Train Loss: 0.2368
+  Train Accuracy: 0.9897
+  Train Macro F1: 0.9875
+
+  Test Accuracy: 0.7941
+  Test Balanced Acc: 0.7941
+  Test Macro F1: 0.2951
+
+  Prediction counts:
+    Healthy: 1315
+    Mild: 330
+    Severe: 11
+
+  True Class: Healthy
+  Recall on True Class: 0.7941
+  ------------------------------
+Fold 14 Best Model Test Result -> Acc: 0.8134, Bal Acc: 0.8134, Macro F1: 0.2990
+
+============================================================
+Starting Fold 15/15: Test Speaker = MC04
+============================================================
+Fold 15 | Epoch 01
+  Train Loss: 0.7296
+  Train Accuracy: 0.7636
+  Train Macro F1: 0.6717
+
+  Test Accuracy: 0.2972
+  Test Balanced Acc: 0.2972
+  Test Macro F1: 0.1528
+
+  Prediction counts:
+    Healthy: 387
+    Mild: 824
+    Severe: 91
+
+  True Class: Healthy
+  Recall on True Class: 0.2972
+  ------------------------------
+Fold 15 | Epoch 02
+  Train Loss: 0.5139
+  Train Accuracy: 0.8645
+  Train Macro F1: 0.8312
+
+  Test Accuracy: 0.2665
+  Test Balanced Acc: 0.2665
+  Test Macro F1: 0.1403
+
+  Prediction counts:
+    Healthy: 347
+    Mild: 624
+    Severe: 331
+
+  True Class: Healthy
+  Recall on True Class: 0.2665
+  ------------------------------
+Fold 15 | Epoch 03
+  Train Loss: 0.4348
+  Train Accuracy: 0.8990
+  Train Macro F1: 0.8780
+
+  Test Accuracy: 0.3410
+  Test Balanced Acc: 0.3410
+  Test Macro F1: 0.1695
+
+  Prediction counts:
+    Healthy: 444
+    Mild: 695
+    Severe: 163
+
+  True Class: Healthy
+  Recall on True Class: 0.3410
+  ------------------------------
+Fold 15 | Epoch 04
+  Train Loss: 0.3844
+  Train Accuracy: 0.9234
+  Train Macro F1: 0.9084
+
+  Test Accuracy: 0.3187
+  Test Balanced Acc: 0.3187
+  Test Macro F1: 0.1611
+
+  Prediction counts:
+    Healthy: 415
+    Mild: 702
+    Severe: 185
+
+  True Class: Healthy
+  Recall on True Class: 0.3187
+  ------------------------------
+Fold 15 | Epoch 05
+  Train Loss: 0.3636
+  Train Accuracy: 0.9331
+  Train Macro F1: 0.9207
+
+  Test Accuracy: 0.1859
+  Test Balanced Acc: 0.1859
+  Test Macro F1: 0.1045
+
+  Prediction counts:
+    Healthy: 242
+    Mild: 855
+    Severe: 205
+
+  True Class: Healthy
+  Recall on True Class: 0.1859
+  ------------------------------
+Fold 15 | Epoch 06
+  Train Loss: 0.3395
+  Train Accuracy: 0.9454
+  Train Macro F1: 0.9342
+
+  Test Accuracy: 0.2120
+  Test Balanced Acc: 0.2120
+  Test Macro F1: 0.1166
+
+  Prediction counts:
+    Healthy: 276
+    Mild: 762
+    Severe: 264
+
+  True Class: Healthy
+  Recall on True Class: 0.2120
+  ------------------------------
+Fold 15 | Epoch 07
+  Train Loss: 0.3226
+  Train Accuracy: 0.9533
+  Train Macro F1: 0.9447
+
+  Test Accuracy: 0.2849
+  Test Balanced Acc: 0.2849
+  Test Macro F1: 0.1478
+
+  Prediction counts:
+    Healthy: 371
+    Mild: 708
+    Severe: 223
+
+  True Class: Healthy
+  Recall on True Class: 0.2849
+  ------------------------------
+Fold 15 | Epoch 08
+  Train Loss: 0.3071
+  Train Accuracy: 0.9590
+  Train Macro F1: 0.9516
+
+  Test Accuracy: 0.2680
+  Test Balanced Acc: 0.2680
+  Test Macro F1: 0.1409
+
+  Prediction counts:
+    Healthy: 349
+    Mild: 798
+    Severe: 155
+
+  True Class: Healthy
+  Recall on True Class: 0.2680
+  ------------------------------
+Fold 15 | Epoch 09
+  Train Loss: 0.2964
+  Train Accuracy: 0.9644
+  Train Macro F1: 0.9580
+
+  Test Accuracy: 0.3218
+  Test Balanced Acc: 0.3218
+  Test Macro F1: 0.1623
+
+  Prediction counts:
+    Healthy: 419
+    Mild: 782
+    Severe: 101
+
+  True Class: Healthy
+  Recall on True Class: 0.3218
+  ------------------------------
+Fold 15 | Epoch 10
+  Train Loss: 0.2902
+  Train Accuracy: 0.9672
+  Train Macro F1: 0.9608
+
+  Test Accuracy: 0.2243
+  Test Balanced Acc: 0.2243
+  Test Macro F1: 0.1221
+
+  Prediction counts:
+    Healthy: 292
+    Mild: 932
+    Severe: 78
+
+  True Class: Healthy
+  Recall on True Class: 0.2243
+  ------------------------------
+Fold 15 | Epoch 11
+  Train Loss: 0.2857
+  Train Accuracy: 0.9684
+  Train Macro F1: 0.9623
+
+  Test Accuracy: 0.3172
+  Test Balanced Acc: 0.3172
+  Test Macro F1: 0.1605
+
+  Prediction counts:
+    Healthy: 413
+    Mild: 852
+    Severe: 37
+
+  True Class: Healthy
+  Recall on True Class: 0.3172
+  ------------------------------
+Fold 15 | Epoch 12
+  Train Loss: 0.2697
+  Train Accuracy: 0.9760
+  Train Macro F1: 0.9714
+
+  Test Accuracy: 0.2327
+  Test Balanced Acc: 0.2327
+  Test Macro F1: 0.1259
+
+  Prediction counts:
+    Healthy: 303
+    Mild: 838
+    Severe: 161
+
+  True Class: Healthy
+  Recall on True Class: 0.2327
+  ------------------------------
+Fold 15 | Epoch 13
+  Train Loss: 0.2651
+  Train Accuracy: 0.9775
+  Train Macro F1: 0.9732
+
+  Test Accuracy: 0.3095
+  Test Balanced Acc: 0.3095
+  Test Macro F1: 0.1576
+
+  Prediction counts:
+    Healthy: 403
+    Mild: 857
+    Severe: 42
+
+  True Class: Healthy
+  Recall on True Class: 0.3095
+  ------------------------------
+Fold 15 | Epoch 14
+  Train Loss: 0.2622
+  Train Accuracy: 0.9791
+  Train Macro F1: 0.9752
+
+  Test Accuracy: 0.2826
+  Test Balanced Acc: 0.2826
+  Test Macro F1: 0.1469
+
+  Prediction counts:
+    Healthy: 368
+    Mild: 854
+    Severe: 80
+
+  True Class: Healthy
+  Recall on True Class: 0.2826
+  ------------------------------
+Fold 15 | Epoch 15
+  Train Loss: 0.2618
+  Train Accuracy: 0.9786
+  Train Macro F1: 0.9739
+
+  Test Accuracy: 0.3049
+  Test Balanced Acc: 0.3049
+  Test Macro F1: 0.1558
+
+  Prediction counts:
+    Healthy: 397
+    Mild: 781
+    Severe: 124
+
+  True Class: Healthy
+  Recall on True Class: 0.3049
+  ------------------------------
+Fold 15 | Epoch 16
+  Train Loss: 0.2543
+  Train Accuracy: 0.9824
+  Train Macro F1: 0.9792
+
+  Test Accuracy: 0.1782
+  Test Balanced Acc: 0.1782
+  Test Macro F1: 0.1008
+
+  Prediction counts:
+    Healthy: 232
+    Mild: 899
+    Severe: 171
+
+  True Class: Healthy
+  Recall on True Class: 0.1782
+  ------------------------------
+Fold 15 | Epoch 17
+  Train Loss: 0.2520
+  Train Accuracy: 0.9831
+  Train Macro F1: 0.9800
+
+  Test Accuracy: 0.1628
+  Test Balanced Acc: 0.1628
+  Test Macro F1: 0.0934
+
+  Prediction counts:
+    Healthy: 212
+    Mild: 861
+    Severe: 229
+
+  True Class: Healthy
+  Recall on True Class: 0.1628
+  ------------------------------
+Fold 15 | Epoch 18
+  Train Loss: 0.2491
+  Train Accuracy: 0.9854
+  Train Macro F1: 0.9822
+
+  Test Accuracy: 0.2596
+  Test Balanced Acc: 0.2596
+  Test Macro F1: 0.1374
+
+  Prediction counts:
+    Healthy: 338
+    Mild: 838
+    Severe: 126
+
+  True Class: Healthy
+  Recall on True Class: 0.2596
+  ------------------------------
+Fold 15 | Epoch 19
+  Train Loss: 0.2524
+  Train Accuracy: 0.9834
+  Train Macro F1: 0.9798
+
+  Test Accuracy: 0.2788
+  Test Balanced Acc: 0.2788
+  Test Macro F1: 0.1453
+
+  Prediction counts:
+    Healthy: 363
+    Mild: 745
+    Severe: 194
+
+  True Class: Healthy
+  Recall on True Class: 0.2788
+  ------------------------------
+Fold 15 | Epoch 20
+  Train Loss: 0.2425
+  Train Accuracy: 0.9871
+  Train Macro F1: 0.9847
+
+  Test Accuracy: 0.2412
+  Test Balanced Acc: 0.2412
+  Test Macro F1: 0.1295
+
+  Prediction counts:
+    Healthy: 314
+    Mild: 887
+    Severe: 101
+
+  True Class: Healthy
+  Recall on True Class: 0.2412
+  ------------------------------
+Fold 15 | Epoch 21
+  Train Loss: 0.2409
+  Train Accuracy: 0.9875
+  Train Macro F1: 0.9855
+
+  Test Accuracy: 0.1375
+  Test Balanced Acc: 0.1375
+  Test Macro F1: 0.0806
+
+  Prediction counts:
+    Healthy: 179
+    Mild: 935
+    Severe: 188
+
+  True Class: Healthy
+  Recall on True Class: 0.1375
+  ------------------------------
+Fold 15 | Epoch 22
+  Train Loss: 0.2355
+  Train Accuracy: 0.9899
+  Train Macro F1: 0.9876
+
+  Test Accuracy: 0.1505
+  Test Balanced Acc: 0.1505
+  Test Macro F1: 0.0872
+
+  Prediction counts:
+    Healthy: 196
+    Mild: 1027
+    Severe: 79
+
+  True Class: Healthy
+  Recall on True Class: 0.1505
+  ------------------------------
+Fold 15 | Epoch 23
+  Train Loss: 0.2398
+  Train Accuracy: 0.9879
+  Train Macro F1: 0.9854
+
+  Test Accuracy: 0.2896
+  Test Balanced Acc: 0.2896
+  Test Macro F1: 0.1497
+
+  Prediction counts:
+    Healthy: 377
+    Mild: 863
+    Severe: 62
+
+  True Class: Healthy
+  Recall on True Class: 0.2896
+  ------------------------------
+Fold 15 | Epoch 24
+  Train Loss: 0.2354
+  Train Accuracy: 0.9896
+  Train Macro F1: 0.9879
+
+  Test Accuracy: 0.3049
+  Test Balanced Acc: 0.3049
+  Test Macro F1: 0.1558
+
+  Prediction counts:
+    Healthy: 397
+    Mild: 787
+    Severe: 118
+
+  True Class: Healthy
+  Recall on True Class: 0.3049
+  ------------------------------
+Fold 15 | Epoch 25
+  Train Loss: 0.2346
+  Train Accuracy: 0.9907
+  Train Macro F1: 0.9888
+
+  Test Accuracy: 0.0906
+  Test Balanced Acc: 0.0906
+  Test Macro F1: 0.0554
+
+  Prediction counts:
+    Healthy: 118
+    Mild: 975
+    Severe: 209
+
+  True Class: Healthy
+  Recall on True Class: 0.0906
+  ------------------------------
+Fold 15 Best Model Test Result -> Acc: 0.0906, Bal Acc: 0.0906, Macro F1: 0.0554
+============================================================
+All folds complete. Aggregating results...
+
+--- Final Aggregated Results ---
+Accuracy:          0.5090
+Balanced Accuracy: 0.3975
+Macro F1:          0.4133
+Weighted F1:       0.5364
+
+--- Classification Report ---
+              precision    recall  f1-score   support
+
+     Healthy     0.7390    0.6509    0.6922     10413
+        Mild     0.0363    0.0524    0.0429      3131
+      Severe     0.5212    0.4893    0.5048      2438
+
+    accuracy                         0.5090     15982
+   macro avg     0.4322    0.3975    0.4133     15982
+weighted avg     0.5681    0.5090    0.5364     15982
+
+--- Confusion Matrix ---
+[[6778 3348  287]
+ [2158  164  809]
+ [ 236 1009 1193]]
+
+--- Per-Class Recall ---
+Healthy: 0.6509
+Mild: 0.0524
+Severe: 0.4893
+
+Saved predictions to outputs_opensmile_gru\results_opensmile_gru.csv. Total execution time: 27.64 minutes.

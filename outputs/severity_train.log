@@ -1,0 +1,37 @@
+2026-04-30 22:49:16 | WARNING | Skipping 2 unreadable/missing audio files.
+2026-04-30 22:49:16 | WARNING | Skipped file: Database\F_data\F01\Session1\wav_headMic\0067.wav | reason: Error opening 'Database\\F_data\\F01\\Session1\\wav_headMic\\0067.wav': Format not recognised.
+2026-04-30 22:49:16 | WARNING | Skipped file: Database\F_data\F01\Session1\wav_headMic\0068.wav | reason: Error opening 'Database\\F_data\\F01\\Session1\\wav_headMic\\0068.wav': Format not recognised.
+2026-04-30 22:49:17 | INFO | Severity class sample coverage:
+2026-04-30 22:49:17 | INFO | Class 0 (Healthy): train=7289 | val=1562 | test=1562
+2026-04-30 22:49:17 | INFO | Class 1 (Mild): train=934 | val=200 | test=201
+2026-04-30 22:49:17 | INFO | Class 2 (Severe): train=2963 | val=636 | test=635
+2026-04-30 22:49:18 | INFO | Training started on device=cuda
+2026-04-30 22:49:18 | INFO | Train samples=11186 | Val samples=2398 | Test samples=2398
+2026-04-30 22:49:50 | DEBUG | Epoch 01 | Batch 20/59 | batch_loss=1.0781
+2026-04-30 22:49:53 | DEBUG | Epoch 01 | Batch 40/59 | batch_loss=1.0992
+2026-04-30 22:49:56 | DEBUG | Epoch 01 | Batch 59/59 | batch_loss=1.0917
+2026-04-30 22:50:24 | DEBUG | Epoch 01 | Validation complete
+2026-04-30 22:50:24 | INFO | Epoch [01/20] LR: 0.001000 | Train Loss: 1.0988 | Train Acc: 0.3230 | Val Loss: 1.1097 | Val Acc: 0.1526
+2026-04-30 22:50:25 | INFO | Saved new best model at epoch 1
+2026-04-30 22:50:53 | DEBUG | Epoch 02 | Batch 20/59 | batch_loss=1.0687
+2026-04-30 22:50:56 | DEBUG | Epoch 02 | Batch 40/59 | batch_loss=1.0980
+2026-04-30 22:50:59 | DEBUG | Epoch 02 | Batch 59/59 | batch_loss=1.0826
+2026-04-30 22:51:26 | DEBUG | Epoch 02 | Validation complete
+2026-04-30 22:51:27 | INFO | Epoch [02/20] LR: 0.001000 | Train Loss: 1.0851 | Train Acc: 0.3430 | Val Loss: 1.0860 | Val Acc: 0.2473
+2026-04-30 22:51:27 | INFO | Saved new best model at epoch 2
+2026-04-30 22:51:56 | DEBUG | Epoch 03 | Batch 20/59 | batch_loss=1.1044
+2026-04-30 22:51:59 | DEBUG | Epoch 03 | Batch 40/59 | batch_loss=1.0664
+2026-04-30 22:52:02 | DEBUG | Epoch 03 | Batch 59/59 | batch_loss=1.0456
+2026-04-30 22:52:32 | DEBUG | Epoch 03 | Validation complete
+2026-04-30 22:52:33 | INFO | Epoch [03/20] LR: 0.001000 | Train Loss: 1.0698 | Train Acc: 0.3613 | Val Loss: 1.0928 | Val Acc: 0.1902
+2026-04-30 22:53:07 | DEBUG | Epoch 04 | Batch 20/59 | batch_loss=1.1088
+2026-04-30 22:53:10 | DEBUG | Epoch 04 | Batch 40/59 | batch_loss=0.9352
+2026-04-30 22:53:13 | DEBUG | Epoch 04 | Batch 59/59 | batch_loss=0.9759
+2026-04-30 22:53:45 | DEBUG | Epoch 04 | Validation complete
+2026-04-30 22:53:46 | INFO | Epoch [04/20] LR: 0.001000 | Train Loss: 1.0337 | Train Acc: 0.4144 | Val Loss: 0.9492 | Val Acc: 0.5667
+2026-04-30 22:53:46 | INFO | Saved new best model at epoch 4
+2026-04-30 22:54:17 | DEBUG | Epoch 05 | Batch 20/59 | batch_loss=1.0512
+2026-04-30 22:54:20 | DEBUG | Epoch 05 | Batch 40/59 | batch_loss=0.9673
+2026-04-30 22:54:23 | DEBUG | Epoch 05 | Batch 59/59 | batch_loss=0.9761
+2026-04-30 22:54:53 | DEBUG | Epoch 05 | Validation complete
+2026-04-30 22:54:54 | INFO | Epoch [05/20] LR: 0.001000 | Train Loss: 1.0015 | Train Acc: 0.4592 | Val Loss: 1.0559 | Val Acc: 0.3236

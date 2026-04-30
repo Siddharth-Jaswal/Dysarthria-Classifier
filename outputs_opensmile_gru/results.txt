@@ -1,0 +1,95 @@
+TORGO Dysarthria Severity Classification Results
+Model: openSMILE LLD + BiGRU + Attention
+Evaluation: Leave-One-Speaker-Out (LOSO) Cross-Validation
+
+============================================================
+FINAL AGGREGATED RESULTS
+========================
+
+Accuracy:            0.5090
+Balanced Accuracy:   0.3975
+Macro F1 Score:      0.4133
+Weighted F1 Score:   0.5364
+
+============================================================
+CLASSIFICATION REPORT
+=====================
+
+Class: Healthy
+Precision: 0.7390
+Recall:    0.6509
+F1-Score:  0.6922
+Support:   10413
+
+Class: Mild
+Precision: 0.0363
+Recall:    0.0524
+F1-Score:  0.0429
+Support:   3131
+
+Class: Severe
+Precision: 0.5212
+Recall:    0.4893
+F1-Score:  0.5048
+Support:   2438
+
+---
+
+Overall Accuracy: 0.5090
+Total Samples:    15982
+
+Macro Average:
+Precision: 0.4322
+Recall:    0.3975
+F1-Score:  0.4133
+
+Weighted Average:
+Precision: 0.5681
+Recall:    0.5090
+F1-Score:  0.5364
+
+============================================================
+CONFUSION MATRIX
+================
+
+```
+            Predicted
+          H      M      S
+```
+
+Actual H    6778   3348    287
+Actual M    2158    164    809
+Actual S     236   1009   1193
+
+Where:
+H = Healthy
+M = Mild
+S = Severe
+
+============================================================
+PER-CLASS RECALL
+================
+
+Healthy : 0.6509
+Mild    : 0.0524
+Severe  : 0.4893
+
+============================================================
+OBSERVATIONS
+============
+
+1. BiGRU + Attention slightly improved overall performance over MLP baseline.
+2. Healthy class remains strongest with best precision and recall.
+3. Severe class improved modestly compared to baseline.
+4. Mild class remains highly challenging with very low recall.
+5. Temporal modeling helped slightly, but class overlap still dominates.
+
+============================================================
+OUTPUT FILES
+============
+
+Predictions CSV:
+outputs_opensmile_gru/results_opensmile_gru.csv
+
+Total Runtime:
+27.64 minutes

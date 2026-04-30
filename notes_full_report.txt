@@ -1,0 +1,155 @@
+=========================================
+        NOTES CSV DATASET SUMMARY        
+=========================================
+
+--- Speaker: FC01 ---
+File: Database\FC_data\FC01\Notes\FC01.csv
+Shape: 17 rows x 2 columns
+Columns: ['Gender', 'Female']
+Preview (first 2 rows):
+    Gender       Female
+0      DOB  May 26 1980
+1  Control          Yes
+
+--- Speaker: FC02 ---
+File: Database\FC_data\FC02\Notes\FC02.csv
+Shape: 17 rows x 2 columns
+Columns: ['Gender', 'Female']
+Preview (first 2 rows):
+    Gender     Female
+0      DOB  16-Oct-84
+1  Control        Yes
+
+--- Speaker: FC03 ---
+File: Database\FC_data\FC03\Notes\FC03.csv
+Shape: 30 rows x 2 columns
+Columns: ['Gender', 'Female']
+Preview (first 2 rows):
+    Gender     Female
+0      DOB  29-Oct-87
+1  Control        Yes
+
+--- Speaker: F01 ---
+File: Database\F_data\F01\Notes\F01.csv
+Shape: 47 rows x 3 columns
+Columns: ['Assessment', 'Unnamed: 1', 'Unnamed: 2']
+Preview (first 2 rows):
+  Assessment Unnamed: 1 Unnamed: 2
+0       Date  14-Apr-08        NaN
+1        NaN        NaN        NaN
+
+--- Speaker: F03 ---
+File: Database\F_data\F03\Notes\F03.csv
+Shape: 59 rows x 3 columns
+Columns: ['Assessment', 'Unnamed: 1', 'Unnamed: 2']
+Preview (first 2 rows):
+  Assessment Unnamed: 1 Unnamed: 2
+0       Date  26-Jun-08        NaN
+1        NaN        NaN        NaN
+
+--- Speaker: F04 ---
+File: Database\F_data\F04\Notes\F04.csv
+Shape: 56 rows x 3 columns
+Columns: ['Assessment', 'Unnamed: 1', 'Unnamed: 2']
+Preview (first 2 rows):
+  Assessment Unnamed: 1 Unnamed: 2
+0       Date  26-Jun-08        NaN
+1        NaN        NaN        NaN
+
+--- Speaker: MC01 ---
+File: Database\MC_data\MC01\Notes\MC01.csv
+Shape: 25 rows x 2 columns
+Columns: ['Gender', 'Male']
+Preview (first 2 rows):
+    Gender       Male
+0      DOB  17-Oct-88
+1  Control        Yes
+
+--- Speaker: MC02 ---
+File: Database\MC_data\MC02\Notes\MC02.csv
+Shape: 31 rows x 2 columns
+Columns: ['Gender', 'Male']
+Preview (first 2 rows):
+    Gender       Male
+0      DOB  28-Feb-82
+1  Control        Yes
+
+--- Speaker: MC03 ---
+File: Database\MC_data\MC03\Notes\MC03.csv
+Shape: 18 rows x 2 columns
+Columns: ['Gender', 'Male']
+Preview (first 2 rows):
+    Gender       Male
+0      DOB  14-Mar-79
+1  Control        Yes
+
+--- Speaker: M01 ---
+File: Database\M_data\M01\Notes\M01.csv
+Shape: 70 rows x 3 columns
+Columns: ['Assessment', 'Unnamed: 1', 'Unnamed: 2']
+Preview (first 2 rows):
+  Assessment Unnamed: 1 Unnamed: 2
+0       Date  25-Feb-08        NaN
+1        NaN        NaN        NaN
+
+--- Speaker: M02 ---
+File: Database\M_data\M02\Notes\M02.csv
+Shape: 50 rows x 3 columns
+Columns: ['Gender', 'Male', 'Unnamed: 2']
+Preview (first 2 rows):
+    Gender       Male Unnamed: 2
+0      DOB  01-Jul-51        NaN
+1  Control         No        NaN
+
+--- Speaker: M03 ---
+File: Database\M_data\M03\Notes\M03.csv
+Shape: 60 rows x 3 columns
+Columns: ['Assessment', 'Unnamed: 1', 'Unnamed: 2']
+Preview (first 2 rows):
+  Assessment Unnamed: 1 Unnamed: 2
+0       Date  13-Aug-08        NaN
+1        NaN        NaN        NaN
+
+--- Speaker: M04 ---
+File: Database\M_data\M04\Notes\M04.csv
+Shape: 56 rows x 3 columns
+Columns: ['Assessment', 'Unnamed: 1', 'Unnamed: 2']
+Preview (first 2 rows):
+  Assessment Unnamed: 1 Unnamed: 2
+0       Date  20-Feb-09        NaN
+1        NaN        NaN        NaN
+
+--- Speaker: M05 ---
+File: Database\M_data\M05\Notes\M05.csv
+Shape: 43 rows x 5 columns
+Columns: ['Assessment', 'Unnamed: 1', 'Unnamed: 2', 'Unnamed: 3', 'Unnamed: 4']
+Preview (first 2 rows):
+  Assessment Unnamed: 1 Unnamed: 2 Unnamed: 3 Unnamed: 4
+0       Date  28-Jan-10        NaN        NaN        NaN
+1        NaN        NaN        NaN        NaN        NaN
+
+
+=========================================
+        SEVERITY LABEL COMPARISON        
+=========================================
+
+AGREEMENTS (1):
+  M05: Severe
+
+CONFLICTS (0):
+  None
+
+UNCERTAIN / UNKNOWN (13):
+  FC01: Current = Healthy | Notes lacked clear severity keywords.
+  FC02: Current = Healthy | Notes lacked clear severity keywords.
+  FC03: Current = Healthy | Notes lacked clear severity keywords.
+  F01: Current = Severe | Notes lacked clear severity keywords.
+  F03: Current = Severe | Notes lacked clear severity keywords.
+  F04: Current = Mild | Notes lacked clear severity keywords.
+  MC01: Current = Healthy | Notes lacked clear severity keywords.
+  MC02: Current = Healthy | Notes lacked clear severity keywords.
+  MC03: Current = Healthy | Notes lacked clear severity keywords.
+  M01: Current = Severe | Notes lacked clear severity keywords.
+  M02: Current = Severe | Notes lacked clear severity keywords.
+  M03: Current = Mild | Notes lacked clear severity keywords.
+  M04: Current = Severe | Notes lacked clear severity keywords.

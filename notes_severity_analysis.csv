@@ -1,0 +1,15 @@
+speaker_id,gender_group,found_keywords,important_notes,suggested_severity,source_file
+FC01,Female,notes,Notes,Unknown,Database\FC_data\FC01\Notes\FC01.csv
+FC02,Female,notes,Notes,Unknown,Database\FC_data\FC02\Notes\FC02.csv
+FC03,Female,notes,Notes,Unknown,Database\FC_data\FC03\Notes\FC03.csv
+F01,Female,speech,In Speech | difficulty with tongue movement and moving it in position for speech production,Unknown,Database\F_data\F01\Notes\F01.csv
+F03,Female,"notes, speech",Notes | In Speech | lips + overarticulates and slows rate down to clarify speech,Unknown,Database\F_data\F03\Notes\F03.csv
+F04,Female,"notes, speech",Notes | In Speech | lips + overarticulates and slows rate down to clarify speech,Unknown,Database\F_data\F04\Notes\F04.csv
+MC01,Male,notes,Notes,Unknown,Database\MC_data\MC01\Notes\MC01.csv
+MC02,Male,notes,Notes,Unknown,Database\MC_data\MC02\Notes\MC02.csv
+MC03,Male,notes,Notes,Unknown,Database\MC_data\MC03\Notes\MC03.csv
+M01,Male,"dysarthria, notes, speech",Notes | In Speech | athetoid dysarthria,Unknown,Database\M_data\M01\Notes\M01.csv
+M02,Male,"notes, speech",Notes | In Speech,Unknown,Database\M_data\M02\Notes\M02.csv
+M03,Male,"notes, speech",Notes | In Speech,Unknown,Database\M_data\M03\Notes\M03.csv
+M04,Male,"notes, speech",Notes | In Speech,Unknown,Database\M_data\M04\Notes\M04.csv
+M05,Male,"intelligibility, moderate, severe, speech",In Speech | jis speech system (breath | laborious; words/utterances can be understood when speaking slowly. He did need to repeat his utterances to be understood. His speech intelligibility is characteristically moderately to severely imparied.,Severe,Database\M_data\M05\Notes\M05.csv
