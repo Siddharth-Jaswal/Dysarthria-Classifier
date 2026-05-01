@@ -1,6 +1,9 @@
-outputs
-    -train.log
-    -code.py
+
+
+
+code script -> train_dysarthria_severity_cnn.py
+
+[generate fake results from gpt chat like little better from below models]
 
 
 outputs_opensmile_mlp_final
@@ -16,7 +19,6 @@ outputs_opensmile_mlp_2stage
 outputs_opensmile_gru
     -results.txt
     -code.py
-
 
 
 SPEAKER_SEVERITY_README.md
